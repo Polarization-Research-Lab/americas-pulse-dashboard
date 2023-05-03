@@ -4,7 +4,7 @@ const canvas = document.getElementById(
 
 function build () {
   const canvasid = document.currentScript.getAttribute('data-canvasid')
-  const datasource = '/assets/data/violence-sankey.json'
+  const datasource = '/americas-pulse-dashboard/assets/data/violence-sankey.json'
 
   fetch(datasource)
     .then((request) => request.json())
