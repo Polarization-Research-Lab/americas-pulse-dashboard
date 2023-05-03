@@ -1,0 +1,53 @@
+﻿label,short_label,scale,question_text,notes,section,limit_lower,limit_upper
+democrat_therm_1,Feeling toward Democrats,therm,"We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. 
+
+How would you rate your feeling toward Democrats?",,Affect,0,100
+republican_therm_1,Feeling toward Republicans,therm,"We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. 
+
+How would you rate your feeling toward Republicans?",,Affect,0,100
+general_trust,General Trust,yesNo,Do you think your wallet (or your valuables) would be returned to you if it were found by a stranger?,,Trust and America,1,2
+institutional_corruption,Institutional Corruption,refuseAccept,"If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?",,Trust and America,1,5
+institutional_response,Institutional Response,likelyUnlikely,"If you were to complain about the poor quality of a public service, how likely or unlikely is it that the problem would be easily resolved?",,Trust and America,1,5
+vote_importance,Importance of Voting,importantUnimportant,How important or unimportant is it to vote in every election?,,Trust and America,1,5
+pride,Pride in Being American,proudNot,How proud are you to be an American?,,Trust and America,1,5
+fair_treatment,Get Fair Treatment from Government,agreeDisagree,Do you agree or disagree that you can expect fair treatment from government authorities?,,Trust and America,1,5
+norm_judges,Democratic Norms: Support Ignore the Judiciary,agreeDisagree,Do you agree or disagree: {inparty: Democratic/Republican} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by {outparty: Democratic/Republican} presidents.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,1,5
+norm_judges_perception,Democratic Norms: Perception Other Side Wants to Ignore the Judiciary,num,What percent of {outparty: Democratic/Republican} voters do you think agree with the following: {outparty: Democratic/Republican} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by {inparty: Democratic/Republican} presidents.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,0,100
+norm_polling,Democratic Norms: Support Reduce Polling Places,agreeDisagree,Do you agree or disagree: {inparty: Democrats/Republicans} should reduce the number of polling stations in areas that typically support {outparty: Democrats/Republicans}.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,1,5
+norm_polling_perception,Democratic Norms: Perception Other Side Wants to Reduce Polling Places,num,What percent of {outparty: Democratic/Republican} voters do you think agree with the following: {outparty: Democrats/Republicans} should reduce the number of polling stations in areas that typically support {inparty: Democrats/Republicans}.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,0,100
+norm_executive,Democratic Norms: Unilateral Executive Action,agreeDisagree,"Do you agree or disagree: If a {inparty: Democratic/Republican} president can't get cooperation from {outparty: Democratic/Republican} members of congress to pass new laws, the {inparty: Democratic/Republican} president should circumvent Congress and issue executive orders on their own to accomplish their priorities.",Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,1,5
+norm_executive_perception,Democratic Norms: Perception Other Side Supports Unilateral Action,num,"What percent of {outparty: Democratic/Republican} voters do you think agree with the following: If a {outparty: Democratic/Republican} president can't get cooperation from {inparty: Democratic/Republican} members of congress to pass new laws, the {outparty: Democratic/Republican} president should issue executive orders on their own to accomplish their priorities.",Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,0,100
+norm_censorship,Democratic Norms: Censor Media,agreeDisagree,Do you agree or disagree with the following: The government should be able to censor media sources that spend more time attacking {inparty: Democrats/Republicans} than {outparty: Democrats/Republicans}.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,1,5
+norm_censorship_perception,Democratic Norms: Perception Other Side Wants to Censor Media,num,What percent of {outparty: Democratic/Republican} voters do you think agree with the following: The government should be able to censor media sources that spend more time attacking {outparty: Democrats/Republicans} than {inparty: Democrats/Republicans}.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,0,100
+norm_loyalty,Democratic Norms: Loyalty to Party Over Constitution,agreeDisagree,Do you agree or disagree with the following: When a {inparty: Democratic/Republican} candidate questions the outcome of an election other {inparty: Democrats/Republicans} should be more loyal to the {inparty: Democratic/Republican} party than to election rules and the constitution.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,1,5
+norm_loyalty_perception,Democratic Norms: Perception Other Side is More Loyal to Party than Constitution,num,What percent of {outparty: Democratic/Republican} voters do you think agree with the following: When a {outparty: Democratic/Republican} questions the outcome of an election other {outparty: Democrats/Republicans} should be more loyal to the {outparty: Democratic/Republican} party than to election rules and the constitution.,Respondents are randomized to complete a subset of three norms questions and their corresponding perception question.,Democratic Norms,0,100
+violence1,Violence: Support for Protesting without Permit,supportOppose,"{name 1} was convicted of protesting without a permit.  
+
+He was arrested by police after leading a protest against {outparty: Democrats/Republicans} on the grounds of the county courthouse. He made no effort to acquire the necessary permit for the protest and refused to leave when asked by police. 
+
+Do you support or oppose {name 1}’s actions?",,Political Violence,1,5
+violence2,Violence: Support for Vandalism,supportOppose,"{name 2} was convicted of vandalism.  
+
+He was arrested by police after he vandalized several large signs expressing support for candidates of the {outparty: Democratic/Republican} party. 
+
+Do you support or oppose {name 2}’s actions?",This is an adaptive scale.  Respondents are only shown this crime if they indicate support for the last crime.,Political Violence,1,5
+violence3,Violence: Support for Assault,supportOppose,"{name 3} was convicted of assault.  
+
+He was arrested by police for throwing rocks at peaceful {outparty: Democratic/Republican} protesters. Although no one was   seriously injured, paramedics bandaged a man with a head wound.         
+
+Do you support or oppose {name 3}’s actions?",This is an adaptive scale.  Respondents are only shown this crime if they indicate support for the last crime.,Political Violence,1,5
+violence4,Violence: Support for Arson,supportOppose,"{name 4} was convicted of arson.  
+
+He was arrested by police as he attempted to run from a fire he started at the local {outparty: Democratic/Republican} headquarters. Although he waited for the building to close for the night, several adjacent buildings were still occupied.          
+
+Do you support or oppose {name 4}’s actions?",This is an adaptive scale.  Respondents are only shown this crime if they indicate support for the last crime.,Political Violence,1,5
+violence5,Violence: Support for Assault with Deadly Weapon,supportOppose,"{name 5} was convicted of assault with a deadly weapon.  
+
+He was arrested by police after driving his car into a crowd of {outparty: Democratic/Republican} protesters. Although no one was killed, several individuals were seriously injured and one spent a month in the hospital. 
+
+Do you support or oppose {name 5}’s actions?",This is an adaptive scale.  Respondents are only shown this crime if they indicate support for the last crime.,Political Violence,1,5
+violence6,Violence: Support for Murder,supportOppose,"{name 6} was convicted of murder.  
+
+He was arrested by police after surveillance footage was found showing him stabbing a prominent {outparty: Democratic/Republican} to death. {name 6} targeted the victim because he believed the victim had prevented him from voting in the last election as part of a conspiracy to stop {inparty: Democrats/Republicans} voters. 
+
+Do you support or oppose {name 6}’s actions?",This is an adaptive scale.  Respondents are only shown this crime if they indicate support for the last crime.,Political Violence,1,5

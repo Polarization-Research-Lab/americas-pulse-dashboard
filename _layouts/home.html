@@ -1,0 +1,150 @@
+---
+layout: default
+# The Home page layout
+---
+
+
+<script type="text/javascript" src='/assets/js/gauge.js'></script>
+<!-- <script type="text/javascript" src='/assets/js/chartjs-gauge.min.js'></script> -->
+<script src="/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="/assets/js/chartjs-plugin-annotation.min.js"></script>
+
+<div id='home-body'>
+
+	<div class='row' id='home-row1'>
+
+		<div class='col-4' id=''>
+			<h1>America's Political Pulse Survey</h1>
+			<p>This survey is a series of questions designed to shed light on public sentiment towards political animosity, respect for democracy, and support for political violence -- asked of a thousand Americans each week.</p>
+		</div>
+
+		<div class='col-8' id='home-affpol-time-div-up'>
+			<h2 class='text-center'>Affective Polarization over Time</h2>
+			<br>
+		    <div id='home-affpol-time-div'>
+		      <canvas id = "home-affpol-time" class=""></canvas>
+		      <script src='/assets/js/charts/affpol-time.js' data-canvasid="home-affpol-time"></script>
+		    </div>
+
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class='row' id='home-row2'>
+
+		<h1>Last Week in America</h1>
+		<br>
+		<br>
+
+		<div class='row' id='home-cards'>
+
+			<div class='col-4 home-card'>
+				<div class='home-card-box' data-destination='/tabs/affective%20polarization.html'>
+
+				      <div class = 'home-gauge-div'>
+				          <canvas id = "home-affpol-nat-avg" class="gauge"></canvas>
+					  </div>
+			          <script type="text/javascript" src="/assets/js/charts/chartjs-gauge.js" data-canvasid="home-affpol-nat-avg" data-gauge="{{ site.data.meta.affpol_week_avg }}" data-max='100'></script>
+
+			          <p class = 'text-center home-gauge-change'>{{ site.data.meta.affpol_week_avg }}
+				          	{% assign change = site.data.meta.affpol_week_avg_change | plus: 0 %}
+			          		{% if change >= 0 %}
+				          		<span class='home-gauge-change-pos'>(+{{ site.data.meta.affpol_week_avg_change }})</span>
+			          		{% else if change <= 0 %}
+				          		<span class='home-gauge-change-neg'>({{ site.data.meta.affpol_week_avg_change }})</span>
+			          		{% else if change == 0 %}
+				          		(+ 0.00)
+			          		{% endif %}
+				       </p>
+
+					<h1 class='text-center'>Affective Polarization<br>(0 - 100)</h1>
+				</div>
+				
+			</div>
+			
+
+			<div class='col-4 home-card'>
+				<div class='home-card-box' data-destination='/tabs/democratic%20norms.html'>
+
+				      <div class = 'home-gauge-div'>
+				          <canvas id = "home-norm-avg" class="gauge"></canvas>
+					  </div>
+			          <script type="text/javascript" src="/assets/js/charts/chartjs-gauge.js" data-canvasid="home-norm-avg" data-gauge="{{ site.data.meta.norm_week_avg }}" data-max='5'></script>
+			          <p class = 'text-center home-gauge-change'>{{ site.data.meta.norm_week_avg }} out of 5
+				          	{% assign change = site.data.meta.norm_week_avg_change | plus: 0 %}
+			          		{% if change >= 0 %}
+				          		<span class='home-gauge-change-pos'>(+{{ site.data.meta.norm_week_avg_change }})</span>
+			          		{% else if change <= 0 %}
+				          		<span class='home-gauge-change-neg'>({{ site.data.meta.norm_week_avg_change }})</span>
+			          		{% else if change == 0 %}
+				          		(+/- 0.00)
+			          		{% endif %}
+				       </p>
+					<h1 class='text-center'>Average # of Norm Violations Supported</h1>
+				</div>
+
+			</div>
+
+
+			<div class='col-4 home-card'>
+				<div class='home-card-box' data-destination='/tabs/support%20for%20violence.html'>
+
+				      <div class = 'home-gauge-div'>
+				          <canvas id = "home-violence-avg" class="gauge"></canvas>
+					  </div>
+			          <script type="text/javascript" src="/assets/js/charts/chartjs-gauge.js" data-canvasid="home-violence-avg" data-gauge="{{ site.data.meta.violence_week_avg }}" data-max='6'></script>
+			          <p class = 'text-center home-gauge-change'>{{ site.data.meta.violence_week_avg }} out of 6
+			          		<!-- <sup class='infobox' data-info='hey'>(*)</sup> -->
+				          	{% assign change = site.data.meta.violence_week_avg_change | plus: 0 %}
+			          		{% if change >= 0 %}
+				          		<span class='home-gauge-change-pos'>(+{{ site.data.meta.violence_week_avg_change }})</span>
+			          		{% else if change <= 0 %}
+				          		<span class='home-gauge-change-neg'>({{ site.data.meta.violence_week_avg_change }})</span>
+			          		{% else if change == 0 %}
+				          		(+/- 0.00)
+			          		{% endif %}
+				       </p>
+
+					<h1 class='text-center'>Average # of Violent Political Acts Supported</h1>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+
+<script src="/assets/js/home-cards.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

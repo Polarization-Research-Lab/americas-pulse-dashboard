@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+
+{% include assets-origin.html %}
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="{{ site.alt_lang | default: site.lang }}"{{ prefer_mode }}>
+
+  {% include head.html %}
+
+  <div id="blank" class="container">
+    {{ content }}
+  </div>
+
+</html>

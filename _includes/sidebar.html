@@ -1,0 +1,152 @@
+<!--
+  The Side Bar
+-->
+
+<div id="sidebar" class="d-flex flex-column align-items-end">
+  <div class="profile-wrapper text-center">
+    <div id="avatar">
+      <a href="{{ '/' | relative_url }}" class="mx-auto">
+        {% if site.avatar != empty and site.avatar %}
+          {% capture avatar_url %}
+            {% if site.avatar contains '://' %}
+              {{ site.avatar }}
+            {% elsif site.img_cdn != empty and site.img_cdn %}
+              {{ site.avatar | prepend: site.img_cdn }}
+            {% else %}
+              {{ site.avatar | relative_url }}
+            {% endif %}
+          {% endcapture %}
+          <img src="{{ avatar_url | strip }}" alt="avatar" onerror="this.style.display='none'">
+        {% endif %}
+      </a>
+    </div>
+
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
+    <div class="site-subtitle font-italic">{{ site.tagline }}</div>
+
+  </div><!-- .profile-wrapper -->
+
+  <ul class="w-100">
+
+    <!-- home -->
+    <!-- removed -->
+
+    <!-- the real tabs -->
+    {% for tab in site.tabs %}
+    <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+      <a href="{{ tab.url | relative_url }}" class="nav-link">
+        <i class="fa-fw {{ tab.icon }} ml-xl-3 mr-xl-3 unloaded"></i>
+        {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+        <span>{{ site.data.locales[site.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+      </a>
+    </li> <!-- .nav-item -->
+    {% endfor %}
+
+  </ul> <!-- ul.nav.flex-column -->
+
+  <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
+
+    <div id='newsletter-box'>
+      <p>Stay up to date on Lab News!</p>
+
+
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:rgba(0,0,0,0); clear:left; font:14px Helvetica,Arial,sans-serif; }
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+          <form action="https://polarizationresearchlab.us10.list-manage.com/subscribe/post?u=f6fa762f62ec9c129c2a62b83&amp;id=c3d273e9fb&amp;f_id=007035e2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+              <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+      </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+        <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+      </div>
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f6fa762f62ec9c129c2a62b83_c3d273e9fb" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      </div>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+      <!--End mc_embed_signup-->
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github' %}
+          Find the code on  
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% else %}
+          {% assign url = entry.url %}
+      {% endcase %}
+
+      {% if url %}
+      <a href="{{ url }}" aria-label="{{ entry.type }}"
+        {% assign link_types = '' %}
+
+        {% unless entry.noblank %}
+          target="_blank"
+          {% assign link_types = 'noopener noreferrer' %}
+        {% endunless %}
+
+        {% if entry.type == 'mastodon' %}
+          {% assign link_types = link_types | append: ' me' | strip %}
+        {% endif %}
+
+        {% unless link_types == empty %}rel="{{ link_types }}"{% endunless %}>
+
+        <i class="{{ entry.icon }}"></i>
+      </a>
+      {% endif %}
+
+    {% endfor %}
+
+
+    <div class="footer-right">
+
+      <p class="mb-0">
+
+        {%- capture _platform -%}
+        <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+        {%- endcapture -%}
+
+        {%- capture _theme -%}
+        <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+        {%- endcapture -%}
+
+        {{ site.data.locales[site.lang].meta
+          | default: 'Using the :PLATFORM theme :THEME.'
+          | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
+        }}
+      </p>
+    </div>
+    
+  </div> <!-- .sidebar-bottom -->
+
+</div><!-- #sidebar -->
+
+<script src="{{ site.sourceurl }}/assets/js/email-btn.js"></script>
