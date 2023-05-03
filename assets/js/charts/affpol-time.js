@@ -1,8 +1,6 @@
-import('../../../../../../../../../../../assets/js/chartjs-adapter-date-fns.bundle.min.js')
-
 const canvasid_affpoltime = document.currentScript.getAttribute('data-canvasid')
 
-fetch('/assets/data/affpol-time.json')
+fetch('/americas-pulse-dashboard/assets/data/affpol-time.json')
   .then((request) => request.json())
   .then((data) => {
     canvas = document.getElementById(canvasid_affpoltime)
