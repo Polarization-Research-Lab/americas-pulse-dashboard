@@ -22,7 +22,7 @@ function build () {
   fetch(datasource)
     .then((r) => r.json())
     .then((data) => {
-      fetch('/assets/data/states-10m.json')
+      fetch('/americas-pulse-dashboard/assets/data/states-10m.json')
         .then((r) => r.json())
         .then((us) => {
           const canvas = document.getElementById(canvasid)

@@ -1,6 +1,6 @@
 function build () {
   const canvasid_affpolhist = document.currentScript.getAttribute('data-canvasid')
-  const datasource = '/assets/data/demnorm-lines.json'
+  const datasource = '/americas-pulse-dashboard/assets/data/demnorm-lines.json'
 
   fetch(datasource)
     .then((request) => request.json())
