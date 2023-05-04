@@ -60,4 +60,4 @@ The start and end time columns mark when a participant starts and finishes our s
 
 For the engagement measure, we show participants a passage about a wildlife funding program for a particular state. The passage is then removed, and participants are asked what state (of 7 possible options) the passage referred to. We've recoded this data to label participants as "engaged" or "not engaged" based on whether they guessed the correct state.
 
-<script src="{{ site.sourceurl }}/assets/js/download-btn.js"></script>
+<script src="{{ site.baseurl }}/assets/js/download-btn.js"></script>

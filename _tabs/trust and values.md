@@ -3,7 +3,7 @@ layout: datatab
 icon: fas fa-info-circle
 order: 4
 ---
-<script src="{{ site.sourceurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
 
 <div id = 'trustval'>
 
@@ -19,9 +19,9 @@ order: 4
         <canvas id = 'trustval-pride'></canvas>
         <script 
           type="text/javascript" 
-          src="{{ site.sourceurl }}/assets/js/charts/trustval-line.js" 
+          src="{{ site.baseurl }}/assets/js/charts/trustval-line.js" 
           data-canvasid="trustval-pride" 
-          data-source="{{ site.sourceurl }}/assets/data/trustval/pride.json"
+          data-source="{{ site.baseurl }}/assets/data/trustval/pride.json"
           data-ylabel-4="['Extremely','proud']"
           data-ylabel-3="['Very','proud']"
           data-ylabel-2="['Moderately','proud']"
@@ -41,9 +41,9 @@ order: 4
         <canvas id = 'trustval-vote'></canvas>
         <script 
           type="text/javascript" 
-          src="{{ site.sourceurl }}/assets/js/charts/trustval-line.js" 
+          src="{{ site.baseurl }}/assets/js/charts/trustval-line.js" 
           data-canvasid="trustval-vote" 
-          data-source="{{ site.sourceurl }}/assets/data/trustval/vote.json"
+          data-source="{{ site.baseurl }}/assets/data/trustval/vote.json"
           data-ylabel-4="['Very','important']"
           data-ylabel-3="['Important']"
           data-ylabel-2="['Neither important','nor unimportant']"
@@ -77,9 +77,9 @@ order: 4
         <canvas id = 'trustval-response'></canvas>    
         <script 
           type="text/javascript" 
-          src="{{ site.sourceurl }}/assets/js/charts/trustval-line.js" 
+          src="{{ site.baseurl }}/assets/js/charts/trustval-line.js" 
           data-canvasid="trustval-response" 
-          data-source="{{ site.sourceurl }}/assets/data/trustval/response.json"
+          data-source="{{ site.baseurl }}/assets/data/trustval/response.json"
           data-ylabel-0="['Extremely','unlikely']"
           data-ylabel-1="['Unlikely']"
           data-ylabel-2="['Equally likely to','or unlikely']"
@@ -101,9 +101,9 @@ order: 4
         <canvas id = 'trustval-corruption'></canvas>    
         <script 
           type="text/javascript" 
-          src="{{ site.sourceurl }}/assets/js/charts/trustval-line.js" 
+          src="{{ site.baseurl }}/assets/js/charts/trustval-line.js" 
           data-canvasid="trustval-corruption" 
-          data-source="{{ site.sourceurl }}/assets/data/trustval/corruption.json"
+          data-source="{{ site.baseurl }}/assets/data/trustval/corruption.json"
           data-ylabel-4="['Extremely likely','to refuse']"
           data-ylabel-3="['Likely','to refuse']"
           data-ylabel-2="['Equally likely to','refuse or accept']"

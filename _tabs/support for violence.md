@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 3
 ---
 
-<script src="{{ site.sourceurl }}/assets/js/chartjs-chart-sankey.min.js"></script>
-<script src="{{ site.sourceurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
-<script src="{{ site.sourceurl }}/assets/js/chartjs-plugin-annotation.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/chartjs-chart-sankey.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/chartjs-plugin-annotation.min.js"></script>
 
 <div class = 'row chartrow chart' id='violence-row-1'>
 
@@ -18,7 +18,7 @@ order: 3
   <div class='col-9'>
     <div id='violence-sankey-div'>
       <canvas id = 'violence-sankey'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-sankey.js" data-canvasid="violence-sankey"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-sankey.js" data-canvasid="violence-sankey"></script>
     </div>
   </div>
 
@@ -30,7 +30,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div'>
       <canvas id = 'violence-line-protest'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-protest" data-source="{{ site.sourceurl }}/assets/data/violence1.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-protest" data-source="{{ site.baseurl }}/assets/data/violence1.json"></script>
     </div>
   </div>
 
@@ -48,7 +48,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div violence-line-div-alt'>
       <canvas id = 'violence-line-vandalism'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-vandalism" data-source="{{ site.sourceurl }}/assets/data/violence2.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-vandalism" data-source="{{ site.baseurl }}/assets/data/violence2.json"></script>
     </div>
   </div>
 
@@ -65,7 +65,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div'>
       <canvas id = 'violence-line-assault'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-assault" data-source="{{ site.sourceurl }}/assets/data/violence3.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-assault" data-source="{{ site.baseurl }}/assets/data/violence3.json"></script>
     </div>
   </div>
 
@@ -82,7 +82,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div violence-line-div-alt'>
       <canvas id = 'violence-line-arson'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-arson" data-source="{{ site.sourceurl }}/assets/data/violence4.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-arson" data-source="{{ site.baseurl }}/assets/data/violence4.json"></script>
     </div>
   </div>
 
@@ -99,7 +99,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div'>
       <canvas id = 'violence-line-assaultdeadly'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-assaultdeadly" data-source="{{ site.sourceurl }}/assets/data/violence5.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-assaultdeadly" data-source="{{ site.baseurl }}/assets/data/violence5.json"></script>
     </div>
   </div>
 
@@ -116,7 +116,7 @@ order: 3
   <div class='col-9'>
     <div class='row violence-line-div violence-line-div-alt'>
       <canvas id = 'violence-line-murder'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-murder" data-source="{{ site.sourceurl }}/assets/data/violence6.json"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/violence-line.js" data-canvasid="violence-line-murder" data-source="{{ site.baseurl }}/assets/data/violence6.json"></script>
     </div>
   </div>
 

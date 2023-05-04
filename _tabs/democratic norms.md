@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 2
 ---
 
-<script src="{{ site.sourceurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
 
 
 <div class = 'row' id='demnorm-row-1'>
@@ -19,7 +19,7 @@ order: 2
       <h3 class = 'text-center'>Avg # of Norm Violations Supported (by Region)</h3>
       <div class = 'col-12' id='demnorm-map-div'>
         <canvas id='demnorm-map'></canvas>
-        <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/map.js" data-canvasid="demnorm-map"  data-source="{{ site.sourceurl }}/assets/data/demnorm-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/map.js" data-canvasid="demnorm-map"  data-source="{{ site.baseurl }}/assets/data/demnorm-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
       </div>
     </div>
 
@@ -30,7 +30,7 @@ order: 2
 
     <div class='row col-9' id='demnorm-lines-div'>
       <canvas id = 'demnorm-lines'></canvas>
-      <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-lines.js" data-canvasid="demnorm-lines"></script>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-lines.js" data-canvasid="demnorm-lines"></script>
       <div id="demnorms-legend" style='background-color: red;'></div>
     </div>
 
@@ -60,7 +60,7 @@ order: 2
           <div class = 'norm-chart-div'>
             <canvas id = 'demnorm-judges'></canvas>
           </div>
-          <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-judges" data-source='{{ site.sourceurl }}/assets/data/norms/norm_judges.json'></script>
+          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-judges" data-source='{{ site.baseurl }}/assets/data/norms/norm_judges.json'></script>
           <div class='norm-party-header'><h3 class='text-center'>Support for Ignoring Court Judges</h3></div>
         </div>
       </div>
@@ -71,7 +71,7 @@ order: 2
           <div class = 'norm-chart-div'>
             <canvas id = 'demnorm-polling'></canvas>
           </div>
-          <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-polling" data-source='{{ site.sourceurl }}/assets/data/norms/norm_polling.json'></script>
+          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-polling" data-source='{{ site.baseurl }}/assets/data/norms/norm_polling.json'></script>
           <div class='norm-party-header'><h3 class='text-center'>Support for Reducing the # of Polling Stations</h3></div>
         </div>
       </div>
@@ -83,7 +83,7 @@ order: 2
           <div class = 'norm-chart-div'>
             <canvas id = 'demnorm-executive'></canvas>
           </div>
-          <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-executive" data-source='{{ site.sourceurl }}/assets/data/norms/norm_executive.json'></script>
+          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-executive" data-source='{{ site.baseurl }}/assets/data/norms/norm_executive.json'></script>
           <div class='norm-party-header'><h3 class='text-center'>Support for Using Executive Orders</h3></div>
         </div>
       </div>
@@ -100,7 +100,7 @@ order: 2
           <div class = 'norm-chart-div'>
             <canvas id = 'demnorm-censorship'></canvas>
           </div>
-          <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-censorship" data-source='{{ site.sourceurl }}/assets/data/norms/norm_censorship.json'></script>
+          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-censorship" data-source='{{ site.baseurl }}/assets/data/norms/norm_censorship.json'></script>
           <div class='norm-party-header'><h3 class='text-center'>Suport for Censorship</h3></div>
         </div>
       </div>
@@ -111,7 +111,7 @@ order: 2
           <div class = 'norm-chart-div'>
             <canvas id = 'demnorm-loyalty'></canvas>
           </div>
-          <script type="text/javascript" src="{{ site.sourceurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-loyalty" data-source='{{ site.sourceurl }}/assets/data/norms/norm_loyalty.json'></script>
+          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-loyalty" data-source='{{ site.baseurl }}/assets/data/norms/norm_loyalty.json'></script>
           <div class='norm-party-header'><h3 class='text-center'>Support for Party Loyalty in the Face of Election Denial</h3></div>
         </div>
       </div>
