@@ -45,6 +45,8 @@ function build () {
               ]
             },
             options: {
+              responsive: true,
+              maintainAspectRatio: false,
               plugins: {
                 tooltip: {
                   callbacks: {
