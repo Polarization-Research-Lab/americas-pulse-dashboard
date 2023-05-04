@@ -221,8 +221,10 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
   transform: scale(1.2);
 }
 
-
-
+#affpol-rep-avg,
+#affpol-dem-avg {
+  width: 100%;
+}
 
 // affpol
 #affpol-row-1 {
