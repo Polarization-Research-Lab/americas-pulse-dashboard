@@ -22,7 +22,7 @@ You can find the list of demographic variables we collect [at this link](https:/
 
 ### Where can I download the data?
 
-You can download our raw data files by navigating to the Download tab in the side bar; or by navigating to [this link](/tabs/download.html).
+You can download our raw data files by navigating to the Download tab in the side bar.
 
 ### Can I use the data in my research?
 
