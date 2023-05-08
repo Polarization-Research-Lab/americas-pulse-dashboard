@@ -1,9 +1,9 @@
 with open("pull data.py", "r") as file:
     exec(file.read())
     print("finished: pull data")
-# with open("process mrps.py", "r") as file:
-    # exec(file.read())
-    # print("finished: process mrps")
+with open("process mrps.py", "r") as file:
+    exec(file.read())
+    print("finished: process mrps")
 with open("process affpol.py", "r") as file:
     exec(file.read())
     print("finished: process affpol")
