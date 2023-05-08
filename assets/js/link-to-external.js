@@ -4,7 +4,11 @@ function external_new_window() {
         if(b.getAttribute("href") && b.hostname !== location.hostname) {
             b.target = "_blank";
             b.rel = "noopener";
+        console.log('hey', c)
         }
+
     }
 }
+external_new_window()
 // shamelessly pulled from jhvanderschee @ https://jekyllcodex.org/without-plugin/new-window-fix/#
+
