@@ -26,6 +26,6 @@ assets/js/dist
 __pycache__/
 .build/.tmp/*
 ._/
-
+_/
 
 

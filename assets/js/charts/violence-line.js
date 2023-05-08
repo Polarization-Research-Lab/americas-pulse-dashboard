@@ -1,5 +1,3 @@
-import('../../../../../../../../../../../assets/js/chartjs-adapter-date-fns.bundle.min.js')
-
 function build () {
   const canvasid_affpolhist = document.currentScript.getAttribute('data-canvasid')
   const datasource = document.currentScript.getAttribute('data-source')

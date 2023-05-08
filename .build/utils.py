@@ -34,7 +34,7 @@ def remove_disengaged(data):
             (data["engagement_measure"] == 1)
             & (
                 (data["year"] == 2022) & ((data["week"] == 40) | (data["week"] == 39))
-                is False
+                == False
             )
         )
         | ((data["engagement_measure"] == 1) & (data["year"] == 2023))

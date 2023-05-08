@@ -1,12 +1,12 @@
 import sys
 
-sys.path.append("../../../../.utils/")
+sys.path.append("../../../.utils/")
 
 import pandas as pd
 
 import alcdb
 
-db = alcdb.DB(config="../../../../.secrets/ops.ini")
+db = alcdb.DB(config="../../../.secrets/ops.ini")
 
 with db.Session() as session:
     links = pd.read_sql(

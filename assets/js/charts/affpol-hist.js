@@ -1,15 +1,13 @@
-import('../../../../../../../../../../../assets/js/chartjs-adapter-date-fns.bundle.min.js')
-
 function build () {
-  const canvasid_affpolhist = document.currentScript.getAttribute('data-canvasid')
-  const datasource = document.currentScript.getAttribute('data-source')
+  var canvasid_affpolhist = document.currentScript.getAttribute('data-canvasid')
+  var datasource = document.currentScript.getAttribute('data-source')
 
   fetch(datasource)
     .then((request) => request.json())
     .then((data) => {
-      const canvas = document.getElementById(canvasid_affpolhist)
-      const xticks = [0, 20, 40, 60, 80, 100]
-      const chart = new Chart(
+      var canvas = document.getElementById(canvasid_affpolhist)
+      var xticks = [0, 20, 40, 60, 80, 100]
+      var chart = new Chart(
         canvas.getContext('2d'),
         {
           type: 'line',

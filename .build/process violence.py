@@ -50,7 +50,7 @@ vmeta = {}
 dropped = 0
 for _, v in enumerate(vs):
     init = remaining.shape[0]
-    remaining = data[data[v].isna() is False]
+    remaining = data[data[v].isna() == False]
     dropped += init - remaining.shape[0]
 
     # print(remaining.shape[0], '|', remaining[remaining[v] <= 2].shape[0], '|', remaining[remaining[v] >= 3].shape[0])
