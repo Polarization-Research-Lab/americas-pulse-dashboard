@@ -52,6 +52,18 @@ If you use our data in your research, we humbly ask that you cite our lab 🙏:
 
 ## Notes
 
+### How do I calculate "Affective Polarization"?
+
+In our research (and on our public visualizations), we calculate "affective polarization" exactly as follows:
+
+1. Define Democrats as anyone where `pid7` is 1, 2, or 3
+2. Define Republicans as anyone where `pid7` is between 5, 6, or 7
+3. Remove everyone where `pid7` equals 4
+4. Remove any rows with missing values in the `republican_therm_1` and `democrat_therm_1` columns (there shouldn't be many)
+5. For Democrats, calculate: `democrat_therm_1 - republican_therm_1`
+6. For Republicans, calculate: `republican_therm_1 - democrat_therm_1`
+7. Remove anyone with a negative score
+
 ### The `starttime` and `endtime` Variables
 
 The start and end time columns mark when a participant starts and finishes our survey. We often find that participants start our survey to claim a spot in the YouGov panel, but then opt to finish the bulk of the survey later. For this reason, we often use end times for any time-series analyses.
