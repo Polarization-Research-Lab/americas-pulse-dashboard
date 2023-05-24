@@ -1,0 +1,659 @@
+---
+title: ""
+author: ""
+params:
+  week: 
+  label: 
+  week_number:
+  year_number: 
+  t: 
+  full:
+geometry: margin=1.5cm
+output: 
+  pdf_document:
+    latex_engine: xelatex
+    toc: no
+    number_sections: yes
+    includes:
+      in_header: "header.tex"
+---
+
+```{r setup, include=FALSE, error=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, fig.width = 8, fig.height = 1.6)
+library(pollster)
+library(dplyr)
+library(knitr)
+library(ggplot2)
+library(kableExtra)
+library(collapse)
+library(Hmisc)
+library(spatstat)
+library(stringr)
+library(tibble)
+library(forcats)
+library(ggthemes)
+library(dbplyr)
+
+source("theme.r")
+
+week <- params$week
+label <-params$label
+file <- params$file
+week_number <- params$week_number
+year_number <- params$year_number
+t <- params$t
+full <- params$full
+
+# week  <- "Dec. 2-8"
+# label <- "w49_2022"
+# week_number <- 49
+# year_number =2022
+# t=""
+
+### SQL
+config_args <- config::get("dataconnection", file = '../../../../../.secrets/config.yml')
+con <- DBI::dbConnect(
+    RMariaDB::MariaDB(), 
+    host = config_args$server,
+    user = config_args$uid,
+    password = config_args$pwd,
+    dbname = config_args$database,
+    port = config_args$port
+)
+
+if(full=="full"){
+df <- as_tibble(tbl(con, sql(paste0("select * from surveys_labelled"))) %>% collect())
+}else{
+df <- as_tibble(tbl(con, sql(paste0("select * from surveys_labelled where week ='", week_number, "' and year='", year_number,"'"))) %>% collect())}
+
+df$weight <- as.numeric(df$weight)
+
+df <- df[!is.na(df$weight),]
+DBI::dbDisconnect(con)
+
+df <- as.data.frame(df)
+names(df)
+ if (week =="Sept. 23-29"){
+  df$engagement_measure <- df$w2_2022_1_wright_state
+  df$engaged <- "Not Engaged"
+  df$engaged[df$engagement_measure =="Iowa"] <- "Engaged"
+  df$engaged[df$engagement_measure =="Iowa"] <- "Engaged"
+} else if (week =="Sept. 20-Oct. 6"){
+  df$engagement_measure <- df$w3_2022_1_wright_state
+  df$engaged <- "Not Engaged"
+  df$engaged[df$engagement_measure =="Iowa"] <- "Engaged"
+  df$engaged[df$engagement_measure =="Iowa"] <- "Engaged"
+} else {
+  df$engaged <- "Not Engaged"
+  df$engaged[df$engagement_measure =="Oregon"] <- "Engaged"
+  
+}
+
+title <- week
+if(t == "engaged"){
+  df <- df %>%
+    filter(engaged == "Engaged")
+  
+  title <- paste0(week, " - Engaged Respondents")
+}
+
+questions <- read.csv("questions.csv", stringsAsFactors=FALSE)
+df$pid <- "Independent/Other"
+df$pid[df$pid7 == "Strong Democrat" | df$pid7 == "Not very strong Democrat" | df$pid7 == "Lean Democrat"] <- "Democrat"
+df$pid[df$pid7 == "Strong Republican" | df$pid7 == "Not very strong Republican"| df$pid7 == "Lean Republican"] <- "Republican"
+df$hispanic[df$hispanic==""] <- "Skipped"
+
+df$violence2[is.na(df$violence2) | df$violence2==""] <- "No Support"
+df$violence3[is.na(df$violence3) | df$violence3==""] <- "No Support"
+df$violence4[is.na(df$violence4) | df$violence4==""] <- "No Support"
+df$violence5[is.na(df$violence5) | df$violence5==""] <- "No Support"
+df$violence6[is.na(df$violence6) | df$violence6==""] <- "No Support"
+
+df$age <- as.numeric(format(Sys.Date(), "%Y")) - as.numeric(df$birthyr)
+df$agec[df$age <= 34] <- "18-34"
+df$agec[df$age >34 & df$age <= 50 ] <- "35-50"
+df$agec[df$age >50 & df$age <= 69 ] <- "51-69"
+df$agec[df$age >69 ] <- "70+"
+
+df$presvote20post[df$presvote20post == "Howie Hawkins"] <- "Other"
+df$presvote20post[df$presvote20post == "Jo Jorgensen"] <- "Other"
+df$presvote20post[df$presvote20post == "Did not vote for President"] <- "Didn't vote"
+
+df$race[df$race=="Two or more races"] <- "Multiracial"
+
+df$educ[df$educ == "High school graduate"] <- "HS Graduate"
+
+df$bornagain <- "Not born again"
+df$bornagain[df$pew_bornagain == "Yes"] <- "Born again"
+
+MOE <- function(sample, population){
+  sample = 1000
+  population = .5
+  d  <- 1.96 * sqrt((population * (1 - population)) / (sample))
+  d = round(d*100,2)
+  return(d)
+}
+
+wrapper <- function(x, ...) 
+{
+  paste(strwrap(x, ...), collapse = "\n")
+}
+
+section <- ""
+```
+
+```{=latex}
+
+\includegraphics[width=.5\linewidth]{images/logo.pdf}
+\vspace{2cm}
+\begin{center}
+  \huge{\textbf{America's Political Pulse}}\\~\\
+  
+  
+    
+```
+`r title`
+```{=latex}
+
+
+\vspace{4cm}
+ 
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3.5cm}|p{7cm}}
+\begin{center}
+  \vspace{-1.4cm} \includegraphics[width=.75\linewidth]{images/dartmouth.png}    
+\end{center}
+ & \begin{tabular}[]{l}  \textbf{Sean J. Westwood}\\
+Associate Professor\\ Department of Government\\ Dartmouth College\end{tabular} \\ \\
+
+
+
+\begin{center}
+    \vspace{-1cm}
+     \includegraphics[width=.75\linewidth]{images/upenn.png} 
+\end{center}
+
+ & { \begin{tabular}[T]{l} \textbf{Yphtach Lelkes} \\
+Associate Professor\\ Annenberg School of Communication\\ University of Pennsylvania\end{tabular}}\\ \\ \\
+
+
+\begin{center}
+    \vspace{-1cm}
+ \includegraphics[width=.75\linewidth]{images/stanford.png}  
+\end{center}
+
+ & { \begin{tabular}[T]{l} \textbf{Shanto Iyengar} \\
+William Robertson Coe Professor of American Studies\\ Department of Political Science\\ Stanford University \end{tabular}}
+\end{tabular}
+\end{table}
+\end{center} 
+\newpage
+```
+
+
+```{=latex}
+\thispagestyle{empty}
+
+\newpage
+\setcounter{tocdepth}{4}
+\tableofcontents
+\newpage
+```
+
+# About
+
+We are a cross-university research lab (Dartmouth College, University of Pennsylvania and Stanford University). The lab exists to serve as a nexus for work on affective polarization, social trust, and political violence.
+
+Our lab focuses on addressing the following critical questions:
+
+- What are the principal causes of affective polarization and what can be done to treat it?
+- When and where does affective polarization alter behavior? Why?
+- How effective and durable are approaches to reducing affective polarization?
+\newpage
+
+```{r functions, echo=FALSE, warning = FALSE, message=FALSE, results='asis'}
+outcomes <- c("democrat_therm_1", "republican_therm_1", "general_trust", "institutional_corruption", "institutional_response", "vote_importance", "pride",  "fair_treatment", "norm_judges", "norm_judges_perception", "norm_polling", "norm_polling_perception", "norm_executive", "norm_executive_perception", "norm_censorship", "norm_censorship_perception", "norm_loyalty", "norm_loyalty_perception", "violence1",  "violence2",  "violence3",  "violence4",  "violence5",  "violence6") 
+              
+policy <- c("policy_graduated_taxes", "policy_energy_ind", "policy_labor_power", "policy_health_insur", "policy_free_trade", "policy_trans_athletes", "policy_abortion", "policy_defund_police", "policy_gun_rights", "policy_marijuana_legal", "engagement_measure")
+controls <- c("pid","gender",  "race", "educ", "agec", "presvote20post", "bornagain")
+
+df$hispanic <- recode(df$hispanic, "Yes" = "Hispanic", "No" = "Not Hispanic")
+
+agreeDisagree <- c("Strongly agree","Agree","Neither agree nor disagree","Disagree","Strongly disagree")
+supportOppose <- c("Strongly support","Support","Neither support nor oppose","Oppose","Strongly oppose")
+refuseAccept <- c("Extremely likely to refuse","Likely to refuse","Equally likely to refuse or accept","Likely to accept","Extremely likely to accept")
+likelyUnlikely <- c("Extremely unlikely","Unlikely","Equally likely to or unlikely","Likely","Extremely likely")
+importantUnimportant <- c("Very important","Important","Neither important nor unimportant","Unimportant","Very unimportant")
+proudNot <- c("Extremely proud","Very proud","Moderately proud","Only a little proud","Not at all proud")
+yesNo <- c("Yes", "No")
+
+getPlot <- function(df, outcome, type, question_text){
+  # df = df
+  # outcome = outcomes[23]
+  # type = supportOppose
+  if(str_detect(outcome, 'norm')){
+    df_sub <- df[df[,outcome] !="",]
+  }else{
+    df_sub <- df
+  }
+  
+  if((length(type)==5 & !str_detect(outcome, 'violence')) | (length(type)==5 & outcome =='violence1')){
+    colors = c("#7ad151","#22a884","#2a788e","#414487","#440154")
+  } else if(length(type) == 2){
+    colors = c("#7ad151","#22a884")
+  } else if(length(type) == 6 | str_detect(outcome, 'violence')){
+    colors = c("#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d", "#46327e")
+  } else if(length(type) == 7){
+    colors = c("#a0da39","#4ac16d","#1fa187","#277f8e","#365c8d", "#46327e", "#440154")
+  }
+      a<- eval(parse(text=paste("topline(df=df_sub, variable=", outcome, ", weight=weight)")))
+  
+  a$q <- "test"
+  if(str_detect(outcome, 'violence') & outcome != "violence1"){
+    a <- a %>% slice(match(c(type, "No Support"), Response)) 
+    a$Response <- fct_relevel(a$Response, c(type,"No Support"))
+  }else{
+    a <- a %>% slice(match(type, Response)) 
+    a$Response <- fct_relevel(a$Response, type)
+  }
+  
+  plot <- ggplot(a, aes(fill=Response, y=Percent, x=q)) + 
+    geom_bar(position="stack", stat="identity") + 
+geom_text(check_overlap = TRUE,position = position_stack(vjust=.5),aes(label = paste(round(Percent,0),"%",sep="")), fontface = "bold",  size = 4, color="white")  +
+    coord_flip() +
+    ylim(0,101) +
+    scale_fill_manual(values=colors) +
+    guides(fill=guide_legend(title="",reverse = TRUE, byrow=TRUE), color="none") + 
+    #ggtitle(wrapper(question_text,width=90)) +
+    theme_prl()+ 
+    theme(panel.grid.major = element_blank(),
+          axis.text.y=element_blank(),
+          plot.title = element_text(size=12),
+          legend.text=element_text(size=9),          
+          axis.title.y=element_blank(),
+          axis.title.x=element_blank()) 
+  return(plot)
+}
+
+getDemos <- function(df, outcome, controls, type){
+  #getDemos(df, outcomes[i], controls, agreeDisagree)
+   # df =df
+   # i=13
+   #  outcome = outcomes[i]
+   #  controls = controls
+   #  type = agreeDisagree
+  # df <- df %>% 
+  #   filter(!is.na(outcome) | outcome != "")
+  # df[,outcome]
+  list <- rep(NA, length(controls))
+  for(j in 1:length(controls)){
+    # j=6
+    a<- eval(parse(text=paste("crosstab(df=df, y=", outcome, ", x=", controls[j], ", weight=weight)")))
+    missing <- setdiff(type,names(a))
+    if(length(missing) > 0){
+      for(k in 1:length(missing)){
+        k=1
+          a[,missing[k]] <- rep(0, nrow(a))
+      }
+    }
+
+    if(controls[j] == "pid"){
+      o <- c("Democrat", "Independent/Other", "Republican")
+      a <- a %>% slice(match(o,pid))
+    } else if (controls[j] == "gender"){
+      o <- c("Female", "Male")
+      a <- a %>% slice(match(o,gender))
+    } else if (controls[j] == "race"){
+      o <- c("Asian", "Black", "Hispanic", "Middle Eastern", "Multiracial", "Native American", "Other", "White")
+      a <- a %>% slice(match(o,race))
+    } else if (controls[j] == "educ"){
+      o <- c("No HS", "HS Graduate","Some college","2-year","4-year","Post-grad")
+      a <- a %>% slice(match(o,educ))
+    } else if (controls[j] == "agec"){
+      o <- c("18-34", "35-50", "51-69", "70+")
+      a <- a %>% slice(match(o,agec))
+    } else if (controls[j] == "presvote20post"){
+      o <- c("Didn't vote", "Donald Trump", "Joe Biden", "Other")
+      a <- a %>% slice(match(o,presvote20post))
+    } else if (controls[j] == "bornagain"){
+      o <- c("Not born again", "Born again")
+      a <- a %>% slice(match(o,bornagain))
+    }
+            type2 <- c()
+    for(item in 1:length(type)){
+      if(type[item] %in% names(a)){
+        type2<- c(type2, type[item])
+      }
+
+    }
+
+    a <- a %>% relocate(c(controls[j],n,type2)) %>%
+    rename("Value" = controls[j])
+    list[j] <- list(as.data.frame(a))
+    b <-as.data.frame(a)
+  }
+  
+  result <- do.call(rbind, list)
+  result <- result %>% mutate_if(is.numeric, ~round(., 2))
+  result$n <- round(result$n,0)
+  b<-result %>% knitr::kable(
+      format = "latex",
+      position = "h!",
+      align = c("l", rep("r", ncol(result)-2)),
+      booktabs = TRUE,
+      longtable = FALSE,
+      linesep = "",
+      ) %>%
+  kableExtra::kable_styling(
+      full_width =T,
+      font_size = 7,
+      latex_options = c("striped", "scale_down"),
+      stripe_color = "gray!15"
+    ) %>%
+  row_spec(c(3,5,13,19, 23,27), hline_after=T) %>%
+        pack_rows("Partisanship", 1, 3, indent=FALSE) %>%
+    pack_rows("Sex", 4, 5, indent=FALSE) %>%
+    pack_rows("Race", 6, 13, indent=FALSE) %>%
+    pack_rows("Highest Education", 14, 19, indent=FALSE) %>%
+    pack_rows("Age", 20, 23, indent=FALSE) %>%
+    pack_rows("2020 Vote Choice", 24, 27, indent=FALSE) %>%
+    pack_rows("Born again", 28, 29, indent=FALSE) 
+  
+  return(b)
+}
+
+getDemosNumeric <- function(df, outcome, controls){
+   #  df =df
+   # i=14
+  list <- rep(NA, length(controls))
+
+  for(j in 1:length(controls)){
+    levels <- unique(df[,controls[j]])
+    list_levels <- rep(NA, length(levels))
+    for(k in 1:length(levels)){
+      df_sub <- df[df[,controls[j]] == levels[k],] 
+      a<- tibble( 
+      Value = levels[k],
+      n = length(df_sub[,outcomes[i]]),
+      Min = min(df_sub[,outcomes[i]], na.rm=T),
+      Max = max(df_sub[,outcomes[i]], na.rm=T),
+      Mean = weighted.mean(df_sub[,outcomes[i]], weight=df_sub$weight, na.rm=T),
+      #Median = weighted.median(df_sub[,outcomes[i]], w=df_sub$weight, na.rm=T),
+      SD = sqrt(wtd.var(df_sub[,outcomes[i]], weights=df_sub$weight)),
+      Skipped = sum(is.na(df_sub[,outcomes[i]])))
+      list_levels[k] <- list(as.data.frame(a))
+    }
+    
+    if(controls[j] == "pid"){
+      o <- c("Democrat", "Independent/Other", "Republican")
+
+    } else if (controls[j] == "gender"){
+      o <- c("Female", "Male")
+
+    } else if (controls[j] == "race"){
+      o <- c("Asian", "Black", "Hispanic", "Middle Eastern", "Multiracial", "Native American", "Other", "White")
+
+    } else if (controls[j] == "educ"){
+      o <- c("No HS", "HS Graduate","Some college","2-year","4-year","Post-grad")
+
+    } else if (controls[j] == "agec"){
+      o <- c("18-34", "35-50", "51-69", "70+")
+
+    } else if (controls[j] == "presvote20post"){
+      o <- c("Didn't vote", "Donald Trump", "Joe Biden", "Other")
+
+    } else if (controls[j] == "bornagain"){
+      o <- c("Not born again", "Born again")
+
+    }
+    a<-do.call(rbind, list_levels)
+    a <- a %>% slice(match(o,Value))
+    list[j] <- list(a)
+  }
+  
+  result <- do.call(rbind, list)
+  result <- result %>% mutate_if(is.numeric, ~round(., 2))
+  
+  b<-result %>% knitr::kable(
+      format = "latex",
+      align = c("l", rep("r", ncol(result)-2)),
+      booktabs = TRUE,
+      longtable = FALSE,
+      position = "h!",
+      linesep = "",
+      ) %>%
+  kableExtra::kable_styling(
+      full_width =T,
+      font_size = 7,
+      latex_options = c("striped", "repeat_header","scale_down"),
+      stripe_color = "gray!15"
+    ) %>%
+  row_spec(c(3,5,13,19, 23,27), hline_after=T)%>%
+        pack_rows("Partisanship", 1, 3) %>%
+    pack_rows("Sex", 4, 5) %>%
+    pack_rows("Race", 6, 13) %>%
+    pack_rows("Highest Education", 14, 19) %>%
+    pack_rows("Age", 20, 23) %>%
+    pack_rows("2020 Vote Choice", 24, 27) %>%
+    pack_rows("Born again", 28, 29, indent=FALSE) 
+  
+  return(b)
+}
+
+getTopLine <- function(df, outcome, type){
+  #getDemos(df, outcomes[i], controls, agreeDisagree)
+  #df, outcomes[i], refuseAccept
+    # df =df
+    # i=4
+    #  outcome = outcomes[i]
+   #  controls = controls
+     # type = refuseAccept
+    if(str_detect(outcome, 'norm')){
+      df_sub <- df[df$norm_judges !="",]
+    }else{
+      df_sub <- df
+    }
+    a<- eval(parse(text=paste("topline(df=df_sub, variable=", outcome, ", weight=weight)")))
+    if(str_detect(outcome, 'violence')){
+      b<-a %>%
+      slice(match(c(type, "No support"), Response )) %>%
+      select(-`Cumulative Percent`) %>%
+      select(-`Valid Percent`)
+      
+    }else{
+      b<-a %>%
+      slice(match(type, Response)) %>%
+      select(-`Cumulative Percent`) %>%
+      select(-`Valid Percent`)
+    }
+    
+    b <- b %>% 
+      mutate_if(is.numeric, ~round(., 2)) 
+      
+    b$Frequency <- round(b$Frequency,0)
+    
+    b <- b %>% knitr::kable(
+    format = "latex",
+    align = "l",
+    position = "h!",
+    booktabs = TRUE,
+    longtable = FALSE,
+    linesep = "",
+    ) %>%
+    kableExtra::kable_styling(
+      full_width = T,
+      latex_options = c("striped", "repeat_header"),
+      stripe_color = "gray!15"
+    ) 
+    return(b)
+}
+
+getDemoTopLine <- function(df, control, type){
+    df_sub <- df
+    a<- eval(parse(text=paste("topline(df=df_sub, variable=", control, ", weight=weight)")))
+    b<-a %>%
+    slice(match(type, Response)) %>%
+    select(-`Cumulative Percent`) %>%
+    select(-`Valid Percent`)
+    
+    b <- b %>% 
+      mutate_if(is.numeric, ~round(., 2)) 
+      
+    b$Frequency <- round(b$Frequency,0)
+    
+    b <- b %>% knitr::kable(
+    format = "latex",
+    align = "l",
+    position = "h!",
+    booktabs = TRUE,
+    longtable = FALSE,
+    linesep = "",
+    ) %>%
+    kableExtra::kable_styling(
+      full_width = T,
+      latex_options = c("striped", "repeat_header"),
+      stripe_color = "gray!15"
+    ) 
+    return(b)
+}
+
+```
+
+
+```{r processQuestions, echo=FALSE, warning = FALSE, message=FALSE, results='asis', error=TRUE}
+for(i in 1:length(outcomes)){
+
+  if("Strongly agree" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], agreeDisagree)
+    b <- getDemos(df, outcomes[i], controls, agreeDisagree)
+    plot <- getPlot(df, outcomes[i], agreeDisagree, questions$question_text[i])
+  } else if (sum(str_detect(df[,outcomes[i]], 'ppose'), na.rm=T) > 0 | sum(str_detect(df[,outcomes[i]], 'upport'), na.rm=T) > 0){
+    a <- getTopLine(df, outcomes[i], supportOppose)
+    b <- getDemos(df, outcomes[i], controls, supportOppose)
+    plot <- getPlot(df, outcomes[i], supportOppose, questions$question_text[i])
+  } else if ("Extremely likely to refuse" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], refuseAccept)
+    b <- getDemos(df, outcomes[i], controls, refuseAccept)
+    plot <- getPlot(df, outcomes[i], refuseAccept, questions$question_text[i])
+  } else if ("Extremely unlikely" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], likelyUnlikely)
+    b <- getDemos(df, outcomes[i], controls, likelyUnlikely)
+    plot <- getPlot(df, outcomes[i], likelyUnlikely, questions$question_text[i])
+  } else if ("Very important" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], importantUnimportant)
+    b <- getDemos(df, outcomes[i], controls, importantUnimportant)
+    plot <- getPlot(df, outcomes[i], importantUnimportant, questions$question_text[i])
+  } else if ("Extremely proud" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], proudNot)
+    b <- getDemos(df, outcomes[i], controls, proudNot)
+    plot <- getPlot(df, outcomes[i], proudNot, questions$question_text[i])
+  } else if ("Yes" %in% df[,outcomes[i]]){
+    a <- getTopLine(df, outcomes[i], yesNo)
+    b <- getDemos(df, outcomes[i], controls, yesNo)
+    plot <- getPlot(df, outcomes[i], yesNo, questions$question_text[i])
+  }else if (is.numeric(df[,outcomes[i]])){
+    a<- tibble(
+    n = length(df[,outcomes[i]]),
+    Min = min(df[,outcomes[i]], na.rm=T),
+    Max = max(df[,outcomes[i]], na.rm=T),
+    Mean = weighted.mean(df[,outcomes[i]], weight=df$weight, na.rm=T),
+    Median = weighted.median(df[,outcomes[i]], w=df$weight, na.rm=T),
+    SD = sqrt(wtd.var(df[,outcomes[i]], weights=df$weight)),
+    Skipped = sum(is.na(df[,outcomes[i]])))
+
+    a <- a %>% 
+      mutate_if(is.numeric, ~round(., 2)) 
+    
+    a <- a %>% knitr::kable(
+    format = "latex",
+    position = "h!",
+    align = "l",
+    booktabs = TRUE,
+    longtable = FALSE,
+    linesep = "",
+    ) %>%
+    kableExtra::kable_styling(
+      full_width = T,
+      latex_options = c("striped", "repeat_header"),
+      stripe_color = "gray!15"
+    ) 
+    b <- getDemosNumeric(df, outcomes[i], controls)
+  }
+  
+  if(section != questions$section[i]){
+    cat(paste("\n# ", questions$section[i],"\n"))
+    section = questions$section[i]
+  }
+  
+  question <- questions$question_text[i]
+  question <- str_replace_all(question, "\\{", "\\\\{")
+  question <- str_replace_all(question, "\\}", "\\\\}")
+  
+  cat(paste("\\begin{flushleft} \\textbf{Question label:} ", str_replace_all(questions$label[i], "_", "\\\\_")," \\break \\break \\textbf{Question text:} \`\`",question,"\'\' \\end{flushleft}", sep=""))
+  if (!is.numeric(df[,outcomes[i]])){
+  print(plot)
+  }
+    
+  cat("\\textbf{Responses}")
+  print(a)
+  cat("\n")
+    cat("\\textbf{Responses by Demographics}")
+  print(b)
+  if(questions$notes[i] != ""){
+      cat(paste("\\footnotesize Notes: ",questions$notes[i]))
+  }
+
+  cat("\n\\clearpage\\pagebreak\n")
+}
+```
+\newpage
+
+# Demographics
+
+```{r echo=FALSE, warning = FALSE, message=FALSE, results='asis', error=TRUE}
+for(j in 1:length(controls)){
+
+  if(controls[j] == "pid"){
+      o <- c("Democrat", "Independent/Other", "Republican")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Partisanship"
+    } else if (controls[j] == "gender"){
+      o <- c("Female", "Male")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Sex"
+    } else if (controls[j] == "race"){
+      o <- c("Asian", "Black", "Hispanic", "Middle Eastern", "Multiracial", "Native American", "Other", "White")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Race"
+    } else if (controls[j] == "educ"){
+      o <- c("No HS", "HS Graduate","Some college","2-year","4-year","Post-grad")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Highest level of education"
+    } else if (controls[j] == "agec"){
+      o <- c("18-34", "35-50", "51-69", "70+")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Age"
+    } else if (controls[j] == "presvote20post"){
+      o <- c("Didn't vote", "Donald Trump", "Joe Biden", "Other")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "2020 Vote Choice"
+    } else if (controls[j] == "bornagain"){
+      o <- c("Not born again", "Born again")
+      a <- getDemoTopLine(df, controls[j], o)
+      label <- "Born again"
+    }
+    cat(paste("\\textbf{", label, "}"))
+    cat(a)
+
+}
+```
+
+\newpage
+
+# Methods
+
+Data were collected from a nationally representative sample of `r formatC(nrow(df), format="d", big.mark=",")` American adults via YouGov.  Data were collected between `r week` 2022. All results are weighted.  The survey margin of error is +/- `r MOE(nrow(df),209128094)`%.
+
+
