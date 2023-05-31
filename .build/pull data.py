@@ -1,15 +1,14 @@
 import sys
 
-sys.path.append("../../../.utils/")
-
 import pandas as pd
 
-import alcdb
+sys.path.append("../../../utils/")
+import distilldb as ddb
 
-db = alcdb.DB(config="../../../.secrets/ops.ini")
+db = ddb.Database(config="../../../../.secrets/db.json")
 
 with db.Session() as session:
     pd.read_sql(
-        session.query(db.tables["surveys"]).statement,
+        session.query(db["surveys"]).statement,
         db.engine,
     ).to_csv(".tmp/all.csv", index=None)

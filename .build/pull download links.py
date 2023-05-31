@@ -1,16 +1,15 @@
 import sys
 
-sys.path.append("../../../.utils/")
-
 import pandas as pd
 
-import alcdb
+sys.path.append("../../../utils/")
+import distilldb as ddb
 
-db = alcdb.DB(config="../../../.secrets/ops.ini")
+db = ddb.Database(config="../../../../.secrets/db.json")
 
 with db.Session() as session:
     links = pd.read_sql(
-        session.query(db.tables["download_counts"]).statement,
+        session.query(db["download_counts"]).statement,
         db.engine,
     )
     links = links[links["file"].str.contains("week")]

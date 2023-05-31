@@ -52,7 +52,7 @@ full <- params$full
 # t=""
 
 ### SQL
-config_args <- config::get("dataconnection", file = '../../../../../.secrets/config.yml')
+config_args <- config::get("dataconnection", file = '../../../../../../.secrets/config.yml')
 con <- DBI::dbConnect(
     RMariaDB::MariaDB(), 
     host = config_args$server,

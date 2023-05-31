@@ -1,0 +1,2218 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=1.5cm]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{colortbl}
+\usepackage{titlesec}
+\usepackage{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{tabu}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\usepackage{titling}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rhead{PolarizationResearchLab.com}
+\rfoot{\thepage}
+% \renewcommand{\headrulewidth}{0pt}
+% % center of footer
+% \fancyfoot[LE,RO]{PolarizationResearchLab.com}
+% % page number on the left of even pages and right of odd pages
+% \fancyfoot[CO,CE]{\thepage}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+
+\includegraphics[width=.5\linewidth]{images/logo.pdf}
+\vspace{2cm}
+\begin{center}
+  \huge{\textbf{America's Political Pulse}}\\~\\
+  
+  
+    
+
+May. 19-25
+
+
+
+\vspace{4cm}
+ 
+\begin{table}[H]
+\centering
+\begin{tabular}{p{3.5cm}|p{7cm}}
+\begin{center}
+  \vspace{-1.4cm} \includegraphics[width=.75\linewidth]{images/dartmouth.png}    
+\end{center}
+ & \begin{tabular}[]{l}  \textbf{Sean J. Westwood}\\
+Associate Professor\\ Department of Government\\ Dartmouth College\end{tabular} \\ \\
+
+
+
+\begin{center}
+    \vspace{-1cm}
+     \includegraphics[width=.75\linewidth]{images/upenn.png} 
+\end{center}
+
+ & { \begin{tabular}[T]{l} \textbf{Yphtach Lelkes} \\
+Associate Professor\\ Annenberg School of Communication\\ University of Pennsylvania\end{tabular}}\\ \\ \\
+
+
+\begin{center}
+    \vspace{-1cm}
+ \includegraphics[width=.75\linewidth]{images/stanford.png}  
+\end{center}
+
+ & { \begin{tabular}[T]{l} \textbf{Shanto Iyengar} \\
+William Robertson Coe Professor of American Studies\\ Department of Political Science\\ Stanford University \end{tabular}}
+\end{tabular}
+\end{table}
+\end{center} 
+\newpage
+
+\thispagestyle{empty}
+
+\newpage
+\setcounter{tocdepth}{4}
+\tableofcontents
+\newpage
+
+\hypertarget{about}{%
+\section{About}\label{about}}
+
+We are a cross-university research lab (Dartmouth College, University of
+Pennsylvania and Stanford University). The lab exists to serve as a
+nexus for work on affective polarization, social trust, and political
+violence.
+
+Our lab focuses on addressing the following critical questions:
+
+\begin{itemize}
+\tightlist
+\item
+  What are the principal causes of affective polarization and what can
+  be done to treat it?
+\item
+  When and where does affective polarization alter behavior? Why?
+\item
+  How effective and durable are approaches to reducing affective
+  polarization? \newpage
+\end{itemize}
+
+\hypertarget{affect}{%
+\section{Affect}\label{affect}}
+
+\begin{flushleft} \textbf{Question label:} democrat\_therm\_1 \break \break \textbf{Question text:} ``We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. 
+
+How would you rate your feeling toward Democrats?'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.63} & \cellcolor{gray!15}{51.5} & \cellcolor{gray!15}{33.65} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{76.70} & \cellcolor{gray!15}{19.61} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 35.98 & 28.79 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{25.43} & \cellcolor{gray!15}{25.61} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 53.55 & 33.75 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{49.44} & \cellcolor{gray!15}{33.56} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 0 & 100 & 48.40 & 34.44 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{67.58} & \cellcolor{gray!15}{29.83} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 55.95 & 32.53 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{60} & \cellcolor{gray!15}{60} & \cellcolor{gray!15}{60.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 100 & 52.22 & 30.45 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.56} & \cellcolor{gray!15}{35.15} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 98 & 46.04 & 33.53 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{48.21} & \cellcolor{gray!15}{33.77} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 53.27 & 37.35 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{48.85} & \cellcolor{gray!15}{33.92} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 46.59 & 34.37 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{54.06} & \cellcolor{gray!15}{32.86} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 56.07 & 31.19 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.25} & \cellcolor{gray!15}{33.15} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 61.01 & 27.20 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.34} & \cellcolor{gray!15}{34.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 47.27 & 35.76 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{49.09} & \cellcolor{gray!15}{35.66} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 50.17 & 31.45 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{24.89} & \cellcolor{gray!15}{26.36} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 74.18 & 21.75 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{41.69} & \cellcolor{gray!15}{22.33} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 54.00 & 32.80 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{47.01} & \cellcolor{gray!15}{35.02} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} republican\_therm\_1 \break \break \textbf{Question text:} ``We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. 
+
+How would you rate your feeling toward Republicans?'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{44.98} & \cellcolor{gray!15}{49.5} & \cellcolor{gray!15}{32.85} & \cellcolor{gray!15}{2}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{25.36} & \cellcolor{gray!15}{26.69} & \cellcolor{gray!15}{2}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 38.92 & 28.08 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{73.80} & \cellcolor{gray!15}{21.22} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 43.48 & 33.01 & 1\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{46.68} & \cellcolor{gray!15}{32.67} & \cellcolor{gray!15}{1}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 0 & 100 & 40.50 & 29.43 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{36.48} & \cellcolor{gray!15}{28.19} & \cellcolor{gray!15}{1}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 43.57 & 32.45 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{63} & \cellcolor{gray!15}{63} & \cellcolor{gray!15}{63.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 84 & 30.61 & 23.95 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{62.00} & \cellcolor{gray!15}{29.38} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 37.96 & 30.78 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{47.00} & \cellcolor{gray!15}{33.35} & \cellcolor{gray!15}{1}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 34.35 & 33.78 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{49.13} & \cellcolor{gray!15}{32.50} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 43.56 & 32.94 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.35} & \cellcolor{gray!15}{32.77} & \cellcolor{gray!15}{2}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 40.16 & 32.88 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{40.62} & \cellcolor{gray!15}{31.69} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 49.50 & 29.78 & 1\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{41.14} & \cellcolor{gray!15}{33.88} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 43.69 & 34.43 & 1\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{45.97} & \cellcolor{gray!15}{32.74} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 44.13 & 31.44 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{72.57} & \cellcolor{gray!15}{22.49} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 23.62 & 24.70 & 2\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{35.77} & \cellcolor{gray!15}{22.81} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 38.34 & 32.74 & 2\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.88} & \cellcolor{gray!15}{29.59} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+
+\hypertarget{trust-and-america}{%
+\section{Trust and America}\label{trust-and-america}}
+
+\begin{flushleft} \textbf{Question label:} general\_trust \break \break \textbf{Question text:} ``Do you think your wallet (or your valuables) would be returned to you if it were found by a stranger?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-1.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Yes} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{35.30}\\
+No & 646 & 64.63\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Yes & No\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{41.55} & \cellcolor{gray!15}{58.45}\\
+Independent/Other & 165 & 17.62 & 82.38\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{35.40} & \cellcolor{gray!15}{64.60}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Sex}}\\
+Female & 512 & 31.68 & 68.32\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{39.16} & \cellcolor{gray!15}{60.84}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Race}}\\
+Asian & 28 & 35.33 & 64.67\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{29.02} & \cellcolor{gray!15}{70.98}\\
+Hispanic & 163 & 29.21 & 70.79\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 37.28 & 62.72\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{31.73} & \cellcolor{gray!15}{68.27}\\
+Other & 21 & 20.93 & 79.07\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{38.49} & \cellcolor{gray!15}{61.51}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 34.34 & 65.66\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{345} & \cellcolor{gray!15}{32.51} & \cellcolor{gray!15}{67.49}\\
+Some college & 196 & 25.82 & 74.18\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{38.51} & \cellcolor{gray!15}{61.49}\\
+4-year & 193 & 40.32 & 59.68\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{49.08} & \cellcolor{gray!15}{50.92}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Age}}\\
+18-34 & 290 & 49.69 & 50.31\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{26.65} & \cellcolor{gray!15}{73.35}\\
+51-69 & 348 & 29.16 & 70.84\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{34.54} & \cellcolor{gray!15}{65.46}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 25.25 & 74.75\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{379} & \cellcolor{gray!15}{34.13} & \cellcolor{gray!15}{65.87}\\
+Joe Biden & 414 & 40.45 & 59.55\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{42.12} & \cellcolor{gray!15}{57.88}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{Born again}}\\
+Not born again & 647 & 30.99 & 69.01\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{43.26} & \cellcolor{gray!15}{56.74}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} institutional\_corruption \break \break \textbf{Question text:} ``If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-2.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Extremely likely to refuse} & \cellcolor{gray!15}{64} & \cellcolor{gray!15}{6.45}\\
+Likely to refuse & 170 & 17.01\\
+\cellcolor{gray!15}{Equally likely to refuse or accept} & \cellcolor{gray!15}{348} & \cellcolor{gray!15}{34.75}\\
+Likely to accept & 290 & 28.96\\
+\cellcolor{gray!15}{Extremely likely to accept} & \cellcolor{gray!15}{128} & \cellcolor{gray!15}{12.83}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Extremely likely to refuse & Likely to refuse & Equally likely to refuse or accept & Likely to accept & Extremely likely to accept\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{6.38} & \cellcolor{gray!15}{21.32} & \cellcolor{gray!15}{37.84} & \cellcolor{gray!15}{26.17} & \cellcolor{gray!15}{8.30}\\
+Independent/Other & 165 & 4.20 & 6.85 & 34.00 & 31.29 & 23.66\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{7.55} & \cellcolor{gray!15}{16.13} & \cellcolor{gray!15}{31.20} & \cellcolor{gray!15}{31.43} & \cellcolor{gray!15}{13.69}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 6.67 & 14.18 & 34.55 & 32.11 & 12.49\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{6.21} & \cellcolor{gray!15}{19.99} & \cellcolor{gray!15}{34.96} & \cellcolor{gray!15}{25.64} & \cellcolor{gray!15}{13.20}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 24.49 & 35.58 & 30.55 & 9.39\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{4.34} & \cellcolor{gray!15}{28.53} & \cellcolor{gray!15}{41.60} & \cellcolor{gray!15}{16.82} & \cellcolor{gray!15}{8.72}\\
+Hispanic & 164 & 4.45 & 19.90 & 34.95 & 31.59 & 9.11\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 5.01 & 11.56 & 21.80 & 34.99 & 26.64\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{6.89} & \cellcolor{gray!15}{16.85} & \cellcolor{gray!15}{38.14} & \cellcolor{gray!15}{21.02} & \cellcolor{gray!15}{17.09}\\
+Other & 21 & 10.89 & 5.88 & 35.57 & 30.94 & 16.73\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{7.39} & \cellcolor{gray!15}{14.29} & \cellcolor{gray!15}{33.77} & \cellcolor{gray!15}{30.50} & \cellcolor{gray!15}{14.06}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 2.64 & 18.18 & 55.41 & 9.83 & 13.94\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{6.46} & \cellcolor{gray!15}{14.69} & \cellcolor{gray!15}{37.68} & \cellcolor{gray!15}{29.79} & \cellcolor{gray!15}{11.38}\\
+Some college & 196 & 4.67 & 15.20 & 29.49 & 32.94 & 17.70\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{7.75} & \cellcolor{gray!15}{19.87} & \cellcolor{gray!15}{41.17} & \cellcolor{gray!15}{21.95} & \cellcolor{gray!15}{9.27}\\
+4-year & 193 & 7.93 & 19.76 & 26.19 & 35.10 & 11.02\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{7.22} & \cellcolor{gray!15}{19.30} & \cellcolor{gray!15}{35.22} & \cellcolor{gray!15}{23.33} & \cellcolor{gray!15}{14.93}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 11.94 & 19.01 & 33.33 & 27.66 & 8.05\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{6.08} & \cellcolor{gray!15}{15.40} & \cellcolor{gray!15}{31.81} & \cellcolor{gray!15}{27.57} & \cellcolor{gray!15}{19.14}\\
+51-69 & 349 & 3.38 & 13.32 & 40.33 & 28.88 & 14.09\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{3.34} & \cellcolor{gray!15}{24.46} & \cellcolor{gray!15}{28.50} & \cellcolor{gray!15}{33.96} & \cellcolor{gray!15}{9.74}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 6.49 & 16.11 & 42.65 & 25.07 & 9.68\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{6.70} & \cellcolor{gray!15}{12.80} & \cellcolor{gray!15}{28.94} & \cellcolor{gray!15}{33.12} & \cellcolor{gray!15}{18.44}\\
+Joe Biden & 414 & 6.19 & 21.56 & 37.54 & 25.93 & 8.78\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{6.65} & \cellcolor{gray!15}{11.95} & \cellcolor{gray!15}{18.78} & \cellcolor{gray!15}{44.64} & \cellcolor{gray!15}{17.98}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 3.39 & 17.02 & 35.59 & 29.88 & 14.12\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{12.05} & \cellcolor{gray!15}{16.98} & \cellcolor{gray!15}{33.22} & \cellcolor{gray!15}{27.27} & \cellcolor{gray!15}{10.49}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} institutional\_response \break \break \textbf{Question text:} ``If you were to complain about the poor quality of a public service, how likely or unlikely is it that the problem would be easily resolved?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-3.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Extremely unlikely} & \cellcolor{gray!15}{161} & \cellcolor{gray!15}{16.14}\\
+Unlikely & 343 & 34.27\\
+\cellcolor{gray!15}{Equally likely to or unlikely} & \cellcolor{gray!15}{274} & \cellcolor{gray!15}{27.41}\\
+Likely & 161 & 16.08\\
+\cellcolor{gray!15}{Extremely likely} & \cellcolor{gray!15}{61} & \cellcolor{gray!15}{6.09}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Extremely unlikely & Unlikely & Equally likely to or unlikely & Likely & Extremely likely\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{10.19} & \cellcolor{gray!15}{31.14} & \cellcolor{gray!15}{32.11} & \cellcolor{gray!15}{18.92} & \cellcolor{gray!15}{7.63}\\
+Independent/Other & 165 & 28.41 & 29.46 & 27.28 & 12.53 & 2.32\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{18.14} & \cellcolor{gray!15}{40.36} & \cellcolor{gray!15}{21.55} & \cellcolor{gray!15}{14.10} & \cellcolor{gray!15}{5.84}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 17.18 & 36.25 & 28.67 & 12.56 & 5.34\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{15.05} & \cellcolor{gray!15}{32.19} & \cellcolor{gray!15}{26.08} & \cellcolor{gray!15}{19.79} & \cellcolor{gray!15}{6.89}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 8.60 & 34.99 & 35.60 & 9.93 & 10.87\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{9.37} & \cellcolor{gray!15}{14.96} & \cellcolor{gray!15}{49.62} & \cellcolor{gray!15}{21.53} & \cellcolor{gray!15}{4.52}\\
+Hispanic & 164 & 15.11 & 25.33 & 26.86 & 26.55 & 6.15\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 31.81 & 39.35 & 21.84 & 0.00 & 6.99\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{11.30} & \cellcolor{gray!15}{31.15} & \cellcolor{gray!15}{21.33} & \cellcolor{gray!15}{33.13} & \cellcolor{gray!15}{3.08}\\
+Other & 21 & 22.58 & 30.09 & 42.66 & 4.66 & 0.00\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{17.42} & \cellcolor{gray!15}{40.39} & \cellcolor{gray!15}{22.80} & \cellcolor{gray!15}{13.16} & \cellcolor{gray!15}{6.23}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 17.04 & 29.98 & 42.10 & 8.23 & 2.64\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{13.87} & \cellcolor{gray!15}{30.39} & \cellcolor{gray!15}{29.96} & \cellcolor{gray!15}{18.50} & \cellcolor{gray!15}{7.28}\\
+Some college & 196 & 19.90 & 39.01 & 24.60 & 13.25 & 3.24\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{12.74} & \cellcolor{gray!15}{32.23} & \cellcolor{gray!15}{29.07} & \cellcolor{gray!15}{19.19} & \cellcolor{gray!15}{6.77}\\
+4-year & 193 & 17.92 & 37.53 & 23.99 & 13.79 & 6.77\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{16.43} & \cellcolor{gray!15}{35.99} & \cellcolor{gray!15}{23.00} & \cellcolor{gray!15}{17.61} & \cellcolor{gray!15}{6.97}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 11.04 & 17.79 & 23.87 & 32.60 & 14.70\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{22.70} & \cellcolor{gray!15}{31.60} & \cellcolor{gray!15}{24.98} & \cellcolor{gray!15}{14.89} & \cellcolor{gray!15}{5.83}\\
+51-69 & 349 & 16.22 & 44.20 & 31.38 & 6.61 & 1.59\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{16.19} & \cellcolor{gray!15}{47.67} & \cellcolor{gray!15}{28.67} & \cellcolor{gray!15}{7.47} & \cellcolor{gray!15}{0.00}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 16.11 & 17.57 & 35.07 & 20.33 & 10.93\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{20.66} & \cellcolor{gray!15}{41.59} & \cellcolor{gray!15}{19.72} & \cellcolor{gray!15}{12.08} & \cellcolor{gray!15}{5.96}\\
+Joe Biden & 414 & 12.04 & 34.23 & 31.23 & 18.05 & 4.45\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{15.57} & \cellcolor{gray!15}{45.82} & \cellcolor{gray!15}{25.15} & \cellcolor{gray!15}{13.46} & \cellcolor{gray!15}{0.00}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 17.41 & 39.86 & 29.10 & 10.78 & 2.86\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{13.82} & \cellcolor{gray!15}{24.05} & \cellcolor{gray!15}{24.33} & \cellcolor{gray!15}{25.79} & \cellcolor{gray!15}{12.01}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} vote\_importance \break \break \textbf{Question text:} ``How important or unimportant is it to vote in every election?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-4.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Very important} & \cellcolor{gray!15}{608} & \cellcolor{gray!15}{60.84}\\
+Important & 255 & 25.47\\
+\cellcolor{gray!15}{Neither important nor unimportant} & \cellcolor{gray!15}{95} & \cellcolor{gray!15}{9.54}\\
+Unimportant & 18 & 1.80\\
+\cellcolor{gray!15}{Very unimportant} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{2.35}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Very important & Important & Neither important nor unimportant & Unimportant & Very unimportant\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{65.28} & \cellcolor{gray!15}{25.77} & \cellcolor{gray!15}{8.26} & \cellcolor{gray!15}{0.68} & \cellcolor{gray!15}{0.00}\\
+Independent/Other & 165 & 34.50 & 25.82 & 24.66 & 6.39 & 8.63\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{67.03} & \cellcolor{gray!15}{24.94} & \cellcolor{gray!15}{4.38} & \cellcolor{gray!15}{1.15} & \cellcolor{gray!15}{2.50}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 64.02 & 25.65 & 7.28 & 1.46 & 1.58\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{57.49} & \cellcolor{gray!15}{25.29} & \cellcolor{gray!15}{11.91} & \cellcolor{gray!15}{2.15} & \cellcolor{gray!15}{3.16}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 60.56 & 1.59 & 33.58 & 2.48 & 1.79\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{49.87} & \cellcolor{gray!15}{30.17} & \cellcolor{gray!15}{13.85} & \cellcolor{gray!15}{0.98} & \cellcolor{gray!15}{5.13}\\
+Hispanic & 164 & 49.77 & 31.64 & 13.09 & 3.07 & 2.44\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 37.17 & 54.62 & 8.21 & 0.00 & 0.00\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{40.40} & \cellcolor{gray!15}{37.28} & \cellcolor{gray!15}{11.01} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{11.30}\\
+Other & 21 & 70.19 & 12.71 & 13.71 & 0.00 & 3.40\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{66.80} & \cellcolor{gray!15}{23.18} & \cellcolor{gray!15}{6.59} & \cellcolor{gray!15}{1.76} & \cellcolor{gray!15}{1.67}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 43.61 & 40.41 & 15.99 & 0.00 & 0.00\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{55.80} & \cellcolor{gray!15}{26.36} & \cellcolor{gray!15}{11.19} & \cellcolor{gray!15}{2.33} & \cellcolor{gray!15}{4.33}\\
+Some college & 196 & 59.88 & 25.31 & 7.93 & 2.88 & 4.01\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{55.26} & \cellcolor{gray!15}{29.76} & \cellcolor{gray!15}{13.38} & \cellcolor{gray!15}{1.59} & \cellcolor{gray!15}{0.00}\\
+4-year & 193 & 68.54 & 23.12 & 6.99 & 1.35 & 0.00\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{76.77} & \cellcolor{gray!15}{17.18} & \cellcolor{gray!15}{5.44} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.61}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 39.56 & 43.36 & 12.84 & 1.48 & 2.76\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{56.76} & \cellcolor{gray!15}{22.17} & \cellcolor{gray!15}{11.73} & \cellcolor{gray!15}{4.91} & \cellcolor{gray!15}{4.43}\\
+51-69 & 349 & 70.23 & 19.45 & 8.00 & 0.67 & 1.65\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{87.54} & \cellcolor{gray!15}{8.87} & \cellcolor{gray!15}{3.19} & \cellcolor{gray!15}{0.39} & \cellcolor{gray!15}{0.00}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 26.93 & 34.33 & 23.62 & 6.31 & 8.80\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{68.36} & \cellcolor{gray!15}{24.80} & \cellcolor{gray!15}{4.05} & \cellcolor{gray!15}{0.95} & \cellcolor{gray!15}{1.83}\\
+Joe Biden & 414 & 71.50 & 19.98 & 7.97 & 0.55 & 0.00\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{16.02} & \cellcolor{gray!15}{63.03} & \cellcolor{gray!15}{16.29} & \cellcolor{gray!15}{2.57} & \cellcolor{gray!15}{2.08}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 63.94 & 22.09 & 8.72 & 2.10 & 3.14\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{55.15} & \cellcolor{gray!15}{31.67} & \cellcolor{gray!15}{11.03} & \cellcolor{gray!15}{1.24} & \cellcolor{gray!15}{0.91}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} pride \break \break \textbf{Question text:} ``How proud are you to be an American?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-5.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Extremely proud} & \cellcolor{gray!15}{350} & \cellcolor{gray!15}{34.96}\\
+Very proud & 311 & 31.07\\
+\cellcolor{gray!15}{Moderately proud} & \cellcolor{gray!15}{201} & \cellcolor{gray!15}{20.12}\\
+Only a little proud & 86 & 8.65\\
+\cellcolor{gray!15}{Not at all proud} & \cellcolor{gray!15}{52} & \cellcolor{gray!15}{5.20}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Extremely proud & Very proud & Moderately proud & Only a little proud & Not at all proud\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{24.48} & \cellcolor{gray!15}{29.02} & \cellcolor{gray!15}{25.47} & \cellcolor{gray!15}{13.48} & \cellcolor{gray!15}{7.55}\\
+Independent/Other & 165 & 28.06 & 35.38 & 19.24 & 10.43 & 6.89\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{51.24} & \cellcolor{gray!15}{31.73} & \cellcolor{gray!15}{13.77} & \cellcolor{gray!15}{1.77} & \cellcolor{gray!15}{1.49}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 33.69 & 29.39 & 22.07 & 8.09 & 6.75\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{36.29} & \cellcolor{gray!15}{32.85} & \cellcolor{gray!15}{18.06} & \cellcolor{gray!15}{9.24} & \cellcolor{gray!15}{3.56}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 29.24 & 24.24 & 36.46 & 8.27 & 1.79\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{22.06} & \cellcolor{gray!15}{41.19} & \cellcolor{gray!15}{18.73} & \cellcolor{gray!15}{11.09} & \cellcolor{gray!15}{6.92}\\
+Hispanic & 164 & 37.21 & 38.30 & 15.67 & 5.07 & 3.75\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 8.16 & 13.57 & 59.10 & 9.11 & 10.07\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{46.49} & \cellcolor{gray!15}{10.41} & \cellcolor{gray!15}{33.47} & \cellcolor{gray!15}{9.63} & \cellcolor{gray!15}{0.00}\\
+Other & 21 & 21.61 & 33.95 & 31.01 & 4.83 & 8.60\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{38.13} & \cellcolor{gray!15}{28.61} & \cellcolor{gray!15}{18.78} & \cellcolor{gray!15}{9.23} & \cellcolor{gray!15}{5.24}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 19.13 & 40.80 & 25.57 & 3.86 & 10.64\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{42.66} & \cellcolor{gray!15}{31.63} & \cellcolor{gray!15}{16.35} & \cellcolor{gray!15}{7.24} & \cellcolor{gray!15}{2.12}\\
+Some college & 196 & 32.63 & 28.66 & 22.18 & 8.18 & 8.36\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{33.27} & \cellcolor{gray!15}{38.27} & \cellcolor{gray!15}{11.62} & \cellcolor{gray!15}{9.75} & \cellcolor{gray!15}{7.09}\\
+4-year & 193 & 29.77 & 28.17 & 25.70 & 13.16 & 3.20\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{32.13} & \cellcolor{gray!15}{27.84} & \cellcolor{gray!15}{24.50} & \cellcolor{gray!15}{6.92} & \cellcolor{gray!15}{8.61}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 30.24 & 31.39 & 21.52 & 12.13 & 4.71\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{27.94} & \cellcolor{gray!15}{30.91} & \cellcolor{gray!15}{22.22} & \cellcolor{gray!15}{11.03} & \cellcolor{gray!15}{7.90}\\
+51-69 & 349 & 39.69 & 30.13 & 19.48 & 5.76 & 4.95\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{43.85} & \cellcolor{gray!15}{32.97} & \cellcolor{gray!15}{15.56} & \cellcolor{gray!15}{4.97} & \cellcolor{gray!15}{2.65}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 28.68 & 31.67 & 21.28 & 11.61 & 6.75\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{51.99} & \cellcolor{gray!15}{30.66} & \cellcolor{gray!15}{13.97} & \cellcolor{gray!15}{1.81} & \cellcolor{gray!15}{1.57}\\
+Joe Biden & 414 & 23.57 & 31.57 & 23.68 & 13.41 & 7.77\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{9.86} & \cellcolor{gray!15}{24.58} & \cellcolor{gray!15}{46.71} & \cellcolor{gray!15}{12.36} & \cellcolor{gray!15}{6.49}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 29.39 & 29.54 & 22.44 & 11.21 & 7.43\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{45.15} & \cellcolor{gray!15}{33.89} & \cellcolor{gray!15}{15.87} & \cellcolor{gray!15}{3.96} & \cellcolor{gray!15}{1.13}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} fair\_treatment \break \break \textbf{Question text:} ``Do you agree or disagree that you can expect fair treatment from government authorities?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-6.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{75} & \cellcolor{gray!15}{7.49}\\
+Agree & 250 & 25.05\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{327} & \cellcolor{gray!15}{32.66}\\
+Disagree & 225 & 22.47\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{123} & \cellcolor{gray!15}{12.34}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{8.98} & \cellcolor{gray!15}{30.10} & \cellcolor{gray!15}{36.48} & \cellcolor{gray!15}{18.96} & \cellcolor{gray!15}{5.49}\\
+Independent/Other & 165 & 3.37 & 14.57 & 37.56 & 21.72 & 22.78\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{7.44} & \cellcolor{gray!15}{23.37} & \cellcolor{gray!15}{25.65} & \cellcolor{gray!15}{27.23} & \cellcolor{gray!15}{16.30}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 7.40 & 19.77 & 33.89 & 26.60 & 12.34\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{7.58} & \cellcolor{gray!15}{30.60} & \cellcolor{gray!15}{31.36} & \cellcolor{gray!15}{18.11} & \cellcolor{gray!15}{12.35}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 8.60 & 36.35 & 28.60 & 16.06 & 10.39\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{4.94} & \cellcolor{gray!15}{27.22} & \cellcolor{gray!15}{47.52} & \cellcolor{gray!15}{12.67} & \cellcolor{gray!15}{7.65}\\
+Hispanic & 164 & 5.33 & 32.22 & 31.31 & 20.15 & 10.98\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 0.00 & 2.15 & 45.61 & 28.92 & 23.32\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{3.08} & \cellcolor{gray!15}{36.25} & \cellcolor{gray!15}{44.74} & \cellcolor{gray!15}{11.34} & \cellcolor{gray!15}{4.59}\\
+Other & 21 & 10.89 & 12.20 & 25.73 & 32.44 & 18.74\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{8.58} & \cellcolor{gray!15}{23.28} & \cellcolor{gray!15}{29.87} & \cellcolor{gray!15}{24.99} & \cellcolor{gray!15}{13.29}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 2.64 & 21.66 & 54.33 & 6.64 & 14.73\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{9.63} & \cellcolor{gray!15}{20.12} & \cellcolor{gray!15}{36.96} & \cellcolor{gray!15}{21.69} & \cellcolor{gray!15}{11.60}\\
+Some college & 196 & 3.91 & 21.98 & 27.56 & 29.59 & 16.95\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{6.10} & \cellcolor{gray!15}{28.14} & \cellcolor{gray!15}{36.74} & \cellcolor{gray!15}{22.25} & \cellcolor{gray!15}{6.77}\\
+4-year & 193 & 7.61 & 28.35 & 29.95 & 23.81 & 10.27\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{10.10} & \cellcolor{gray!15}{38.06} & \cellcolor{gray!15}{20.61} & \cellcolor{gray!15}{16.70} & \cellcolor{gray!15}{14.53}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 13.96 & 37.21 & 25.65 & 14.41 & 8.77\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{9.17} & \cellcolor{gray!15}{21.68} & \cellcolor{gray!15}{33.03} & \cellcolor{gray!15}{20.29} & \cellcolor{gray!15}{15.83}\\
+51-69 & 349 & 3.45 & 18.81 & 37.03 & 27.92 & 12.78\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{1.56} & \cellcolor{gray!15}{20.73} & \cellcolor{gray!15}{35.65} & \cellcolor{gray!15}{28.89} & \cellcolor{gray!15}{13.16}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 8.46 & 25.75 & 34.84 & 20.65 & 10.30\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{7.92} & \cellcolor{gray!15}{18.74} & \cellcolor{gray!15}{25.90} & \cellcolor{gray!15}{27.60} & \cellcolor{gray!15}{19.84}\\
+Joe Biden & 414 & 6.80 & 31.01 & 37.53 & 18.63 & 6.03\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{5.14} & \cellcolor{gray!15}{16.85} & \cellcolor{gray!15}{38.80} & \cellcolor{gray!15}{21.24} & \cellcolor{gray!15}{17.98}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 3.92 & 22.32 & 35.74 & 24.86 & 13.17\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{14.02} & \cellcolor{gray!15}{30.04} & \cellcolor{gray!15}{27.03} & \cellcolor{gray!15}{18.09} & \cellcolor{gray!15}{10.83}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+
+\hypertarget{democratic-norms}{%
+\section{Democratic Norms}\label{democratic-norms}}
+
+\begin{flushleft} \textbf{Question label:} norm\_judges \break \break \textbf{Question text:} ``Do you agree or disagree: \{inparty: Democratic/Republican\} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by \{outparty: Democratic/Republican\} presidents.'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-7.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{41} & \cellcolor{gray!15}{4.15}\\
+Agree & 146 & 14.60\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{246} & \cellcolor{gray!15}{24.61}\\
+Disagree & 312 & 31.24\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{254} & \cellcolor{gray!15}{25.40}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{4.80} & \cellcolor{gray!15}{20.42} & \cellcolor{gray!15}{22.52} & \cellcolor{gray!15}{30.85} & \cellcolor{gray!15}{21.41}\\
+Independent/Other & 165 & 1.24 & 6.07 & 33.28 & 22.69 & 36.71\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{4.62} & \cellcolor{gray!15}{11.10} & \cellcolor{gray!15}{23.36} & \cellcolor{gray!15}{35.54} & \cellcolor{gray!15}{25.38}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 4.57 & 10.03 & 28.60 & 32.33 & 24.46\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{3.70} & \cellcolor{gray!15}{19.41} & \cellcolor{gray!15}{20.41} & \cellcolor{gray!15}{30.08} & \cellcolor{gray!15}{26.40}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 17.10 & 28.30 & 32.35 & 22.24\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{4.51} & \cellcolor{gray!15}{22.40} & \cellcolor{gray!15}{38.22} & \cellcolor{gray!15}{17.60} & \cellcolor{gray!15}{17.27}\\
+Hispanic & 164 & 5.00 & 14.25 & 27.72 & 34.71 & 18.32\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 1.52 & 0.00 & 25.48 & 33.16 & 39.85\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{3.08} & \cellcolor{gray!15}{28.53} & \cellcolor{gray!15}{24.32} & \cellcolor{gray!15}{25.88} & \cellcolor{gray!15}{18.19}\\
+Other & 21 & 5.58 & 12.15 & 29.36 & 19.17 & 33.74\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{4.12} & \cellcolor{gray!15}{13.39} & \cellcolor{gray!15}{20.87} & \cellcolor{gray!15}{33.42} & \cellcolor{gray!15}{28.20}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 0.00 & 12.49 & 27.67 & 40.69 & 19.15\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{5.78} & \cellcolor{gray!15}{14.44} & \cellcolor{gray!15}{31.68} & \cellcolor{gray!15}{29.11} & \cellcolor{gray!15}{18.98}\\
+Some college & 196 & 1.48 & 12.93 & 29.46 & 27.81 & 28.32\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{3.41} & \cellcolor{gray!15}{14.16} & \cellcolor{gray!15}{20.23} & \cellcolor{gray!15}{34.09} & \cellcolor{gray!15}{28.12}\\
+4-year & 193 & 6.37 & 13.85 & 16.83 & 31.04 & 31.91\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{2.34} & \cellcolor{gray!15}{20.48} & \cellcolor{gray!15}{10.93} & \cellcolor{gray!15}{37.51} & \cellcolor{gray!15}{28.74}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 9.58 & 31.41 & 24.10 & 21.16 & 13.75\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{2.94} & \cellcolor{gray!15}{15.51} & \cellcolor{gray!15}{28.60} & \cellcolor{gray!15}{26.85} & \cellcolor{gray!15}{26.10}\\
+51-69 & 349 & 1.59 & 5.31 & 24.37 & 37.76 & 30.98\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{1.21} & \cellcolor{gray!15}{1.70} & \cellcolor{gray!15}{20.07} & \cellcolor{gray!15}{42.58} & \cellcolor{gray!15}{34.44}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 3.22 & 18.38 & 41.73 & 19.91 & 16.76\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{4.18} & \cellcolor{gray!15}{9.97} & \cellcolor{gray!15}{21.12} & \cellcolor{gray!15}{34.23} & \cellcolor{gray!15}{30.50}\\
+Joe Biden & 414 & 4.52 & 17.66 & 19.94 & 33.54 & 24.34\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{4.24} & \cellcolor{gray!15}{6.49} & \cellcolor{gray!15}{30.42} & \cellcolor{gray!15}{30.06} & \cellcolor{gray!15}{28.79}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 2.85 & 9.79 & 26.13 & 33.62 & 27.61\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{6.52} & \cellcolor{gray!15}{23.40} & \cellcolor{gray!15}{21.83} & \cellcolor{gray!15}{26.88} & \cellcolor{gray!15}{21.37}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_judges\_perception \break \break \textbf{Question text:} ``What percent of \{outparty: Democratic/Republican\} voters do you think agree with the following: \{outparty: Democratic/Republican\} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by \{inparty: Democratic/Republican\} presidents.'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{55.62} & \cellcolor{gray!15}{58.5} & \cellcolor{gray!15}{31.3} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.31} & \cellcolor{gray!15}{28.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 40.07 & 30.60 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.20} & \cellcolor{gray!15}{32.98} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 53.59 & 31.16 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.93} & \cellcolor{gray!15}{31.36} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 1 & 100 & 56.20 & 24.92 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{46.71} & \cellcolor{gray!15}{29.62} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 53.76 & 31.72 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{13} & \cellcolor{gray!15}{13} & \cellcolor{gray!15}{13.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 100 & 46.17 & 28.01 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{55.56} & \cellcolor{gray!15}{31.54} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 59.24 & 32.04 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.63} & \cellcolor{gray!15}{31.35} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 52.85 & 32.27 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{52.11} & \cellcolor{gray!15}{31.56} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 55.93 & 31.58 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.23} & \cellcolor{gray!15}{31.13} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 57.91 & 31.15 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{63.56} & \cellcolor{gray!15}{28.78} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 53.66 & 26.83 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{54.65} & \cellcolor{gray!15}{30.23} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 56.12 & 33.75 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.21} & \cellcolor{gray!15}{34.89} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 43.54 & 29.14 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{60.00} & \cellcolor{gray!15}{32.76} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 57.10 & 29.63 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{46.96} & \cellcolor{gray!15}{23.69} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 56.51 & 31.76 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.88} & \cellcolor{gray!15}{30.46} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_polling \break \break \textbf{Question text:} ``Do you agree or disagree: \{inparty: Democrats/Republicans\} should reduce the number of polling stations in areas that typically support \{outparty: Democrats/Republicans\}.'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-8.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{49} & \cellcolor{gray!15}{4.87}\\
+Agree & 94 & 9.43\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{216} & \cellcolor{gray!15}{21.58}\\
+Disagree & 274 & 27.38\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{367} & \cellcolor{gray!15}{36.75}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{5.25} & \cellcolor{gray!15}{11.42} & \cellcolor{gray!15}{16.45} & \cellcolor{gray!15}{27.37} & \cellcolor{gray!15}{39.51}\\
+Independent/Other & 165 & 3.98 & 3.50 & 35.35 & 16.20 & 40.97\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{4.79} & \cellcolor{gray!15}{9.57} & \cellcolor{gray!15}{21.86} & \cellcolor{gray!15}{32.39} & \cellcolor{gray!15}{31.38}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 4.38 & 8.10 & 21.14 & 28.34 & 38.05\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{5.38} & \cellcolor{gray!15}{10.83} & \cellcolor{gray!15}{22.04} & \cellcolor{gray!15}{26.37} & \cellcolor{gray!15}{35.38}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 7.17 & 29.56 & 35.64 & 27.64\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{6.35} & \cellcolor{gray!15}{10.94} & \cellcolor{gray!15}{29.46} & \cellcolor{gray!15}{25.25} & \cellcolor{gray!15}{27.99}\\
+Hispanic & 164 & 4.66 & 11.68 & 28.45 & 25.66 & 29.55\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 1.52 & 0.00 & 23.50 & 14.21 & 60.78\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{9.63} & \cellcolor{gray!15}{28.85} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{25.88} & \cellcolor{gray!15}{35.65}\\
+Other & 21 & 4.86 & 15.45 & 21.90 & 21.56 & 36.23\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{4.88} & \cellcolor{gray!15}{8.36} & \cellcolor{gray!15}{18.36} & \cellcolor{gray!15}{28.62} & \cellcolor{gray!15}{39.79}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 3.19 & 0.00 & 28.82 & 24.26 & 43.73\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{4.78} & \cellcolor{gray!15}{10.33} & \cellcolor{gray!15}{27.95} & \cellcolor{gray!15}{28.95} & \cellcolor{gray!15}{27.99}\\
+Some college & 196 & 3.65 & 8.09 & 23.63 & 22.12 & 42.51\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{3.67} & \cellcolor{gray!15}{13.69} & \cellcolor{gray!15}{23.04} & \cellcolor{gray!15}{26.43} & \cellcolor{gray!15}{33.17}\\
+4-year & 193 & 6.40 & 6.03 & 14.88 & 30.71 & 41.99\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{6.41} & \cellcolor{gray!15}{14.40} & \cellcolor{gray!15}{5.82} & \cellcolor{gray!15}{28.15} & \cellcolor{gray!15}{45.21}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 10.85 & 23.29 & 22.95 & 15.90 & 27.01\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{4.28} & \cellcolor{gray!15}{8.34} & \cellcolor{gray!15}{28.74} & \cellcolor{gray!15}{24.69} & \cellcolor{gray!15}{33.96}\\
+51-69 & 349 & 1.78 & 1.90 & 17.12 & 35.97 & 43.23\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{1.13} & \cellcolor{gray!15}{1.32} & \cellcolor{gray!15}{18.63} & \cellcolor{gray!15}{33.89} & \cellcolor{gray!15}{45.03}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 6.07 & 10.60 & 39.58 & 15.75 & 28.00\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{5.37} & \cellcolor{gray!15}{7.00} & \cellcolor{gray!15}{20.89} & \cellcolor{gray!15}{33.56} & \cellcolor{gray!15}{33.20}\\
+Joe Biden & 414 & 4.17 & 11.16 & 14.41 & 26.93 & 43.34\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{9.22} & \cellcolor{gray!15}{19.42} & \cellcolor{gray!15}{25.77} & \cellcolor{gray!15}{45.59}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 3.12 & 4.57 & 21.62 & 27.79 & 42.90\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{8.07} & \cellcolor{gray!15}{18.32} & \cellcolor{gray!15}{21.49} & \cellcolor{gray!15}{26.63} & \cellcolor{gray!15}{25.48}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_polling\_perception \break \break \textbf{Question text:} ``What percent of \{outparty: Democratic/Republican\} voters do you think agree with the following: \{outparty: Democrats/Republicans\} should reduce the number of polling stations in areas that typically support \{inparty: Democrats/Republicans\}.'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{54.67} & \cellcolor{gray!15}{58.5} & \cellcolor{gray!15}{32.25} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.34} & \cellcolor{gray!15}{30.58} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 39.52 & 30.20 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{55.43} & \cellcolor{gray!15}{33.47} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 51.88 & 32.51 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.86} & \cellcolor{gray!15}{31.77} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 1 & 90 & 47.85 & 24.49 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.31} & \cellcolor{gray!15}{33.01} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 51.28 & 31.61 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 100 & 42.78 & 30.91 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{17} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{65.12} & \cellcolor{gray!15}{25.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 50.64 & 35.89 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{56.46} & \cellcolor{gray!15}{32.34} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 60.46 & 34.40 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.46} & \cellcolor{gray!15}{32.65} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 52.20 & 31.54 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.31} & \cellcolor{gray!15}{32.36} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 57.02 & 32.05 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{63.49} & \cellcolor{gray!15}{30.81} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 53.03 & 27.93 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.26} & \cellcolor{gray!15}{30.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 55.16 & 35.03 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.56} & \cellcolor{gray!15}{35.92} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 42.91 & 30.34 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{56.42} & \cellcolor{gray!15}{33.15} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 58.46 & 31.50 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{79} & \cellcolor{gray!15}{40.85} & \cellcolor{gray!15}{19.97} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 55.68 & 32.60 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{52.71} & \cellcolor{gray!15}{31.63} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_executive \break \break \textbf{Question text:} ``Do you agree or disagree: If a \{inparty: Democratic/Republican\} president can't get cooperation from \{outparty: Democratic/Republican\} members of congress to pass new laws, the \{inparty: Democratic/Republican\} president should circumvent Congress and issue executive orders on their own to accomplish their priorities.'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-9.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{103} & \cellcolor{gray!15}{10.30}\\
+Agree & 260 & 26.04\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{356} & \cellcolor{gray!15}{35.59}\\
+Disagree & 191 & 19.07\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{90} & \cellcolor{gray!15}{9.00}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{13.51} & \cellcolor{gray!15}{37.52} & \cellcolor{gray!15}{33.83} & \cellcolor{gray!15}{12.13} & \cellcolor{gray!15}{3.01}\\
+Independent/Other & 165 & 3.72 & 6.89 & 51.95 & 20.50 & 16.94\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{9.20} & \cellcolor{gray!15}{20.17} & \cellcolor{gray!15}{30.47} & \cellcolor{gray!15}{27.18} & \cellcolor{gray!15}{12.99}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 11.43 & 25.30 & 33.95 & 20.50 & 8.82\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{9.11} & \cellcolor{gray!15}{26.83} & \cellcolor{gray!15}{37.32} & \cellcolor{gray!15}{17.56} & \cellcolor{gray!15}{9.19}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 17.10 & 54.90 & 19.73 & 8.27\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{16.69} & \cellcolor{gray!15}{36.24} & \cellcolor{gray!15}{35.03} & \cellcolor{gray!15}{11.60} & \cellcolor{gray!15}{0.44}\\
+Hispanic & 164 & 11.13 & 24.17 & 36.81 & 17.79 & 10.11\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 12.10 & 16.27 & 27.03 & 34.79 & 9.82\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{13.68} & \cellcolor{gray!15}{44.77} & \cellcolor{gray!15}{28.09} & \cellcolor{gray!15}{13.46}\\
+Other & 21 & 5.58 & 27.83 & 45.36 & 16.43 & 4.80\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{9.66} & \cellcolor{gray!15}{25.60} & \cellcolor{gray!15}{34.35} & \cellcolor{gray!15}{20.17} & \cellcolor{gray!15}{10.23}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 4.22 & 6.45 & 56.89 & 21.25 & 11.19\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{11.13} & \cellcolor{gray!15}{24.77} & \cellcolor{gray!15}{41.86} & \cellcolor{gray!15}{13.34} & \cellcolor{gray!15}{8.90}\\
+Some college & 196 & 9.83 & 26.98 & 36.91 & 21.26 & 5.02\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{7.97} & \cellcolor{gray!15}{30.63} & \cellcolor{gray!15}{30.69} & \cellcolor{gray!15}{17.57} & \cellcolor{gray!15}{13.14}\\
+4-year & 193 & 12.28 & 25.89 & 26.39 & 25.04 & 10.41\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{9.78} & \cellcolor{gray!15}{31.87} & \cellcolor{gray!15}{26.21} & \cellcolor{gray!15}{23.17} & \cellcolor{gray!15}{8.97}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 13.33 & 35.17 & 26.59 & 15.85 & 9.06\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{13.07} & \cellcolor{gray!15}{22.26} & \cellcolor{gray!15}{41.37} & \cellcolor{gray!15}{17.60} & \cellcolor{gray!15}{5.70}\\
+51-69 & 349 & 5.61 & 20.46 & 40.21 & 22.02 & 11.71\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{11.35} & \cellcolor{gray!15}{27.01} & \cellcolor{gray!15}{33.66} & \cellcolor{gray!15}{20.68} & \cellcolor{gray!15}{7.30}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 5.79 & 23.70 & 49.19 & 14.04 & 7.28\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{8.97} & \cellcolor{gray!15}{16.67} & \cellcolor{gray!15}{30.97} & \cellcolor{gray!15}{26.84} & \cellcolor{gray!15}{16.55}\\
+Joe Biden & 414 & 14.11 & 36.10 & 32.96 & 14.15 & 2.68\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{18.84} & \cellcolor{gray!15}{50.51} & \cellcolor{gray!15}{19.15} & \cellcolor{gray!15}{11.50}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 8.84 & 26.03 & 37.80 & 20.21 & 7.12\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{12.96} & \cellcolor{gray!15}{26.08} & \cellcolor{gray!15}{31.55} & \cellcolor{gray!15}{16.99} & \cellcolor{gray!15}{12.43}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_executive\_perception \break \break \textbf{Question text:} ``What percent of \{outparty: Democratic/Republican\} voters do you think agree with the following: If a \{outparty: Democratic/Republican\} president can't get cooperation from \{inparty: Democratic/Republican\} members of congress to pass new laws, the \{outparty: Democratic/Republican\} president should issue executive orders on their own to accomplish their priorities.'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{61.22} & \cellcolor{gray!15}{67.5} & \cellcolor{gray!15}{31.78} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{63.83} & \cellcolor{gray!15}{29.37} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 46.05 & 30.62 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{64.72} & \cellcolor{gray!15}{33.11} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 58.65 & 32.33 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{64.15} & \cellcolor{gray!15}{31.02} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 1 & 100 & 62.10 & 26.33 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{51.14} & \cellcolor{gray!15}{32.49} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 56.13 & 31.13 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{25} & \cellcolor{gray!15}{25} & \cellcolor{gray!15}{25.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 100 & 53.50 & 25.41 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{12} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{69.50} & \cellcolor{gray!15}{25.38} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 68.20 & 29.56 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{63.73} & \cellcolor{gray!15}{32.03} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 58.92 & 33.94 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.23} & \cellcolor{gray!15}{32.07} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 59.57 & 33.13 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{55.45} & \cellcolor{gray!15}{32.58} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 64.70 & 29.50 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{71.98} & \cellcolor{gray!15}{27.60} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 54.92 & 27.79 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.16} & \cellcolor{gray!15}{30.04} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 63.51 & 34.53 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{66.88} & \cellcolor{gray!15}{33.31} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 47.06 & 31.10 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{64.98} & \cellcolor{gray!15}{32.79} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 63.93 & 29.62 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.46} & \cellcolor{gray!15}{26.21} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 62.84 & 32.47 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.05} & \cellcolor{gray!15}{30.38} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_censorship \break \break \textbf{Question text:} ``Do you agree or disagree with the following: The government should be able to censor media sources that spend more time attacking \{inparty: Democrats/Republicans\} than \{outparty: Democrats/Republicans\}.'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-10.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{67} & \cellcolor{gray!15}{6.66}\\
+Agree & 165 & 16.49\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{255} & \cellcolor{gray!15}{25.51}\\
+Disagree & 214 & 21.39\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{299} & \cellcolor{gray!15}{29.94}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{7.26} & \cellcolor{gray!15}{18.50} & \cellcolor{gray!15}{24.52} & \cellcolor{gray!15}{24.20} & \cellcolor{gray!15}{25.51}\\
+Independent/Other & 165 & 1.09 & 10.60 & 35.43 & 17.02 & 35.85\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{8.39} & \cellcolor{gray!15}{16.60} & \cellcolor{gray!15}{22.32} & \cellcolor{gray!15}{19.82} & \cellcolor{gray!15}{32.88}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 6.07 & 18.61 & 29.13 & 21.96 & 24.23\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{7.28} & \cellcolor{gray!15}{14.26} & \cellcolor{gray!15}{21.71} & \cellcolor{gray!15}{20.80} & \cellcolor{gray!15}{35.95}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 9.93 & 10.87 & 24.88 & 30.53 & 23.78\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{10.25} & \cellcolor{gray!15}{22.33} & \cellcolor{gray!15}{37.05} & \cellcolor{gray!15}{15.38} & \cellcolor{gray!15}{14.99}\\
+Hispanic & 164 & 8.18 & 14.33 & 26.73 & 28.45 & 22.31\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 10.58 & 0.00 & 36.57 & 29.56 & 23.28\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{47.07} & \cellcolor{gray!15}{11.49} & \cellcolor{gray!15}{2.72} & \cellcolor{gray!15}{38.72}\\
+Other & 21 & 0.00 & 15.45 & 21.27 & 28.36 & 34.92\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{5.67} & \cellcolor{gray!15}{16.14} & \cellcolor{gray!15}{23.11} & \cellcolor{gray!15}{20.06} & \cellcolor{gray!15}{35.03}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 0.00 & 8.27 & 36.22 & 17.36 & 38.15\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{11.06} & \cellcolor{gray!15}{18.73} & \cellcolor{gray!15}{27.17} & \cellcolor{gray!15}{20.90} & \cellcolor{gray!15}{22.14}\\
+Some college & 196 & 6.50 & 11.92 & 29.07 & 18.47 & 34.04\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{2.63} & \cellcolor{gray!15}{17.55} & \cellcolor{gray!15}{31.32} & \cellcolor{gray!15}{17.24} & \cellcolor{gray!15}{31.26}\\
+4-year & 193 & 2.94 & 17.64 & 20.56 & 24.56 & 34.30\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{6.28} & \cellcolor{gray!15}{17.80} & \cellcolor{gray!15}{13.07} & \cellcolor{gray!15}{28.07} & \cellcolor{gray!15}{34.77}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 8.80 & 32.23 & 25.65 & 15.57 & 17.74\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{4.57} & \cellcolor{gray!15}{14.75} & \cellcolor{gray!15}{31.21} & \cellcolor{gray!15}{15.50} & \cellcolor{gray!15}{33.96}\\
+51-69 & 349 & 4.77 & 8.64 & 23.55 & 27.54 & 35.50\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{10.16} & \cellcolor{gray!15}{6.31} & \cellcolor{gray!15}{21.23} & \cellcolor{gray!15}{27.32} & \cellcolor{gray!15}{34.98}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 6.25 & 18.38 & 38.55 & 17.15 & 19.67\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{7.39} & \cellcolor{gray!15}{16.32} & \cellcolor{gray!15}{19.95} & \cellcolor{gray!15}{19.72} & \cellcolor{gray!15}{36.63}\\
+Joe Biden & 414 & 6.42 & 16.06 & 24.81 & 24.89 & 27.83\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{2.49} & \cellcolor{gray!15}{12.30} & \cellcolor{gray!15}{26.74} & \cellcolor{gray!15}{19.91} & \cellcolor{gray!15}{38.56}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 4.24 & 11.21 & 26.42 & 24.82 & 33.31\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{11.08} & \cellcolor{gray!15}{26.16} & \cellcolor{gray!15}{23.86} & \cellcolor{gray!15}{15.12} & \cellcolor{gray!15}{23.79}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_censorship\_perception \break \break \textbf{Question text:} ``What percent of \{outparty: Democratic/Republican\} voters do you think agree with the following: The government should be able to censor media sources that spend more time attacking \{outparty: Democrats/Republicans\} than \{inparty: Democrats/Republicans\}.'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{56.75} & \cellcolor{gray!15}{59.5} & \cellcolor{gray!15}{31.81} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.89} & \cellcolor{gray!15}{28.55} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 42.10 & 32.70 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{60.66} & \cellcolor{gray!15}{33.20} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 54.50 & 32.02 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.32} & \cellcolor{gray!15}{31.55} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 1 & 100 & 60.20 & 20.73 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{49.83} & \cellcolor{gray!15}{31.39} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 54.57 & 31.23 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{7} & \cellcolor{gray!15}{7} & \cellcolor{gray!15}{7.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 1 & 99 & 38.11 & 29.43 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{3} & \cellcolor{gray!15}{95} & \cellcolor{gray!15}{65.50} & \cellcolor{gray!15}{28.39} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 58.12 & 32.49 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.56} & \cellcolor{gray!15}{32.10} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 44.35 & 34.46 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.28} & \cellcolor{gray!15}{31.55} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 55.37 & 33.45 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.01} & \cellcolor{gray!15}{29.72} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 60.98 & 30.93 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{62.73} & \cellcolor{gray!15}{28.86} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 53.61 & 28.56 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.02} & \cellcolor{gray!15}{30.54} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 57.51 & 34.76 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{63.47} & \cellcolor{gray!15}{31.47} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 44.47 & 30.81 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{62.10} & \cellcolor{gray!15}{33.14} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 57.68 & 29.20 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{45.77} & \cellcolor{gray!15}{31.99} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 57.43 & 32.31 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{55.44} & \cellcolor{gray!15}{30.91} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_loyalty \break \break \textbf{Question text:} ``Do you agree or disagree with the following: When a \{inparty: Democratic/Republican\} candidate questions the outcome of an election other \{inparty: Democrats/Republicans\} should be more loyal to the \{inparty: Democratic/Republican\} party than to election rules and the constitution.'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-11.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly agree} & \cellcolor{gray!15}{67} & \cellcolor{gray!15}{6.72}\\
+Agree & 168 & 16.81\\
+\cellcolor{gray!15}{Neither agree nor disagree} & \cellcolor{gray!15}{277} & \cellcolor{gray!15}{27.73}\\
+Disagree & 221 & 22.09\\
+\cellcolor{gray!15}{Strongly disagree} & \cellcolor{gray!15}{267} & \cellcolor{gray!15}{26.66}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly agree & Agree & Neither agree nor disagree & Disagree & Strongly disagree\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{6.67} & \cellcolor{gray!15}{19.83} & \cellcolor{gray!15}{18.90} & \cellcolor{gray!15}{21.77} & \cellcolor{gray!15}{32.83}\\
+Independent/Other & 165 & 4.02 & 5.24 & 42.13 & 14.00 & 34.61\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{7.98} & \cellcolor{gray!15}{18.17} & \cellcolor{gray!15}{32.39} & \cellcolor{gray!15}{26.11} & \cellcolor{gray!15}{15.35}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 7.30 & 14.73 & 28.20 & 23.83 & 25.94\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{6.10} & \cellcolor{gray!15}{18.99} & \cellcolor{gray!15}{27.22} & \cellcolor{gray!15}{20.25} & \cellcolor{gray!15}{27.43}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 20.80 & 21.67 & 23.82 & 33.70\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{8.82} & \cellcolor{gray!15}{25.24} & \cellcolor{gray!15}{33.56} & \cellcolor{gray!15}{15.30} & \cellcolor{gray!15}{17.09}\\
+Hispanic & 164 & 5.14 & 21.39 & 32.46 & 20.65 & 20.36\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 1.52 & 8.85 & 21.98 & 8.79 & 58.86\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{5.35} & \cellcolor{gray!15}{22.12} & \cellcolor{gray!15}{35.51} & \cellcolor{gray!15}{13.04} & \cellcolor{gray!15}{23.99}\\
+Other & 21 & 6.45 & 20.16 & 26.54 & 12.20 & 34.64\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{7.27} & \cellcolor{gray!15}{13.89} & \cellcolor{gray!15}{25.75} & \cellcolor{gray!15}{24.75} & \cellcolor{gray!15}{28.35}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 8.94 & 12.45 & 21.92 & 19.58 & 37.10\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{9.95} & \cellcolor{gray!15}{20.03} & \cellcolor{gray!15}{33.99} & \cellcolor{gray!15}{19.49} & \cellcolor{gray!15}{16.55}\\
+Some college & 196 & 4.04 & 12.61 & 32.87 & 24.53 & 25.95\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{3.76} & \cellcolor{gray!15}{20.24} & \cellcolor{gray!15}{26.88} & \cellcolor{gray!15}{22.70} & \cellcolor{gray!15}{26.40}\\
+4-year & 193 & 6.71 & 11.15 & 20.70 & 23.68 & 37.75\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{3.44} & \cellcolor{gray!15}{22.25} & \cellcolor{gray!15}{14.82} & \cellcolor{gray!15}{23.48} & \cellcolor{gray!15}{36.01}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 11.49 & 29.43 & 24.70 & 15.33 & 19.05\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{6.42} & \cellcolor{gray!15}{19.08} & \cellcolor{gray!15}{36.25} & \cellcolor{gray!15}{13.65} & \cellcolor{gray!15}{24.60}\\
+51-69 & 349 & 3.10 & 8.74 & 28.11 & 28.57 & 31.48\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{6.33} & \cellcolor{gray!15}{7.34} & \cellcolor{gray!15}{19.73} & \cellcolor{gray!15}{33.02} & \cellcolor{gray!15}{33.57}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 7.13 & 17.24 & 41.83 & 13.42 & 20.38\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{8.60} & \cellcolor{gray!15}{15.77} & \cellcolor{gray!15}{33.02} & \cellcolor{gray!15}{24.80} & \cellcolor{gray!15}{17.81}\\
+Joe Biden & 414 & 5.05 & 17.77 & 17.01 & 22.76 & 37.41\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{2.49} & \cellcolor{gray!15}{13.46} & \cellcolor{gray!15}{21.76} & \cellcolor{gray!15}{33.16} & \cellcolor{gray!15}{29.13}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 4.54 & 11.16 & 27.44 & 24.40 & 32.46\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{10.71} & \cellcolor{gray!15}{27.13} & \cellcolor{gray!15}{28.26} & \cellcolor{gray!15}{17.85} & \cellcolor{gray!15}{16.05}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} norm\_loyalty\_perception \break \break \textbf{Question text:} ``What percent of \{outparty: Democratic/Republican\} voters do you think agree with the following: When a \{outparty: Democratic/Republican\} questions the outcome of an election other \{outparty: Democrats/Republicans\} should be more loyal to the \{outparty: Democratic/Republican\} party than to election rules and the constitution.'' \end{flushleft}
+
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+n & Min & Max & Mean & Median & SD & Skipped\\
+\midrule
+\cellcolor{gray!15}{1000} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{57.06} & \cellcolor{gray!15}{59.5} & \cellcolor{gray!15}{31.57} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Min & Max & Mean & SD & Skipped\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\hspace{1em}\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{477} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{60.13} & \cellcolor{gray!15}{29.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Independent/Other & 165 & 0 & 100 & 39.78 & 29.55 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{358} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{60.94} & \cellcolor{gray!15}{32.17} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+\hspace{1em}Female & 533 & 0 & 100 & 55.65 & 31.55 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{467} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{58.67} & \cellcolor{gray!15}{31.59} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+\hspace{1em}Asian & 20 & 10 & 100 & 59.35 & 23.27 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{47.46} & \cellcolor{gray!15}{31.01} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Hispanic & 145 & 0 & 100 & 55.33 & 30.86 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{26.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Multiracial & 18 & 0 & 97 & 37.94 & 31.89 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{16} & \cellcolor{gray!15}{40} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{73.25} & \cellcolor{gray!15}{20.35} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Other & 25 & 0 & 100 & 58.56 & 34.26 & 0\\
+\hspace{1em}\cellcolor{gray!15}{White} & \cellcolor{gray!15}{667} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{59.04} & \cellcolor{gray!15}{31.56} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+\hspace{1em}No HS & 26 & 0 & 100 & 58.19 & 38.78 & 0\\
+\hspace{1em}\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{331} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{54.54} & \cellcolor{gray!15}{31.01} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Some college & 200 & 0 & 100 & 56.33 & 32.91 & 0\\
+\hspace{1em}\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.01} & \cellcolor{gray!15}{30.27} & \cellcolor{gray!15}{0}\\
+\hspace{1em}4-year & 207 & 0 & 100 & 57.83 & 31.88 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{122} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{67.33} & \cellcolor{gray!15}{25.63} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+\hspace{1em}18-34 & 238 & 0 & 100 & 52.77 & 26.53 & 0\\
+\hspace{1em}\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{190} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{52.57} & \cellcolor{gray!15}{30.68} & \cellcolor{gray!15}{0}\\
+\hspace{1em}51-69 & 400 & 0 & 100 & 60.12 & 34.50 & 0\\
+\hspace{1em}\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{172} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{60.84} & \cellcolor{gray!15}{33.40} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+\hspace{1em}Didn't vote & 167 & 0 & 100 & 43.65 & 29.85 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{359} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{61.36} & \cellcolor{gray!15}{32.58} & \cellcolor{gray!15}{0}\\
+\hspace{1em}Joe Biden & 448 & 0 & 100 & 59.13 & 29.82 & 0\\
+\hspace{1em}\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{26} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{95} & \cellcolor{gray!15}{48.19} & \cellcolor{gray!15}{28.62} & \cellcolor{gray!15}{0}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 661 & 0 & 100 & 58.82 & 31.72 & 0\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{339} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100} & \cellcolor{gray!15}{53.63} & \cellcolor{gray!15}{31.21} & \cellcolor{gray!15}{0}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: Respondents are randomized to complete a subset of
+three norms questions and their corresponding perception question.
+\clearpage\pagebreak
+
+\hypertarget{political-violence}{%
+\section{Political Violence}\label{political-violence}}
+
+\begin{flushleft} \textbf{Question label:} violence1 \break \break \textbf{Question text:} ``\{name 1\} was convicted of protesting without a permit.  
+
+He was arrested by police after leading a protest against \{outparty: Democrats/Republicans\} on the grounds of the county courthouse. He made no effort to acquire the necessary permit for the protest and refused to leave when asked by police. 
+
+Do you support or oppose \{name 1\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-12.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{129} & \cellcolor{gray!15}{12.91}\\
+Support & 224 & 22.40\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{323} & \cellcolor{gray!15}{32.30}\\
+Oppose & 239 & 23.86\\
+\cellcolor{gray!15}{Strongly oppose} & \cellcolor{gray!15}{85} & \cellcolor{gray!15}{8.53}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{12.06} & \cellcolor{gray!15}{28.70} & \cellcolor{gray!15}{30.53} & \cellcolor{gray!15}{22.10} & \cellcolor{gray!15}{6.62}\\
+Independent/Other & 165 & 11.34 & 13.88 & 38.27 & 21.89 & 14.62\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{14.69} & \cellcolor{gray!15}{18.29} & \cellcolor{gray!15}{31.85} & \cellcolor{gray!15}{26.95} & \cellcolor{gray!15}{8.21}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Sex}}\\
+Female & 513 & 9.40 & 18.78 & 33.69 & 29.24 & 8.89\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{16.61} & \cellcolor{gray!15}{26.22} & \cellcolor{gray!15}{30.83} & \cellcolor{gray!15}{18.19} & \cellcolor{gray!15}{8.16}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 27.72 & 48.22 & 24.06 & 0.00\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{10.77} & \cellcolor{gray!15}{28.76} & \cellcolor{gray!15}{32.26} & \cellcolor{gray!15}{19.96} & \cellcolor{gray!15}{8.26}\\
+Hispanic & 164 & 8.59 & 23.02 & 36.97 & 18.62 & 12.80\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00}\\
+Multiracial & 23 & 16.81 & 23.78 & 39.89 & 17.69 & 1.83\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{29.35} & \cellcolor{gray!15}{17.33} & \cellcolor{gray!15}{24.48} & \cellcolor{gray!15}{24.25} & \cellcolor{gray!15}{4.59}\\
+Other & 21 & 6.45 & 22.17 & 23.10 & 40.28 & 8.00\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{14.75} & \cellcolor{gray!15}{20.89} & \cellcolor{gray!15}{30.45} & \cellcolor{gray!15}{25.68} & \cellcolor{gray!15}{8.22}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 29.20 & 13.61 & 40.08 & 15.66 & 1.45\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{9.89} & \cellcolor{gray!15}{21.21} & \cellcolor{gray!15}{34.57} & \cellcolor{gray!15}{23.12} & \cellcolor{gray!15}{11.21}\\
+Some college & 196 & 16.21 & 20.04 & 33.58 & 18.65 & 11.52\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{9.87} & \cellcolor{gray!15}{20.25} & \cellcolor{gray!15}{28.58} & \cellcolor{gray!15}{26.23} & \cellcolor{gray!15}{15.07}\\
+4-year & 193 & 12.52 & 25.40 & 27.40 & 32.27 & 2.41\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{13.60} & \cellcolor{gray!15}{30.49} & \cellcolor{gray!15}{31.96} & \cellcolor{gray!15}{21.75} & \cellcolor{gray!15}{2.20}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Age}}\\
+18-34 & 290 & 17.44 & 32.46 & 26.71 & 17.28 & 6.11\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{11.31} & \cellcolor{gray!15}{21.95} & \cellcolor{gray!15}{36.29} & \cellcolor{gray!15}{21.09} & \cellcolor{gray!15}{9.36}\\
+51-69 & 349 & 12.18 & 16.17 & 34.27 & 27.61 & 9.77\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{7.95} & \cellcolor{gray!15}{17.87} & \cellcolor{gray!15}{32.67} & \cellcolor{gray!15}{32.35} & \cellcolor{gray!15}{9.16}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 9.15 & 21.28 & 38.58 & 22.24 & 8.74\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{15.31} & \cellcolor{gray!15}{19.25} & \cellcolor{gray!15}{30.11} & \cellcolor{gray!15}{23.94} & \cellcolor{gray!15}{11.39}\\
+Joe Biden & 414 & 12.19 & 26.70 & 31.36 & 24.24 & 5.51\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{15.89} & \cellcolor{gray!15}{6.96} & \cellcolor{gray!15}{35.42} & \cellcolor{gray!15}{28.07} & \cellcolor{gray!15}{13.66}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{7}{l}{\textbf{Born again}}\\
+Not born again & 647 & 12.76 & 21.46 & 33.31 & 24.40 & 8.07\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{13.19} & \cellcolor{gray!15}{24.13} & \cellcolor{gray!15}{30.44} & \cellcolor{gray!15}{22.87} & \cellcolor{gray!15}{9.37}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\clearpage\pagebreak
+\begin{flushleft} \textbf{Question label:} violence2 \break \break \textbf{Question text:} ``\{name 2\} was convicted of vandalism.  
+
+He was arrested by police after he vandalized several large signs expressing support for candidates of the \{outparty: Democratic/Republican\} party. 
+
+Do you support or oppose \{name 2\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-13.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{35} & \cellcolor{gray!15}{3.45}\\
+Support & 81 & 8.13\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{60} & \cellcolor{gray!15}{5.96}\\
+Oppose & 96 & 9.56\\
+\cellcolor{gray!15}{Strongly oppose} & \cellcolor{gray!15}{85} & \cellcolor{gray!15}{8.51}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose & No Support\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{3.91} & \cellcolor{gray!15}{12.38} & \cellcolor{gray!15}{8.31} & \cellcolor{gray!15}{10.56} & \cellcolor{gray!15}{5.80} & \cellcolor{gray!15}{59.02}\\
+Independent/Other & 165 & 0.00 & 4.51 & 6.69 & 6.70 & 8.02 & 74.08\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{4.41} & \cellcolor{gray!15}{4.38} & \cellcolor{gray!15}{2.68} & \cellcolor{gray!15}{9.58} & \cellcolor{gray!15}{12.14} & \cellcolor{gray!15}{66.80}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Sex}}\\
+Female & 513 & 3.82 & 6.60 & 4.69 & 7.93 & 5.52 & 71.44\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{3.06} & \cellcolor{gray!15}{9.73} & \cellcolor{gray!15}{7.31} & \cellcolor{gray!15}{11.28} & \cellcolor{gray!15}{11.66} & \cellcolor{gray!15}{56.96}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 14.34 & 5.79 & 0.00 & 7.59 & 72.28\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{3.61} & \cellcolor{gray!15}{11.75} & \cellcolor{gray!15}{12.19} & \cellcolor{gray!15}{5.67} & \cellcolor{gray!15}{7.15} & \cellcolor{gray!15}{59.62}\\
+Hispanic & 164 & 3.09 & 10.64 & 2.89 & 8.67 & 7.03 & 67.68\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 0.00 & 8.85 & 28.37 & 3.37 & 0.00 & 59.41\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{7.89} & \cellcolor{gray!15}{21.69} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{17.10} & \cellcolor{gray!15}{53.32}\\
+Other & 21 & 0.00 & 1.27 & 3.30 & 14.08 & 9.99 & 71.38\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{3.99} & \cellcolor{gray!15}{6.71} & \cellcolor{gray!15}{4.50} & \cellcolor{gray!15}{11.29} & \cellcolor{gray!15}{9.28} & \cellcolor{gray!15}{64.23}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 2.79 & 2.01 & 5.04 & 9.36 & 23.60 & 57.19\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{4.53} & \cellcolor{gray!15}{7.41} & \cellcolor{gray!15}{6.11} & \cellcolor{gray!15}{6.25} & \cellcolor{gray!15}{6.80} & \cellcolor{gray!15}{68.90}\\
+Some college & 196 & 3.29 & 6.12 & 4.21 & 9.93 & 12.70 & 63.75\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{3.90} & \cellcolor{gray!15}{8.58} & \cellcolor{gray!15}{4.26} & \cellcolor{gray!15}{11.91} & \cellcolor{gray!15}{2.43} & \cellcolor{gray!15}{68.91}\\
+4-year & 193 & 2.12 & 10.54 & 7.52 & 12.39 & 6.37 & 61.06\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{2.53} & \cellcolor{gray!15}{11.63} & \cellcolor{gray!15}{7.88} & \cellcolor{gray!15}{12.04} & \cellcolor{gray!15}{10.01} & \cellcolor{gray!15}{55.91}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Age}}\\
+18-34 & 290 & 7.28 & 19.47 & 12.15 & 6.99 & 4.77 & 49.34\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{2.56} & \cellcolor{gray!15}{6.75} & \cellcolor{gray!15}{4.73} & \cellcolor{gray!15}{7.73} & \cellcolor{gray!15}{11.50} & \cellcolor{gray!15}{66.74}\\
+51-69 & 349 & 2.09 & 2.39 & 2.61 & 11.84 & 9.65 & 71.42\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{0.36} & \cellcolor{gray!15}{1.17} & \cellcolor{gray!15}{3.49} & \cellcolor{gray!15}{12.07} & \cellcolor{gray!15}{8.72} & \cellcolor{gray!15}{74.19}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 5.04 & 5.82 & 9.28 & 3.75 & 6.54 & 69.57\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{4.42} & \cellcolor{gray!15}{5.21} & \cellcolor{gray!15}{2.32} & \cellcolor{gray!15}{10.22} & \cellcolor{gray!15}{12.90} & \cellcolor{gray!15}{64.93}\\
+Joe Biden & 414 & 2.07 & 12.01 & 7.36 & 11.98 & 5.73 & 60.86\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{4.90} & \cellcolor{gray!15}{14.21} & \cellcolor{gray!15}{1.69} & \cellcolor{gray!15}{2.05} & \cellcolor{gray!15}{77.15}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Born again}}\\
+Not born again & 647 & 1.73 & 6.34 & 6.54 & 10.85 & 8.89 & 65.66\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{6.60} & \cellcolor{gray!15}{11.40} & \cellcolor{gray!15}{4.92} & \cellcolor{gray!15}{7.21} & \cellcolor{gray!15}{7.82} & \cellcolor{gray!15}{62.05}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: This is an adaptive scale. Respondents are only
+shown this crime if they indicate support for the last crime.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} violence3 \break \break \textbf{Question text:} ``\{name 3\} was convicted of assault.  
+
+He was arrested by police for throwing rocks at peaceful \{outparty: Democratic/Republican\} protesters. Although no one was   seriously injured, paramedics bandaged a man with a head wound.         
+
+Do you support or oppose \{name 3\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-14.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{38} & \cellcolor{gray!15}{3.75}\\
+Support & 41 & 4.10\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{4} & \cellcolor{gray!15}{0.42}\\
+Oppose & 25 & 2.48\\
+\cellcolor{gray!15}{Strongly oppose} & \cellcolor{gray!15}{9} & \cellcolor{gray!15}{0.90}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose & No Support\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{5.74} & \cellcolor{gray!15}{5.24} & \cellcolor{gray!15}{0.54} & \cellcolor{gray!15}{3.59} & \cellcolor{gray!15}{1.19} & \cellcolor{gray!15}{83.70}\\
+Independent/Other & 165 & 0.76 & 2.49 & 0.56 & 0.00 & 0.71 & 95.49\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{2.59} & \cellcolor{gray!15}{3.38} & \cellcolor{gray!15}{0.22} & \cellcolor{gray!15}{2.19} & \cellcolor{gray!15}{0.61} & \cellcolor{gray!15}{91.01}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Sex}}\\
+Female & 513 & 3.58 & 3.22 & 0.03 & 2.43 & 1.16 & 89.57\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{3.93} & \cellcolor{gray!15}{5.02} & \cellcolor{gray!15}{0.84} & \cellcolor{gray!15}{2.52} & \cellcolor{gray!15}{0.62} & \cellcolor{gray!15}{87.07}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Race}}\\
+Asian & 28 & 7.17 & 0.00 & 0.00 & 7.17 & 0.00 & 85.66\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{5.54} & \cellcolor{gray!15}{4.99} & \cellcolor{gray!15}{0.66} & \cellcolor{gray!15}{3.07} & \cellcolor{gray!15}{1.11} & \cellcolor{gray!15}{84.63}\\
+Hispanic & 164 & 2.60 & 8.60 & 0.00 & 0.81 & 1.72 & 86.27\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 0.00 & 8.85 & 0.00 & 0.00 & 0.00 & 91.15\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{7.89} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{92.11}\\
+Other & 21 & 0.00 & 1.27 & 0.00 & 0.00 & 0.00 & 98.73\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{3.91} & \cellcolor{gray!15}{2.77} & \cellcolor{gray!15}{0.55} & \cellcolor{gray!15}{2.82} & \cellcolor{gray!15}{0.76} & \cellcolor{gray!15}{89.19}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 2.79 & 0.00 & 0.00 & 0.00 & 2.01 & 95.20\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{4.52} & \cellcolor{gray!15}{5.79} & \cellcolor{gray!15}{0.19} & \cellcolor{gray!15}{0.96} & \cellcolor{gray!15}{0.47} & \cellcolor{gray!15}{88.07}\\
+Some college & 196 & 0.67 & 3.49 & 0.99 & 2.25 & 2.01 & 90.58\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{3.36} & \cellcolor{gray!15}{6.17} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{2.95} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{87.52}\\
+4-year & 193 & 4.25 & 1.32 & 0.86 & 5.63 & 0.96 & 86.98\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{6.63} & \cellcolor{gray!15}{4.32} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{2.64} & \cellcolor{gray!15}{0.57} & \cellcolor{gray!15}{85.85}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Age}}\\
+18-34 & 290 & 9.74 & 9.41 & 1.21 & 5.02 & 1.37 & 73.25\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{2.09} & \cellcolor{gray!15}{2.93} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{3.08} & \cellcolor{gray!15}{1.21} & \cellcolor{gray!15}{90.70}\\
+51-69 & 349 & 1.35 & 1.60 & 0.21 & 0.99 & 0.33 & 95.52\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{1.19} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.84} & \cellcolor{gray!15}{97.97}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 3.90 & 4.05 & 1.57 & 1.33 & 0.00 & 89.14\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{4.00} & \cellcolor{gray!15}{2.79} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{2.13} & \cellcolor{gray!15}{0.90} & \cellcolor{gray!15}{90.19}\\
+Joe Biden & 414 & 3.69 & 5.27 & 0.33 & 3.45 & 1.34 & 85.93\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{4.90} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{95.10}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Born again}}\\
+Not born again & 647 & 1.18 & 3.00 & 0.26 & 2.53 & 1.21 & 91.83\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{8.47} & \cellcolor{gray!15}{6.10} & \cellcolor{gray!15}{0.73} & \cellcolor{gray!15}{2.37} & \cellcolor{gray!15}{0.33} & \cellcolor{gray!15}{82.00}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: This is an adaptive scale. Respondents are only
+shown this crime if they indicate support for the last crime.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} violence4 \break \break \textbf{Question text:} ``\{name 4\} was convicted of arson.  
+
+He was arrested by police as he attempted to run from a fire he started at the local \{outparty: Democratic/Republican\} headquarters. Although he waited for the building to close for the night, several adjacent buildings were still occupied.          
+
+Do you support or oppose \{name 4\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-15.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{23} & \cellcolor{gray!15}{2.29}\\
+Support & 39 & 3.88\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{9} & \cellcolor{gray!15}{0.94}\\
+Oppose & 4 & 0.40\\
+\cellcolor{gray!15}{Strongly oppose} & \cellcolor{gray!15}{6} & \cellcolor{gray!15}{0.56}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose & No Support\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{4.08} & \cellcolor{gray!15}{5.52} & \cellcolor{gray!15}{1.35} & \cellcolor{gray!15}{0.26} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{88.80}\\
+Independent/Other & 165 & 0.76 & 1.21 & 0.91 & 0.00 & 1.07 & 96.05\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{0.72} & \cellcolor{gray!15}{3.00} & \cellcolor{gray!15}{0.44} & \cellcolor{gray!15}{0.76} & \cellcolor{gray!15}{1.05} & \cellcolor{gray!15}{94.03}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Sex}}\\
+Female & 513 & 2.00 & 4.01 & 0.47 & 0.32 & 0.23 & 92.97\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{2.59} & \cellcolor{gray!15}{3.74} & \cellcolor{gray!15}{1.43} & \cellcolor{gray!15}{0.49} & \cellcolor{gray!15}{0.92} & \cellcolor{gray!15}{90.83}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 7.17 & 0.00 & 0.00 & 0.00 & 92.83\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{0.41} & \cellcolor{gray!15}{8.56} & \cellcolor{gray!15}{0.24} & \cellcolor{gray!15}{0.36} & \cellcolor{gray!15}{1.82} & \cellcolor{gray!15}{88.62}\\
+Hispanic & 164 & 3.70 & 4.99 & 2.51 & 0.00 & 0.71 & 88.09\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 0.00 & 8.85 & 0.00 & 0.00 & 0.00 & 91.15\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{7.89} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{92.11}\\
+Other & 21 & 0.00 & 1.27 & 0.00 & 0.00 & 0.00 & 98.73\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{2.60} & \cellcolor{gray!15}{2.54} & \cellcolor{gray!15}{0.61} & \cellcolor{gray!15}{0.57} & \cellcolor{gray!15}{0.36} & \cellcolor{gray!15}{93.32}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 0.00 & 0.00 & 0.00 & 2.79 & 0.00 & 97.21\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{3.42} & \cellcolor{gray!15}{4.85} & \cellcolor{gray!15}{1.67} & \cellcolor{gray!15}{0.12} & \cellcolor{gray!15}{0.25} & \cellcolor{gray!15}{89.68}\\
+Some college & 196 & 0.63 & 2.33 & 1.19 & 0.00 & 0.00 & 95.84\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{1.02} & \cellcolor{gray!15}{5.70} & \cellcolor{gray!15}{0.27} & \cellcolor{gray!15}{0.71} & \cellcolor{gray!15}{2.79} & \cellcolor{gray!15}{89.50}\\
+4-year & 193 & 2.38 & 2.83 & 0.00 & 0.36 & 0.61 & 93.82\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{3.64} & \cellcolor{gray!15}{5.11} & \cellcolor{gray!15}{0.88} & \cellcolor{gray!15}{0.78} & \cellcolor{gray!15}{0.53} & \cellcolor{gray!15}{89.06}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Age}}\\
+18-34 & 290 & 6.03 & 10.91 & 1.66 & 0.15 & 1.16 & 80.09\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{1.63} & \cellcolor{gray!15}{1.89} & \cellcolor{gray!15}{1.14} & \cellcolor{gray!15}{0.35} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{94.98}\\
+51-69 & 349 & 0.52 & 0.57 & 0.60 & 0.61 & 0.65 & 97.04\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.70} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.49} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{98.81}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 1.76 & 4.74 & 1.45 & 0.00 & 0.00 & 92.05\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{2.36} & \cellcolor{gray!15}{2.23} & \cellcolor{gray!15}{0.43} & \cellcolor{gray!15}{0.74} & \cellcolor{gray!15}{1.33} & \cellcolor{gray!15}{92.91}\\
+Joe Biden & 414 & 2.59 & 4.94 & 1.24 & 0.29 & 0.15 & 90.79\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{4.90} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{95.10}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Born again}}\\
+Not born again & 647 & 0.37 & 1.80 & 1.02 & 0.56 & 0.43 & 95.82\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{5.80} & \cellcolor{gray!15}{7.68} & \cellcolor{gray!15}{0.79} & \cellcolor{gray!15}{0.12} & \cellcolor{gray!15}{0.80} & \cellcolor{gray!15}{84.81}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: This is an adaptive scale. Respondents are only
+shown this crime if they indicate support for the last crime.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} violence5 \break \break \textbf{Question text:} ``\{name 5\} was convicted of assault with a deadly weapon.  
+
+He was arrested by police after driving his car into a crowd of \{outparty: Democratic/Republican\} protesters. Although no one was killed, several individuals were seriously injured and one spent a month in the hospital. 
+
+Do you support or oppose \{name 5\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-16.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{23} & \cellcolor{gray!15}{2.32}\\
+Support & 32 & 3.24\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{4} & \cellcolor{gray!15}{0.37}\\
+Oppose & 1 & 0.10\\
+\cellcolor{gray!15}{Strongly oppose} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.13}\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose & No Support\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{3.22} & \cellcolor{gray!15}{5.36} & \cellcolor{gray!15}{0.80} & \cellcolor{gray!15}{0.22} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{90.40}\\
+Independent/Other & 165 & 0.00 & 1.97 & 0.00 & 0.00 & 0.00 & 98.03\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{2.23} & \cellcolor{gray!15}{1.14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.35} & \cellcolor{gray!15}{96.28}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Sex}}\\
+Female & 513 & 2.46 & 2.99 & 0.55 & 0.00 & 0.00 & 93.99\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{2.18} & \cellcolor{gray!15}{3.50} & \cellcolor{gray!15}{0.18} & \cellcolor{gray!15}{0.21} & \cellcolor{gray!15}{0.26} & \cellcolor{gray!15}{93.67}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Race}}\\
+Asian & 28 & 7.17 & 0.00 & 0.00 & 0.00 & 0.00 & 92.83\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{1.96} & \cellcolor{gray!15}{5.11} & \cellcolor{gray!15}{1.04} & \cellcolor{gray!15}{0.86} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{91.03}\\
+Hispanic & 164 & 3.75 & 4.94 & 0.00 & 0.00 & 0.00 & 91.31\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 0.00 & 8.85 & 0.00 & 0.00 & 0.00 & 91.15\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{100.00}\\
+Other & 21 & 0.00 & 1.27 & 0.00 & 0.00 & 0.00 & 98.73\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{2.02} & \cellcolor{gray!15}{2.52} & \cellcolor{gray!15}{0.39} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.20} & \cellcolor{gray!15}{94.86}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 100.00\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{3.57} & \cellcolor{gray!15}{4.24} & \cellcolor{gray!15}{0.45} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{91.73}\\
+Some college & 196 & 0.00 & 2.96 & 0.00 & 0.00 & 0.00 & 97.04\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{2.34} & \cellcolor{gray!15}{2.60} & \cellcolor{gray!15}{0.82} & \cellcolor{gray!15}{0.96} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{93.27}\\
+4-year & 193 & 2.46 & 2.10 & 0.66 & 0.00 & 0.00 & 94.78\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{3.18} & \cellcolor{gray!15}{4.44} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{1.13} & \cellcolor{gray!15}{91.25}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Age}}\\
+18-34 & 290 & 6.25 & 9.05 & 1.28 & 0.36 & 0.00 & 83.06\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{2.09} & \cellcolor{gray!15}{1.44} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{96.48}\\
+51-69 & 349 & 0.16 & 0.57 & 0.00 & 0.00 & 0.37 & 98.90\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.70} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{99.30}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 3.76 & 1.88 & 0.86 & 0.00 & 0.00 & 93.50\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{1.64} & \cellcolor{gray!15}{2.62} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.34} & \cellcolor{gray!15}{95.41}\\
+Joe Biden & 414 & 2.46 & 4.31 & 0.52 & 0.25 & 0.00 & 92.47\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{4.90} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{95.10}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Born again}}\\
+Not born again & 647 & 0.99 & 1.05 & 0.14 & 0.00 & 0.00 & 97.83\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{4.77} & \cellcolor{gray!15}{7.25} & \cellcolor{gray!15}{0.80} & \cellcolor{gray!15}{0.29} & \cellcolor{gray!15}{0.36} & \cellcolor{gray!15}{86.52}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: This is an adaptive scale. Respondents are only
+shown this crime if they indicate support for the last crime.
+\clearpage\pagebreak
+
+\begin{flushleft} \textbf{Question label:} violence6 \break \break \textbf{Question text:} ``\{name 6\} was convicted of murder.  
+
+He was arrested by police after surveillance footage was found showing him stabbing a prominent \{outparty: Democratic/Republican\} to death. \{name 6\} targeted the victim because he believed the victim had prevented him from voting in the last election as part of a conspiracy to stop \{inparty: Democrats/Republicans\} voters. 
+
+Do you support or oppose \{name 6\}’s actions?'' \end{flushleft}
+
+\includegraphics{toplines/w21_2023topline_files/figure-latex/processQuestions-17.pdf}
+\textbf{Responses}
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Strongly support} & \cellcolor{gray!15}{20} & \cellcolor{gray!15}{2.03}\\
+Support & 24 & 2.36\\
+\cellcolor{gray!15}{Neither support nor oppose} & \cellcolor{gray!15}{7} & \cellcolor{gray!15}{0.69}\\
+Oppose & 5 & 0.49\\
+\bottomrule
+\end{tabu}
+
+\textbf{Responses by Demographics}\begingroup\fontsize{7}{9}\selectfont
+
+\resizebox{\linewidth}{!}{
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedright}X}
+\toprule
+Value & n & Strongly support & Support & Neither support nor oppose & Oppose & Strongly oppose & No Support\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Partisanship}}\\
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{2.66} & \cellcolor{gray!15}{3.98} & \cellcolor{gray!15}{1.16} & \cellcolor{gray!15}{0.77} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{91.42}\\
+Independent/Other & 165 & 1.97 & 0.00 & 0.00 & 0.00 & 0 & 98.03\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{1.27} & \cellcolor{gray!15}{1.37} & \cellcolor{gray!15}{0.39} & \cellcolor{gray!15}{0.34} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{96.63}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Sex}}\\
+Female & 513 & 2.54 & 2.30 & 0.28 & 0.33 & 0 & 94.55\\
+\cellcolor{gray!15}{Male} & \cellcolor{gray!15}{487} & \cellcolor{gray!15}{1.50} & \cellcolor{gray!15}{2.41} & \cellcolor{gray!15}{1.11} & \cellcolor{gray!15}{0.65} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{94.33}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Race}}\\
+Asian & 28 & 0.00 & 0.00 & 7.17 & 0.00 & 0 & 92.83\\
+\cellcolor{gray!15}{Black} & \cellcolor{gray!15}{121} & \cellcolor{gray!15}{0.18} & \cellcolor{gray!15}{3.07} & \cellcolor{gray!15}{1.19} & \cellcolor{gray!15}{2.63} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{92.93}\\
+Hispanic & 164 & 3.75 & 4.94 & 0.00 & 0.00 & 0 & 91.31\\
+\cellcolor{gray!15}{Middle Eastern} & \cellcolor{gray!15}{1} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100.00}\\
+Multiracial & 23 & 8.85 & 0.00 & 0.00 & 0.00 & 0 & 91.15\\
+\cellcolor{gray!15}{Native American} & \cellcolor{gray!15}{14} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{100.00}\\
+Other & 21 & 1.27 & 0.00 & 0.00 & 0.00 & 0 & 98.73\\
+\cellcolor{gray!15}{White} & \cellcolor{gray!15}{628} & \cellcolor{gray!15}{1.86} & \cellcolor{gray!15}{1.87} & \cellcolor{gray!15}{0.54} & \cellcolor{gray!15}{0.27} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{95.46}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Highest Education}}\\
+No HS & 44 & 0.00 & 0.00 & 0.00 & 0.00 & 0 & 100.00\\
+\cellcolor{gray!15}{HS Graduate} & \cellcolor{gray!15}{346} & \cellcolor{gray!15}{3.36} & \cellcolor{gray!15}{2.58} & \cellcolor{gray!15}{0.59} & \cellcolor{gray!15}{1.28} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{92.18}\\
+Some college & 196 & 0.00 & 2.96 & 0.00 & 0.00 & 0 & 97.04\\
+\cellcolor{gray!15}{2-year} & \cellcolor{gray!15}{108} & \cellcolor{gray!15}{0.24} & \cellcolor{gray!15}{3.64} & \cellcolor{gray!15}{1.07} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{95.05}\\
+4-year & 193 & 3.24 & 1.32 & 0.00 & 0.00 & 0 & 95.44\\
+\cellcolor{gray!15}{Post-grad} & \cellcolor{gray!15}{114} & \cellcolor{gray!15}{1.95} & \cellcolor{gray!15}{2.09} & \cellcolor{gray!15}{3.22} & \cellcolor{gray!15}{0.36} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{92.38}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Age}}\\
+18-34 & 290 & 5.34 & 6.03 & 2.27 & 1.67 & 0 & 84.70\\
+\cellcolor{gray!15}{35-50} & \cellcolor{gray!15}{220} & \cellcolor{gray!15}{1.06} & \cellcolor{gray!15}{2.33} & \cellcolor{gray!15}{0.13} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{96.48}\\
+51-69 & 349 & 0.73 & 0.00 & 0.00 & 0.00 & 0 & 99.27\\
+\cellcolor{gray!15}{70+} & \cellcolor{gray!15}{142} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.70} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{99.30}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{2020 Vote Choice}}\\
+Didn't vote & 182 & 3.29 & 1.71 & 0.63 & 0.00 & 0 & 94.36\\
+\cellcolor{gray!15}{Donald Trump} & \cellcolor{gray!15}{380} & \cellcolor{gray!15}{2.35} & \cellcolor{gray!15}{1.37} & \cellcolor{gray!15}{0.54} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{95.74}\\
+Joe Biden & 414 & 1.24 & 3.46 & 0.89 & 1.17 & 0 & 93.24\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{24} & \cellcolor{gray!15}{1.07} & \cellcolor{gray!15}{3.83} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0.00} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{95.10}\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{8}{l}{\textbf{Born again}}\\
+Not born again & 647 & 0.33 & 1.09 & 0.36 & 0.26 & 0 & 97.97\\
+\cellcolor{gray!15}{Born again} & \cellcolor{gray!15}{353} & \cellcolor{gray!15}{5.16} & \cellcolor{gray!15}{4.67} & \cellcolor{gray!15}{1.29} & \cellcolor{gray!15}{0.90} & \cellcolor{gray!15}{0} & \cellcolor{gray!15}{87.98}\\
+\bottomrule
+\end{tabu}}
+\endgroup{}
+
+\footnotesize Notes: This is an adaptive scale. Respondents are only
+shown this crime if they indicate support for the last crime.
+\clearpage\pagebreak \newpage
+
+\hypertarget{demographics}{%
+\section{Demographics}\label{demographics}}
+
+\textbf{ Partisanship }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Democrat} & \cellcolor{gray!15}{465} & \cellcolor{gray!15}{46.52}\\
+Independent/Other & 165 & 16.54\\
+\cellcolor{gray!15}{Republican} & \cellcolor{gray!15}{369} & \cellcolor{gray!15}{36.94}\\
+\bottomrule
+\end{tabu}
+
+\textbf{ Sex }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Female} & \cellcolor{gray!15}{513} & \cellcolor{gray!15}{51.29}\\
+Male & 487 & 48.71\\
+\bottomrule
+\end{tabu}
+
+\textbf{ Race }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Asian} & \cellcolor{gray!15}{28} & \cellcolor{gray!15}{2.83}\\
+Black & 121 & 12.11\\
+\cellcolor{gray!15}{Hispanic} & \cellcolor{gray!15}{164} & \cellcolor{gray!15}{16.40}\\
+Middle Eastern & 1 & 0.12\\
+\cellcolor{gray!15}{Multiracial} & \cellcolor{gray!15}{23} & \cellcolor{gray!15}{2.26}\\
+Native American & 14 & 1.44\\
+\cellcolor{gray!15}{Other} & \cellcolor{gray!15}{21} & \cellcolor{gray!15}{2.06}\\
+White & 628 & 62.78\\
+\bottomrule
+\end{tabu}
+
+\textbf{ Highest level of education }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{No HS} & \cellcolor{gray!15}{44} & \cellcolor{gray!15}{4.44}\\
+HS Graduate & 346 & 34.56\\
+\cellcolor{gray!15}{Some college} & \cellcolor{gray!15}{196} & \cellcolor{gray!15}{19.56}\\
+2-year & 108 & 10.79\\
+\cellcolor{gray!15}{4-year} & \cellcolor{gray!15}{193} & \cellcolor{gray!15}{19.26}\\
+Post-grad & 114 & 11.39\\
+\bottomrule
+\end{tabu}
+
+\textbf{ Age }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{18-34} & \cellcolor{gray!15}{290} & \cellcolor{gray!15}{28.98}\\
+35-50 & 220 & 21.98\\
+\cellcolor{gray!15}{51-69} & \cellcolor{gray!15}{349} & \cellcolor{gray!15}{34.87}\\
+70+ & 142 & 14.18\\
+\bottomrule
+\end{tabu}
+
+\textbf{ 2020 Vote Choice }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Didn't vote} & \cellcolor{gray!15}{182} & \cellcolor{gray!15}{18.22}\\
+Donald Trump & 380 & 37.96\\
+\cellcolor{gray!15}{Joe Biden} & \cellcolor{gray!15}{414} & \cellcolor{gray!15}{41.38}\\
+Other & 24 & 2.43\\
+\bottomrule
+\end{tabu}
+
+\textbf{ Born again }
+
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+Response & Frequency & Percent\\
+\midrule
+\cellcolor{gray!15}{Not born again} & \cellcolor{gray!15}{647} & \cellcolor{gray!15}{64.66}\\
+Born again & 353 & 35.34\\
+\bottomrule
+\end{tabu}
+
+\newpage
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+Data were collected from a nationally representative sample of 1,000
+American adults via YouGov. Data were collected between May. 19-25 2022.
+All results are weighted. The survey margin of error is +/- 3.1\%.
+
+\end{document}

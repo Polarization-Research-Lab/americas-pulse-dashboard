@@ -2,6 +2,13 @@
 title: Polarization Research Lab - Data Dashboard -- Build System
 ---
 
+# ToDo
+
+- redo all of this so that we dont have to save data to ".tmp/"
+	- either use sql for the groupby operations or make a tempdir
+
+# About
+
 ![pipeline](_/pipeline.png)
 
 This folder contains a collection of scripts that pull+process data _from_ our primary relational database _to_ the dashboard. Here's what everything does:
