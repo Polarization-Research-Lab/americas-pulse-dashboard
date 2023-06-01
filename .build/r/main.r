@@ -71,40 +71,40 @@ full$date <- as.Date(paste(full$year, full$week_, 1, sep="-"), "%Y-%U-%u")
 ######
 # Make toplines
 ######
-rmarkdown::render(
-  'assets/topline.Rmd',
-  output_file = paste0("toplines/",week_meta$week_labels[week_meta$sort == max(week_meta$sort)],'topline.pdf'), 
-                  params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
-                                label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
-                                week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
-                                year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
-                                t = "", full=""))
+# rmarkdown::render(
+#   'assets/topline.Rmd',
+#   output_file = paste0("toplines/",week_meta$week_labels[week_meta$sort == max(week_meta$sort)],'topline.pdf'), 
+#                   params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
+#                                 label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
+#                                 week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
+#                                 year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
+#                                 t = "", full=""))
   
-file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline.pdf")
-put_object(file, bucket="prlsurveydata")
+# file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline.pdf")
+# put_object(file, bucket="prlsurveydata")
 
-rmarkdown::render('assets/topline.Rmd',output_file = paste0("toplines/",week_meta$week_labels[week_meta$sort == max(week_meta$sort)],'topline_engaged.pdf'), 
-                  params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
-                                label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
-                                week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
-                                year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
-                                t = "engaged", full=""))
+# rmarkdown::render('assets/topline.Rmd',output_file = paste0("toplines/",week_meta$week_labels[week_meta$sort == max(week_meta$sort)],'topline_engaged.pdf'), 
+#                   params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
+#                                 label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
+#                                 week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
+#                                 year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
+#                                 t = "engaged", full=""))
 
-file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline_engaged.pdf")
-put_object(file, bucket="prlsurveydata")
+# file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline_engaged.pdf")
+# put_object(file, bucket="prlsurveydata")
 
-system("aws cloudfront create-invalidation     --distribution-id E2AKD9AJIK78QP     --paths '/*'")
+# system("aws cloudfront create-invalidation     --distribution-id E2AKD9AJIK78QP     --paths '/*'")
 
 
-rmarkdown::render('assets/topline.Rmd',output_file = paste0("toplines/all_topline_engaged.pdf"), 
-                  params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
-                                label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
-                                week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
-                                year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
-                                t = "engaged", full="full"))
+# rmarkdown::render('assets/topline.Rmd',output_file = paste0("toplines/all_topline_engaged.pdf"), 
+#                   params = list(week = week_meta$weeks[week_meta$sort == max(week_meta$sort)], 
+#                                 label = week_meta$week_labels[week_meta$sort == max(week_meta$sort)], 
+#                                 week_number = week_meta$week[week_meta$sort == max(week_meta$sort)],  
+#                                 year_number = week_meta$year[week_meta$sort == max(week_meta$sort)], 
+#                                 t = "engaged", full="full"))
 
-file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline_engaged.pdf")
-put_object(file, bucket="prlsurveydata")
+# file <- paste0("toplines/", week_meta$week_labels[week_meta$sort == max(week_meta$sort)],"topline_engaged.pdf")
+# put_object(file, bucket="prlsurveydata")
 
 
 ######
