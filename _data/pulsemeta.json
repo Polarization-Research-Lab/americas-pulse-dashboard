@@ -1,7 +1,6 @@
-[
-  {
+{
+  "democrat_therm_1": {
     "name": "Democrat Feeling Thermometer",
-    "code": "democrat_therm_1",
     "question_text": "We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. How would you rate your feeling toward Democrats?",
     "type": "quantitative",
     "options":
@@ -11,9 +10,8 @@
     }
   },
 
-  {
+  "republican_therm_1": {
     "name": "Republican Feeling Thermometer",
-    "code": "republican_therm_1",
     "question_text": "We'd like you to rate how you feel towards some groups on a scale of 0 to 100. Zero means very unfavorable and 100 means very favorable. Fifty means you do not feel favorable or unfavorable. How would you rate your feeling toward Republicans?",
     "type": "quantitative",
     "options":
@@ -23,9 +21,8 @@
     }
   },
 
-  {
+  "general_trust": {
     "name": "General Trust",
-    "code": "general_trust",
     "question_text": "Do you think your wallet (or your valuables) would be returned to you if it were found by a stranger? ",
     "type": "qual",
     "options":
@@ -35,9 +32,8 @@
     }
   },
 
-  {
+  "institutional_corruption": {
     "name": "Institutional Corruption",
-    "code": "institutional_corruption",
     "question_text": "If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?",
     "type": "qual",
     "options":
@@ -50,9 +46,8 @@
     }
   },
 
-  {
+  "institutional_response": {
     "name": "Institutional Response",
-    "code": "institutional_response",
     "question_text": "If you were to complain about the poor quality of a public service, how likely or unlikely is it that the problem would be easily resolved? ",
     "type": "qual",
     "options":
@@ -65,9 +60,8 @@
     }
   },
 
-  {
+  "vote_importance": {
     "name": "Importance of Voting",
-    "code": "vote_importance",
     "question_text": "How important or unimportant is it to vote in every election?",
     "type": "qual",
     "options":
@@ -80,9 +74,8 @@
     }
   },
 
-  {
+  "pride": {
     "name": "Pride in Citizenship",
-    "code": "pride",
     "question_text": "How proud are you to be an American?",
     "type": "qual",
     "options":
@@ -95,9 +88,8 @@
     }
   },
 
-  {
+  "fair_treatment": {
     "name": "Fair Treatment by Govt",
-    "code": "fair_treatment",
     "question_text": "Do you agree or disagree that you can expect fair treatment from government authorities?",
     "type": "qual",
     "options":
@@ -111,9 +103,8 @@
     }
   },
 
-  {
+  "maga": {
     "name": "Maga / Never-Trumper",
-    "code": "maga",
     "question_text": "Would you describe yourself as a…",
     "type": "qual",
     "options":
@@ -125,9 +116,8 @@
     }
   },
 
-  {
+  "norm_judges": {
     "name": "Judge Appointments",
-    "code": "norm_judges",
     "question_text": "Do you agree or disagree: {inparty} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by {outparty} presidents.",
     "type": "qual",
     "options":
@@ -140,9 +130,8 @@
     }
   },
 
-  {
+  "norm_judges_perception": {
     "name": "Outparty: Judge Appointments",
-    "code": "norm_judges_perception",
     "question_text": "What percent of {outparty} voters do you think agree with the following: {outparty} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by {inparty} presidents.",
     "type": "quantitative",
     "options":
@@ -152,9 +141,8 @@
     }
   },
 
-  {
+  "norm_polling": {
     "name": "Polling Stations",
-    "code": "norm_polling",
     "question_text": "Do you agree or disagree: {inparty} should reduce the number of polling stations in areas that typically support {outparty}.",
     "type": "qual",
     "options":
@@ -167,9 +155,8 @@
     }
   },
 
-  {
+  "norm_polling_perception": {
     "name": "Outparty: Polling Stations",
-    "code": "norm_polling_perception",
     "question_text": "What percent of {outparty} voters do you think agree with the following: {outparty} should reduce the number of polling stations in areas that typically support {inparty}.",
     "type": "quantitative",
     "options":
@@ -179,9 +166,8 @@
     }
   },
 
-  {
+  "norm_executive": {
     "name": "Use Executive Orders",
-    "code": "norm_executive",
     "question_text": "Do you agree or disagree: If a {inparty} president can't get cooperation from {outparty} members of congress to pass new laws, the {inparty} president should circumvent Congress and issue executive orders on their own to accomplish their priorities.",
     "type": "qual",
     "options":
@@ -194,9 +180,8 @@
     }
   },
 
-  {
+  "norm_executive_perception": {
     "name": "Outparty: Use Executive Orders",
-    "code": "norm_executive_perception",
     "question_text": "What percent of {outparty} voters do you think agree with the following: If a {outparty} president can't get cooperation from {inparty} members of congress to pass new laws, the {outparty} president should issue executive orders on their own to accomplish their priorities.",
     "type": "quantitative",
     "options":
@@ -206,9 +191,8 @@
     }
   },
 
-  {
+  "norm_censorship": {
     "name": "Censorship",
-    "code": "norm_censorship",
     "question_text": "Do you agree or disagree with the following: The government should be able to censor media sources that spend more time attacking {inparty} than {outparty}.",
     "type": "qual",
     "options":
@@ -221,9 +205,8 @@
     }
   },
 
-  {
+  "norm_censorship_perception": {
     "name": "Outparty: Censorship",
-    "code": "norm_censorship_perception",
     "question_text": "What percent of {outparty} voters do you think agree with the following: The government should be able to censor media sources that spend more time attacking {outparty} than {inparty}.",
     "type": "quantitative",
     "options":
@@ -233,9 +216,8 @@
     }
   },
 
-  {
+  "norm_loyalty": {
     "name": "Loyalty to Election Denial",
-    "code": "norm_loyalty",
     "question_text": "Do you agree or disagree with the following: When a {inparty} candidate questions the outcome of an election other {inparty} should be more loyal to the {inparty} party than to election rules and the constitution.",
     "type": "qual",
     "options":
@@ -249,9 +231,8 @@
     }
   },
 
-  {
+  "norm_loyalty_perception": {
     "name": "Outparty: Loyalty to Election Denial",
-    "code": "norm_loyalty_perception",
     "question_text": "What percent of {outparty} voters do you think agree with the following: When a {outparty} questions the outcome of an election other {outparty} should be more loyal to the {outparty} party than to election rules and the constitution.",
     "type": "quantitative",
     "options":
@@ -261,9 +242,8 @@
     }
   },
 
-  {
+  "violence1": {
     "name": "1. Support for Unlawful Protest",
-    "code": "violence1",
     "question_text": "Please consider the following scenarios:  {name} was convicted of protesting without a permit. He was arrested by police after leading a protest against {outparty} on the grounds of the county courthouse. He made no effort to acquire the necessary permit for the protest and refused to leave when asked by police. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -277,9 +257,8 @@
     }
   },
 
-  {
+  "violence2": {
     "name": "2. Support for Vandalism",
-    "code": "violence2",
     "question_text": "{name} was convicted of vandalism. He was arrested by police after he vandalized several large signs expressing support for candidates of the {outparty} party. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -292,9 +271,8 @@
     }
   },
 
-  {
+  "violence3": {
     "name": "3. Support for Assault",
-    "code": "violence3",
     "question_text": "{name} was convicted of assault. He was arrested by police for throwing rocks at peaceful {outparty} protesters. Although no one was  seriously injured, paramedics bandaged a man with a head wound. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -307,9 +285,8 @@
     }
   },
 
-  {
+  "violence4": {
     "name": "4. Support for Arson",
-    "code": "violence4",
     "question_text": "{name} was convicted of arson. He was arrested by police as he attempted to run from a fire he started at the local {outparty} headquarters. Although he waited for the building to close for the night, several adjacent buildings were still occupied. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -322,9 +299,8 @@
     }
   },
 
-  {
+  "violence5": {
     "name": "5. Support for Assault with a Deadly Weapon",
-    "code": "violence5",
     "question_text": "{name} was convicted of assault with a deadly weapon.He was arrested by police after driving his car into a crowd of {outparty} protesters. Although no one was killed, several individuals were seriously injured and one spent a month in the hospital. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -337,9 +313,8 @@
     }
   },
 
-  {
+  "violence6": {
     "name": "6. Support for Murder",
-    "code": "violence6",
     "question_text": "{name} was convicted of murder. He was arrested by police after surveillance footage was found showing him stabbing a prominent {outparty} to death. {name} targeted the victim because he believed the victim had prevented him from voting in the last election as part of a conspiracy to stop {inparty} voters. Do you support or oppose {name}’s actions?",
     "type": "qual",
     "options":
@@ -352,9 +327,8 @@
     }
   },
 
-  {
+  " In what year were you born?": {
     "name": "Birth Year",
-    "code": " In what year were you born?",
     "question_text": "Year of Birth",
     "type": "quantitative",
     "options":
@@ -364,9 +338,8 @@
     }
   },
 
-  {
+  "gender": {
     "name": "Gender",
-    "code": "gender",
     "question_text": "Are you male or female?",
     "type": "qual",
     "options":
@@ -376,9 +349,8 @@
     }
   },
 
-  {
+  "race": {
     "name": "Race",
-    "code": "race",
     "question_text": "What racial or ethnic group best describes you?",
     "type": "qual",
     "options":
@@ -394,9 +366,8 @@
     }
   },
 
-  {
+  "hispanic": {
     "name": "Hispanic",
-    "code": "hispanic",
     "question_text": "Are you of Spanish, Latino, or Hispanic origin or descent?",
     "type": "qual",
     "options":
@@ -406,9 +377,8 @@
     }
   },
 
-  {
+  "speakspanish": {
     "name": "Spanish Speaking",
-    "code": "speakspanish",
     "question_text": "Do you speak Spanish on a regular basis?",
     "type": "qual",
     "options":
@@ -420,9 +390,8 @@
     }
   },
 
-  {
+  "educ": {
     "name": "Education",
-    "code": "educ",
     "question_text": "What is the highest level of education you have completed?",
     "type": "qual",
     "options":
@@ -436,9 +405,8 @@
     }
   },
 
-  {
+  "marstat": {
     "name": "Marital Status",
-    "code": "marstat",
     "question_text": "What is your marital status?",
     "type": "qual",
     "options":
@@ -452,9 +420,8 @@
     }
   },
 
-  {
+  "employ": {
     "name": "Employment",
-    "code": "employ",
     "question_text": "Which of the following best describes your current employment status?",
     "type": "qual",
     "options":
@@ -471,9 +438,8 @@
     }
   },
 
-  {
+  "faminc_new": {
     "name": "Income",
-    "code": "faminc_new",
     "question_text": "Thinking back over the last year, what was your family’s annual income?",
     "type": "qual",
     "options":
@@ -498,9 +464,8 @@
     }
   },
 
-  {
+  "child18": {
     "name": "Children",
-    "code": "child18",
     "question_text": "Are you the parent or guardian of any children under the age of 18?",
     "type": "qual",
     "options":
@@ -510,9 +475,8 @@
     }
   },
 
-  {
+  "pid": {
     "name": "Party Affiliation",
-    "code": "pid3",
     "question_text": "Generally speaking, do you think of yourself as a…?",
     "type": "qual",
     "options":
@@ -523,9 +487,20 @@
     }
   },
 
-  {
+  "pid3": {
+    "name": "Party Affiliation",
+    "question_text": "Generally speaking, do you think of yourself as a…?",
+    "type": "qual",
+    "options":
+    {
+      "1": "Democrat",
+      "2": "Republican",
+      "3": "Independent"
+    }
+  },
+
+  "pid7": {
     "name": "Party Affiliation Strength",
-    "code": "pid7",
     "question_text": "[Coded from pid3 and follow-up questions] If Democrat selected: 'Would you call yourself a strong Democrat or a not very strong Democrat?'; If Republican selected: 'Would you call yourself a strong Republican or a not very strong Republican?'; If Independent, Other, or Not sure selected: 'Do you think of yourself as a closer to the Democratic or the Republican Party?'",
     "type": "qual",
     "options":
@@ -540,9 +515,8 @@
     }
   },
 
-  {
+  "presvote16post": {
     "name": "Presidential Vote in the 2016 Election",
-    "code": "presvote16post",
     "question_text": "Who did you vote for in the election for President in 2016?",
     "type": "qual",
     "options":
@@ -557,9 +531,8 @@
     }
   },
 
-  {
+  "presvote20post": {
     "name": "Presidential Vote in the 2020 Election",
-    "code": "presvote20post",
     "question_text": "Who did you vote for in the election for President in 2020?",
     "type": "qual",
     "options":
@@ -573,9 +546,8 @@
     }
   },
 
-  {
+  "inputstate": {
     "name": "State of Residence",
-    "code": "inputstate",
     "question_text": "What is your State of Residence?",
     "type": "qual",
     "options":
@@ -634,9 +606,8 @@
     }
   },
 
-  {
+  "urbanicity2": {
     "name": "Residence type",
-    "code": "urbanicity2",
     "question_text": "In what sort of place do you currently live?",
     "type": "qual",
     "options":
@@ -649,9 +620,8 @@
     }
   },
 
-  {
+  "votereg": {
     "name": "Voter Registration",
-    "code": "votereg",
     "question_text": "Are you registered to vote?",
     "type": "qual",
     "options":
@@ -662,9 +632,8 @@
     }
   },
 
-  {
+  "ideo5": {
     "name": "Political Ideology",
-    "code": "ideo5",
     "question_text": "In general, how would you describe your own political viewpoint?",
     "type": "qual",
     "options":
@@ -678,9 +647,8 @@
     }
   },
 
-  {
+  "newsint": {
     "name": "Political Interest",
-    "code": "newsint",
     "question_text": "Some people seem to follow what’s going on in government and public affairs most of the time, whether there’s an election going on or not. Others aren’t that interested. Would you say you follow what’s going on in government and public affairs…",
     "type": "qual",
     "options":
@@ -693,9 +661,8 @@
     }
   },
 
-  {
+  "religpew": {
     "name": "Religion",
-    "code": "religpew",
     "question_text": "What is your present religion, if any?",
     "type": "qual",
     "options":
@@ -716,9 +683,8 @@
     }
   },
 
-  {
+  "pew_churatd": {
     "name": "Church Attendance",
-    "code": "pew_churatd",
     "question_text": "Aside from wedding and funerals, how often do you attend religious services?",
     "type": "qual",
     "options":
@@ -734,9 +700,8 @@
     }
   },
 
-  {
+  "pew_bornagain": {
     "name": "Born Again Christian",
-    "code": "pew_bornagain",
     "question_text": "Would you describe yourself as a “born-again”, or evangelical Christian, or not?",
     "type": "qual",
     "options":
@@ -746,9 +711,8 @@
     }
   },
 
-  {
+  "pew_religimp": {
     "name": "Importance of Religion",
-    "code": "pew_religimp",
     "question_text": "How important is religion in your life?",
     "type": "qual",
     "options":
@@ -760,9 +724,8 @@
     }
   },
 
-  {
+  "pew_prayer": {
     "name": "Frequency of Prayer",
-    "code": "pew_prayer",
     "question_text": "People practice their religion in different ways. Outside of attending religious services, how often do you pray?",
     "type": "qual",
     "options":
@@ -776,5 +739,18 @@
       "7": "Never",
       "8": "Don't know"
     }
+  },
+
+  "age": {
+    "name": "Age",
+    "question_text": null,
+    "type": "quant",
+    "options":
+    {
+      "1": "18-34",
+      "2": "35-50",
+      "3": "51-69",
+      "4": "70+"
+    }
   }
-]
+}
