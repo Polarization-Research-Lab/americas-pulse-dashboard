@@ -70,13 +70,13 @@ In our research (and on our public visualizations), we calculate "affective pola
 6. For Republicans, calculate: `republican_therm_1 - democrat_therm_1`
 7. Remove anyone with a negative score
 
-### The `starttime` and `endtime` Variables
+## The `starttime` and `endtime` Variables
 
 The start and end time columns mark when a participant starts and finishes our survey. We often find that participants start our survey to claim a spot in the YouGov panel, but then opt to finish the bulk of the survey later. For this reason, we often use end times for any time-series analyses.
 
-### The `engagement_measure` Variable
+## The `engagement_measure` Variable
 
-#### September 2022 - June 2023
+### September 2022 - June 2023
 
 For the engagement measure, we show participants a passage about a wildlife funding program for a particular state. The passage is then removed, and participants are asked what state (of 7 possible options) the passage referred to. We've recoded this data to label participants as "engaged" or "not engaged" based on whether they guessed the correct state.
 
