@@ -1,6 +1,6 @@
 ---
 layout: datatab
-icon: fas fa-info-circle
+icon: fas fa-face-angry
 order: 1
 params: 
   # variable name: type (checkbox, slider, interval slider)

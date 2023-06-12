@@ -1,6 +1,6 @@
 ---
 layout: datatab
-icon: fas fa-info-circle
+icon: fas fa-handshake
 order: 4
 ---
 <script src="{{ site.baseurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>

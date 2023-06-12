@@ -1,10 +1,25 @@
 ---
 layout: downloads
 order: 5
-icon: fas fa-info-circle
+icon: fas fa-download
 ---
 
 <h1 class = 'text-center'>Downloads</h1>
+
+The [America's Pulse Survey](https://polarizationresearchlab.org/americas-political-pulse/) is collected each week using participants from the [YouGov panel](https://yougov.com/).
+
+- click here to view the [survey question details]({{ site.baseurl }}/meta)
+- click here to view the [changelog](https://docs.google.com/document/d/1HwQb6z5m6_l_Y1FZ0fQi5m8tFy753z9XbJofEkcli0k/edit#)
+
+If you use our data in your research, we humbly ask that you cite our lab 🙏:
+
+> Shanto Iyengar, Yphtach Lelkes and Sean Westwood. (2023). America’s Political Pulse. https://polarizationresearchlab.org/americas-political-pulse/.
+
+
+
+<br>
+<hr>
+<br>
 
 <div class = 'row'>
   <div class = 'col-6'>
@@ -31,28 +46,19 @@ icon: fas fa-info-circle
   </div>
 </div>
 
-
 <br>
-<hr>
-<br>
-
-The [America's Pulse Survey](https://polarizationresearchlab.org/americas-political-pulse/) is collected each week using participants from the [YouGov panel](https://yougov.com/).
-
-A specific description of each variable in the survey can be found [here](https://drive.google.com/file/d/1S5b3-OyktijpSs46QCWwwtOqJjYZtQ0U/view?usp=share_link).
 
 \*Data is distributed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License</a>.
 
+<hr>
 
-## Citation
+<h1 class = 'text-center'>Notes</h1>
 
-If you use our data in your research, we humbly ask that you cite our lab 🙏:
+## What is the file naming convention?
 
-> Shanto Iyengar, Yphtach Lelkes and Sean Westwood. (2023). America’s Political Pulse. https://polarizationresearchlab.org/americas-political-pulse/.
+Each file is titled with the following convention: `<year>_week<week_number>.csv`, where `<week_number>` is the nth week of that year. We started conducting the America's Pulse Survey in the 38th week of 2022.
 
-
-## Notes
-
-### How do I calculate "Affective Polarization"?
+## How do I calculate "Affective Polarization"?
 
 In our research (and on our public visualizations), we calculate "affective polarization" exactly as follows:
 
@@ -70,6 +76,11 @@ The start and end time columns mark when a participant starts and finishes our s
 
 ### The `engagement_measure` Variable
 
+#### September 2022 - June 2023
+
 For the engagement measure, we show participants a passage about a wildlife funding program for a particular state. The passage is then removed, and participants are asked what state (of 7 possible options) the passage referred to. We've recoded this data to label participants as "engaged" or "not engaged" based on whether they guessed the correct state.
 
+<!-- #### June 2023 - present -->
+
 <script src="{{ site.baseurl }}/assets/js/download-btn.js"></script>
+

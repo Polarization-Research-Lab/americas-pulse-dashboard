@@ -25,6 +25,7 @@ assets/js/dist
 .DS_Store
 __pycache__/
 .build/.tmp/*
+.build/.logs/*
 ._/
 _/
 

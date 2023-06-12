@@ -8,6 +8,7 @@ params:
   year_number: 
   t: 
   full:
+subparagraph: yes
 geometry: margin=1.5cm
 output: 
   pdf_document:
@@ -597,10 +598,10 @@ for(i in 1:length(outcomes)){
   }
     
   cat("\\textbf{Responses}")
-  print(a)
+  print(a) # <-- this are causing errors on the main server
   cat("\n")
     cat("\\textbf{Responses by Demographics}")
-  print(b)
+  print(b) # <-- this are causing errors on the main server
   if(questions$notes[i] != ""){
       cat(paste("\\footnotesize Notes: ",questions$notes[i]))
   }
@@ -645,7 +646,7 @@ for(j in 1:length(controls)){
       label <- "Born again"
     }
     cat(paste("\\textbf{", label, "}"))
-    cat(a)
+    cat(a) # <-- this are causing errors on the main server
 
 }
 ```
