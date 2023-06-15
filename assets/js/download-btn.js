@@ -14,8 +14,8 @@ var btn = document.getElementById('download-btn-week-topline')
 btn.onclick = function () {
     var selectInput = document.getElementById('dlselectbox')
     var selected = selectInput.options[selectInput.selectedIndex]
-    var file = 'pulse/toplines/' + selected.dataset.year + '_week' + selected.dataset.week' + '.pdf'
+    var file = 'pulse/toplines/' + selected.dataset.year + '_week' + selected.dataset.week + '.pdf'
 
     // window.location.href = 'https://dtwknrym6jvxy.cloudfront.net/' + file;
-    window.open('https://d2goaxv8lbgkdm.cloudfront.net' + file);
+    window.open('https://d2goaxv8lbgkdm.cloudfront.net/' + file);
 }
