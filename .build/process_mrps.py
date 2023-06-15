@@ -16,7 +16,6 @@ process = subprocess.Popen(
 
 process.wait()
 
-
 # Maps
 affpol = pd.read_csv(".tmp/affpol-mrp.csv")
 affpol = affpol.groupby("region").mean()["outcome"].round(2)
