@@ -2,7 +2,7 @@ print('=== running: pull_data ===')
 import pull_data
 print('---done---')
 print('=== running: process_mrps ===')
-# import process_mrps
+import process_mrps
 print('---done---')
 print('=== running: process_affpol ===')
 import process_affpol
