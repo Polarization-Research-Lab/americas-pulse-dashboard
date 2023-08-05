@@ -15,7 +15,7 @@ order: 2
       <p>Each week, we ask Americans which norms, if any, they would support elected officials violating.</p>
     </div>
 
-    <div class = 'col-9'>
+    <div class = 'col-6'>
       <h3 class = 'text-center'>Avg # of Norm Violations Supported (by Region)</h3>
       <div class = 'col-12' id='demnorm-map-div'>
         <canvas id='demnorm-map'></canvas>
