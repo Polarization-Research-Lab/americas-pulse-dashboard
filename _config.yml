@@ -21,7 +21,7 @@ timezone: America/New_York
 
 title: America's Political Pulse # the main title
 
-tagline: Explore our publicly available data # it will display as the sub-title
+tagline:  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A dashboard for viewing data collected by the Polarization Research Lab
