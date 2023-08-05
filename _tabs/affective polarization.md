@@ -24,7 +24,22 @@ params:
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-nat-avg" data-gauge="{{ site.data.meta.affpol_nat_avg }}"></script>
     <p class = 'text-center'>{{ site.data.meta.affpol_nat_avg }}%</p>
  -->
-    <div class = "row">
+    
+  </div>
+
+  <div class='col-6'>
+    <div class='row' id='affpol-map-div'>
+      <canvas id = "affpol-map" class=""></canvas>
+      <script src='{{ site.baseurl }}/assets/js/charts/map.js' data-canvasid="affpol-map" data-source="{{ site.baseurl }}/assets/data/affpol-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class = 'row chartrow chart' id='affpol-row-2'>
+<div class = "row">
       <div class = 'col-6'>
         <h5 class = 'gauge-heading'>Democrats:</h5>
         <div class = 'gauge-div'>
@@ -44,20 +59,9 @@ params:
       </div>
 
     </div>
-  </div>
-
-  <div class='col-6'>
-    <div class='row' id='affpol-map-div'>
-      <canvas id = "affpol-map" class=""></canvas>
-      <script src='{{ site.baseurl }}/assets/js/charts/map.js' data-canvasid="affpol-map" data-source="{{ site.baseurl }}/assets/data/affpol-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
-    </div>
-
-
-  </div>
-
 </div>
 
-<div class = 'row chartrow chart' id='affpol-row-2'>
+<div class = 'row chartrow chart' id='affpol-row-3'>
 
     <div class='col-6' id='affpol-time-div'>
       <canvas id = "affpol-time" class=""></canvas>
@@ -76,11 +80,11 @@ params:
         </div>
     </div>
 
-</div> <!-- end row2 -->
+</div> <!-- end row3 -->
 
 
-<!-- row 3 -->
-<div class = 'row chartrow chart' id='affpol-row-3'>
+<!-- row 4 -->
+<div class = 'row chartrow chart' id='affpol-row-4'>
 
   <!-- info -->
   <div class='col-3' id='affpol-hist-info'>
