@@ -26,7 +26,7 @@ params:
  -->
     <div class = "row">
       <div class = 'col-6'>
-        <h3 class = 'gauge-heading'>Democrats:</h3>
+        <h5 class = 'gauge-heading'>Democrats:</h5>
         <div class = 'gauge-div'>
           <canvas id = "affpol-dem-avg" class="gauge"></canvas>
           <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-dem-avg" data-gauge="{{ site.data.meta.affpol_dem_avg }}"></script>
@@ -35,7 +35,7 @@ params:
       </div>
 
       <div class = 'col-6'>
-        <h3 class = 'gauge-heading'>Republicans:</h3>
+        <h5 class = 'gauge-heading'>Republicans:</h5>
         <div class = 'gauge-div'>
           <canvas id = "affpol-rep-avg" class="gauge"></canvas>
           <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-rep-avg" data-gauge="{{ site.data.meta.affpol_rep_avg }}"></script>
@@ -46,7 +46,7 @@ params:
     </div>
   </div>
 
-  <div class='col-8'>
+  <div class='col-6'>
     <div class='row' id='affpol-map-div'>
       <canvas id = "affpol-map" class=""></canvas>
       <script src='{{ site.baseurl }}/assets/js/charts/map.js' data-canvasid="affpol-map" data-source="{{ site.baseurl }}/assets/data/affpol-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
@@ -59,13 +59,13 @@ params:
 
 <div class = 'row chartrow chart' id='affpol-row-2'>
 
-    <div class='col-9' id='affpol-time-div'>
+    <div class='col-6' id='affpol-time-div'>
       <canvas id = "affpol-time" class=""></canvas>
       <script src='{{ site.baseurl }}/assets/js/charts/affpol-time.js' data-canvasid="affpol-time"></script>
     </div>
 
     <div class='col-3' id='affpol-time-info'>
-        <h2><span class="mr-2">Is it getting better or worse?</span><a href="#is-it-getting-better-or-worse?" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+        <h5><span class="mr-2">Is it getting better or worse?</span><a href="#is-it-getting-better-or-worse?" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
         <p>The y-axis shows the level of polarization, averaged across each week.</p>
         <!-- <p>Our national sample's average amount of polarization is <b>{{ site.data.meta.affpol_nat_avg }}</b>.</p> -->
         <!-- <p>The average from our last survey was <b>{{ site.data.meta.affpol_nat_avg }}</b>.</p> -->
@@ -98,12 +98,12 @@ params:
 
   <div class='col-9 row d-flex justify-content-center' id='affpol-hists'>
 
-    <div class='col-12 affpol-hist-container'>
+    <div class='col-9 affpol-hist-container'>
 
       <div class=''>
-        <h3 class = 'text-center'>Democrats</h3>
+        <h5 class = 'text-center'>Democrats</h5>
         <br>
-        <div class='col-12 affpoll-hist-div'>
+        <div class='col-9 affpoll-hist-div'>
           <canvas id = "affpol-dem-hist" class="affpol-hist"></canvas>
           <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/affpol-hist.js" data-canvasid="affpol-dem-hist" data-source="{{ site.baseurl }}/assets/data/affpol-hist-dem.json"></script>
         </div> 
@@ -120,10 +120,10 @@ params:
 
     <hr>
 
-    <div class='col-12 affpol-hist-container'>
+    <div class='col-9 affpol-hist-container'>
       
       <div class=''>
-        <h3 class = 'text-center'>Republicans</h3>
+        <h5 class = 'text-center'>Republicans</h5>
         <br>
         <div class='col-12 affpoll-hist-div'>
           <canvas id = "affpol-rep-hist" class="affpol-hist"></canvas>

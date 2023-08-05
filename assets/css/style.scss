@@ -40,9 +40,9 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 #home-affpol-time-div-up {
-  background-color: rgba(200,0,0,.03);
+
   padding-top: 20px;
-  border-radius: 30px;
+
 }
 
 #home-affpol-time-div {
@@ -71,7 +71,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
   transition: all .2s ease-in-out;
 
   // height: 100%;
-  width: 400px;
+  width: 20%;
   // margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -269,7 +269,6 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
   #affpol-time-div {
     height: 350px;
     width: 100% !important;
-    background-color: rgba(0,0,200,.03); border-radius: 30px;
     padding: 20px;
   }
 
@@ -409,11 +408,11 @@ h3 {
 #demnorm-map-div {
   // width: 100%;
   height: 400px; 
-  background-color: rgba(0,0,0,.03); border-radius: 30px;
+
 }
 
 #demnorm-map {
-  padding: 25px;
+  padding: 5px;
 }
 
 #demnorm-title {
@@ -431,9 +430,9 @@ h3 {
 
 #demnorm-lines-div {
   // width: 100%;
-  height: 400px;
-  background-color: rgba(0,0,200,.03); border-radius: 30px;
-  padding: 20px;
+  height: 300px;
+
+  padding: 5px;
 }
 
 #demnormline-btn-div {
