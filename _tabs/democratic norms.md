@@ -28,7 +28,7 @@ order: 2
 
 <div class = 'row' id='demnorm-row-2'>
 
-    <div class='row col-9' id='demnorm-lines-div'>
+    <div class='row col-6' id='demnorm-lines-div'>
       <canvas id = 'demnorm-lines'></canvas>
       <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-lines.js" data-canvasid="demnorm-lines"></script>
       <div id="demnorms-legend" style='background-color: red;'></div>
