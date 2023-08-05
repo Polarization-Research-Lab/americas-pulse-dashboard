@@ -96,9 +96,9 @@ params:
     <p><b>Vertical dashed line:</b> Average</p>
   </div>
 
-  <div class='col-9 row d-flex justify-content-center' id='affpol-hists'>
+  <div class='col-6 row d-flex justify-content-center' id='affpol-hists'>
 
-    <div class='col-9 affpol-hist-container'>
+    <div class='col-6 affpol-hist-container'>
 
       <div class=''>
         <h5 class = 'text-center'>Democrats</h5>
@@ -120,7 +120,7 @@ params:
 
     <hr>
 
-    <div class='col-9 affpol-hist-container'>
+    <div class='col-6 affpol-hist-container'>
       
       <div class=''>
         <h5 class = 'text-center'>Republicans</h5>
