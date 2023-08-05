@@ -12,7 +12,7 @@ $tab-count: {{ site.tabs | size | plus: 0 }}; // plus 1 for home tab (removed si
 /* append your custom style below */
 $sidebar-display: 'sidebar-display';
 
-html, body {height: 100%; background-color: rgba(255,255,255,1);}
+html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 #blank {
   width: 100%;
