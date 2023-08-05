@@ -83,7 +83,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 .home-gauge-div {
-  width: 600px;
+  width: 20%;
   padding: 10px;
 }
 
@@ -238,7 +238,6 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
     // margin: 0;
     // width: 100%;
     height: 400px;
-    background-color: rgba(0,0,0,.03); border-radius: 30px;
     padding: 30px;
   }
 
@@ -365,11 +364,11 @@ h3 {
 }
 
 .violence-line-div {
-    background-color: rgba(200,0,0,.03); border-radius: 30px;
+
     padding: 20px;
 }
 .violence-line-div-alt {
-    background-color: rgba(0,0,200,.03); border-radius: 30px;
+
 }
 
 #violence-title-div {
@@ -477,8 +476,6 @@ h3 {
 
 .norm-chart-div-parent {
   transition: all .2s ease-in-out;
-  // background-color: rgba(255,245,245,1); border-radius: 30px;
-  background-color: rgba(200,0,0,.03); border-radius: 30px;
   padding-bottom: 10px;
   height: 100%;
 }
@@ -531,13 +528,13 @@ h3 {
 // }
 
 .trustval-line-div {
-  background-color: rgba(200,0,0,.03); border-radius: 30px;
+
   height: 300px;
   padding: 30px;
 }
 
 .trustval-line-div-alt {
-  background-color: rgba(0,0,200,.03); border-radius: 30px;
+
 }
 
 
