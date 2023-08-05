@@ -53,7 +53,7 @@ order: 2
   <div id='SupportPartyHeader'><h2><span class="mr-2">Support for Norm Violations by Party.</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2></div>
 
   <div class='norm-chart-container'>
-    <div class='row col-12 norm-row'>
+    <div class='row col-8 norm-row'>
 
       <div class='col-4'> 
         <div class = 'norm-chart-div-parent'>
@@ -75,8 +75,8 @@ order: 2
           <div class='norm-party-header'><h3 class='text-center'>Support for Reducing the # of Polling Stations</h3></div>
         </div>
       </div>
-
-
+    </div>
+    <div class='row col-8 norm-row'>
       <div class='col-4'> 
 
         <div class = 'norm-chart-div-parent'>
@@ -89,11 +89,11 @@ order: 2
       </div>
 
 
-    </div>
+   
 
     <br>
 
-    <div class='row col-12 justify-content-center norm-row'>
+    <div class='row col-8 justify-content-center norm-row'>
 
       <div class='col-4'> 
         <div class = 'norm-chart-div-parent'>
@@ -105,7 +105,8 @@ order: 2
         </div>
       </div>
 
-
+    </div>
+    <div class='row col-8 norm-row'>
       <div class='col-4'> 
         <div class = 'norm-chart-div-parent'>
           <div class = 'norm-chart-div'>
