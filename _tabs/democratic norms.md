@@ -17,7 +17,7 @@ order: 2
 
     <div class = 'col-6'>
       <h3 class = 'text-center'>Avg # of Norm Violations Supported (by Region)</h3>
-      <div class = 'col-12' id='demnorm-map-div'>
+      <div class = 'col-6' id='demnorm-map-div'>
         <canvas id='demnorm-map'></canvas>
         <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/map.js" data-canvasid="demnorm-map"  data-source="{{ site.baseurl }}/assets/data/demnorm-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
       </div>
