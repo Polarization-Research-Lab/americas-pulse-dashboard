@@ -14,7 +14,7 @@ params:
 <!-- row 1 -->
 <br>
 <br>
-<h2>3<span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2>4<span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Each week, we ask a thousand Americans how they feel about their own political party, as well as how they feel about the opposing political party. <emph>Affective polarization</emph> is the difference between the two <sup><a href = "https://academic.oup.com/poq/article-abstract/76/3/405/1894274">[Iyengar et al., 2012]</a></sup>.</p>
 
 <h3>Affective polarization by state</h3>
