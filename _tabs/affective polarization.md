@@ -29,7 +29,7 @@ params:
 <h3>Avergae level of polarizaiton by party</h3>
 <p>(more is worse)</p>
 <div class = 'row chartrow chart'>
-  <div class = 'col-4'>
+  <div class = 'col-6'>
     <h5 class = 'gauge-heading'>Democrats:</h5>
     <div class = 'gauge-div'>
       <canvas id = "affpol-dem-avg" class="gauge"></canvas>
@@ -38,11 +38,11 @@ params:
     </div>
   </div>
 
-  <div id = 'col1'>
+  <div id = 'col2'>
     <p>&nbsp;</p>
   </div>
 
-  <div class = 'col-4'>
+  <div class = 'col-6'>
     <h5 class = 'gauge-heading'>Republicans:</h5>
     <div class = 'gauge-div'>
       <canvas id = "affpol-rep-avg" class="gauge"></canvas>
@@ -76,7 +76,7 @@ params:
   
   <div class='row d-flex justify-content-center' id='affpol-hists'>
     <div class='affpol-hist-container'>
-      <div class=''>
+      <div class='col-6'>
         <h5 class = 'text-center'>Democrats</h5>
         <br>
         <div class='affpoll-hist-div'>
@@ -87,7 +87,7 @@ params:
     </div>
     <hr>
     <div class='affpol-hist-container'>
-      <div class=''>
+      <div class='col-6'>
         <h5 class = 'text-center'>Republicans</h5>
         <br>
         <div class='affpoll-hist-div'>
@@ -96,6 +96,7 @@ params:
         </div> 
       </div> 
     </div>
+    <br>
     <p><b>Vertical dashed line:</b> Average</p>
   </div>
 
