@@ -25,7 +25,7 @@ html {
     }
   }
 
-  font-size: 16px;
+  font-size: 14pt;
 }
 
 body {
@@ -718,7 +718,7 @@ $sidebar-display: 'sidebar-display';
   left: 0;
   height: 100%;
   overflow-y: auto;
-  width: $sidebar-width;
+  width: 250px;
   z-index: 99;
   // background: var(--sidebar-bg);
   background: rgba(210, 210, 210, 0);
@@ -799,19 +799,19 @@ $sidebar-display: 'sidebar-display';
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    display: hide;
   }
 
   .nav-link {
     border-radius: 0;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 1px;
     display: table-cell;
     vertical-align: middle;
   }
 
   .nav-item {
-    text-align: center;
+    text-align: left;
     display: table;
     height: $tab-height;
 
