@@ -12,49 +12,42 @@ params:
 <script src="{{ site.baseurl }}/assets/js/chartjs-plugin-annotation.min.js"></script>
 
 <!-- row 1 -->
+
+<h2><span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Each week, we ask a thousand Americans how they feel about their own political party, as well as how they feel about the opposing political party. <emph>Affective polarization</emph> is the difference between the two <sup><a href = "https://academic.oup.com/poq/article-abstract/76/3/405/1894274">[Iyengar et al., 2012]</a></sup>.</p>
+
 <div class='row chartrow chart' id='affpol-row-1'>
-
-  <!-- info -->
-  <div class='col1' id='affpol-row-1-info'>
-    <h2><span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-    <p>Each week, we ask a thousand Americans how they feel about their own political party, as well as how they feel about the opposing political party. <emph>Affective polarization</emph> is the difference between the two <sup><a href = "https://academic.oup.com/poq/article-abstract/76/3/405/1894274">[Iyengar et al., 2012]</a></sup>.</p>
-
-    
-  </div>
-
-  <div class='col-2'>
     <div class='row' id='affpol-map-div'>
       <canvas id = "affpol-map" class=""></canvas>
       <script src='{{ site.baseurl }}/assets/js/charts/map.js' data-canvasid="affpol-map" data-source="{{ site.baseurl }}/assets/data/affpol-map.json" data-scaleminlabel = "Less" data-scalemaxlabel = "More"></script>
-    </div>
   </div>
-
 </div>
 
 <div class = 'row chartrow chart' id='affpol-row-2'>
-      <div class = 'col-2'>
-        <h5 class = 'gauge-heading'>Democrats:</h5>
-        <div class = 'gauge-div'>
-          <canvas id = "affpol-dem-avg" class="gauge"></canvas>
-          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-dem-avg" data-gauge="{{ site.data.meta.affpol_dem_avg }}"></script>
-          <p class = 'text-center'>{{ site.data.meta.affpol_dem_avg }}%</p>
-        </div>
-      </div>
-
-      <div class= 'col1'>
-        &nbsp;
-      <\div>
-
-      <div class = 'col-2'>
-        <h5 class = 'gauge-heading'>Republicans:</h5>
-        <div class = 'gauge-div'>
-          <canvas id = "affpol-rep-avg" class="gauge"></canvas>
-          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-rep-avg" data-gauge="{{ site.data.meta.affpol_rep_avg }}"></script>
-          <p class = 'text-center'>{{ site.data.meta.affpol_rep_avg }}%</p>
-        </div>
-      </div>
-
+<h3>Avergae level of polarizaiton by party</h3>
+<p>(more is worse)</p>
+  <div class = 'col-2'>
+    <h5 class = 'gauge-heading'>Democrats:</h5>
+    <div class = 'gauge-div'>
+      <canvas id = "affpol-dem-avg" class="gauge"></canvas>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-dem-avg" data-gauge="{{ site.data.meta.affpol_dem_avg }}"></script>
+      <p class = 'text-center'>{{ site.data.meta.affpol_dem_avg }}</p>
     </div>
+  </div>
+
+  <div class = 'col1'>
+    &nbsp;
+  <\div>
+
+  <div class = 'col-2'>
+    <h5 class = 'gauge-heading'>Republicans:</h5>
+    <div class = 'gauge-div'>
+      <canvas id = "affpol-rep-avg" class="gauge"></canvas>
+      <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-rep-avg" data-gauge="{{ site.data.meta.affpol_rep_avg }}"></script>
+      <p class = 'text-center'>{{ site.data.meta.affpol_rep_avg }}</p>
+    </div>
+  </div>
+
 </div><!-- end row2 -->
 
 <div class = 'row chartrow chart' id='affpol-row-3'>
