@@ -117,7 +117,7 @@ function build () {
               // },
               legend: {
                 display: true,
-                position: 'right',
+                position: 'bottom',
                 labels: {
                   font: {
                     size: 20,
