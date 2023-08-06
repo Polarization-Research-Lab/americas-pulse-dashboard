@@ -14,7 +14,7 @@ params:
 <!-- row 1 -->
 <br>
 <br>
-<h2>4<span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2><span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Each week, we ask a thousand Americans how they feel about their own political party, as well as how they feel about the opposing political party. <emph>Affective polarization</emph> is the difference between the two <sup><a href = "https://academic.oup.com/poq/article-abstract/76/3/405/1894274">[Iyengar et al., 2012]</a></sup>.</p>
 
 <h3>Affective polarization by state</h3>
@@ -29,7 +29,7 @@ params:
 <h3>Avergae level of polarizaiton by party</h3>
 <p>(more is worse)</p>
 <div class = 'row chartrow chart'>
-  <div class = 'col-6'>
+  <div>
     <h5 class = 'gauge-heading'>Democrats:</h5>
     <div class = 'gauge-div'>
       <canvas id = "affpol-dem-avg" class="gauge"></canvas>
@@ -38,11 +38,11 @@ params:
     </div>
   </div>
 
-  <div id = 'col2'>
+  <div>
     <p>&nbsp;</p>
   </div>
 
-  <div class = 'col-6'>
+  <div>
     <h5 class = 'gauge-heading'>Republicans:</h5>
     <div class = 'gauge-div'>
       <canvas id = "affpol-rep-avg" class="gauge"></canvas>
@@ -76,7 +76,7 @@ params:
   
   <div class='row d-flex justify-content-center' id='affpol-hists'>
     <div class='affpol-hist-container'>
-      <div class='col-6'>
+      <div>
         <h5 class = 'text-center'>Democrats</h5>
         <br>
         <div class='affpoll-hist-div'>
@@ -87,7 +87,7 @@ params:
     </div>
     <hr>
     <div class='affpol-hist-container'>
-      <div class='col-6'>
+      <div>
         <h5 class = 'text-center'>Republicans</h5>
         <br>
         <div class='affpoll-hist-div'>
