@@ -23,7 +23,7 @@ order: 3
 </div>
 
 
-<div class = 'row chartrow chart violence-row violence-row-alt'>
+<div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Protesting Without a Permit</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
@@ -38,7 +38,7 @@ order: 3
 </div>
 
 
-<div class = 'row chartrow chart violence-row'>
+<div class = 'row chartrow violence-row'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Vandalism</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
@@ -52,7 +52,7 @@ order: 3
   </div>
 </div>
 
-<div class = 'row chartrow chart violence-row violence-row-alt'>
+<div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Assault</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
@@ -66,7 +66,7 @@ order: 3
   </div>
 </div>
 
-<div class = 'row chartrow chart violence-row'>
+<div class = 'row chartrow violence-row'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Arson</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
@@ -80,7 +80,7 @@ order: 3
   </div>
 </div>
 
-<div class = 'row chartrow chart violence-row violence-row-alt'>
+<div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Assault with a Deadly Weapon</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
@@ -94,7 +94,7 @@ order: 3
   </div>
 </div>
 
-<div class = 'row chartrow chart violence-row'>
+<div class = 'row chartrow violence-row'>
   <div class='chart'>
     <h5><span class="mr-2">Support for Murder</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
     <h4>What we ask:</h4>
