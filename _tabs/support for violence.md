@@ -22,7 +22,7 @@ order: 3
 
 </div>
 
-<h5><span class="mr-2">Support for Protesting Without a Permit</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Protesting Without a Permit</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
 
@@ -37,7 +37,7 @@ order: 3
   </div>
 </div>
 
-<h5><span class="mr-2">Support for Vandalism</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Vandalism</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -51,7 +51,7 @@ order: 3
   </div>
 </div>
 
-<h5><span class="mr-2">Support for Assault</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Assault</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -65,7 +65,7 @@ order: 3
   </div>
 </div>
 
-<h5><span class="mr-2">Support for Arson</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Arson</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -79,7 +79,7 @@ order: 3
   </div>
 </div>
 
-<h5><span class="mr-2">Support for Assault with a Deadly Weapon</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Assault with a Deadly Weapon</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -93,7 +93,7 @@ order: 3
   </div>
 </div>
 
-<h5><span class="mr-2">Support for Murder</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
+<h2><span class="mr-2">Support for Murder</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
     <h4>What we ask:</h4>
