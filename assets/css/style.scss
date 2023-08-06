@@ -114,8 +114,8 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
   min-width: 800px;
   overflow-x: scroll;
   overflow-y: scroll;
-  padding: 50px;
-  padding-bottom: 100px;
+  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .chart {
@@ -283,7 +283,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 
 #affpol-row-3 {
-  height: 800px;
+  /* height: 800px; */
 
   #affpol-hists {
     // padding-top: 30px;
@@ -296,7 +296,6 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 .affpol-hist-container {
 
     padding: 20px;
-    margin-top: 30px;
 }
 
 
