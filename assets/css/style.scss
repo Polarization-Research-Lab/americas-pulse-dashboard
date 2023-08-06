@@ -36,7 +36,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 #home-row1 {
-  height: 350px;
+  height: 500px;
 }
 
 #home-affpol-time-div-up {
@@ -51,7 +51,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 #home-row2 {
-  height: 400px;
+  height: 200px;
 }
 
 
@@ -235,9 +235,9 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
   #affpol-map-div {
     // margin: 0;
-    // width: 100%;
+    width: 600px;
     height: 400px;
-    padding: 30px;
+    padding: 0px;
   }
 
   // #affpol-row-1-info {
@@ -317,6 +317,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 #sidebar {
   background: rgba(0,0,0,.01);
+  width: 300px;
 }
 
 
@@ -330,6 +331,7 @@ h3 {
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    width:800px;
 } 
 
 @keyframes fadeInAnimation {
