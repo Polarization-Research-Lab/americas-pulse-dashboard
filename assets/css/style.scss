@@ -488,9 +488,10 @@ h3 {
 
 
 .questionbox {
-  overflow-y: scroll;
+  width: 250px;
+  //overflow-y: scroll;
   // overflow: hidden;
-  height: 200px;
+  //height: 200px;
 }
 
 
@@ -539,7 +540,8 @@ h3 {
 
 
 .trustval-info {
-  padding: 20px;
+  padding: 0px;
+  width: 250px;
 }
 
 .padd-left {
@@ -550,12 +552,12 @@ h3 {
   padding-right: 40px;
 }
 
-// .trustval-line-container {
-//   padding: 30px;
-// }
+ .trustval-line-container {
+   padding: 30px;
+ }
 
 .trustval-line-div {
-
+  width: 500px;
   height: 300px;
   padding: 30px;
 }
