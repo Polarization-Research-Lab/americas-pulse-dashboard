@@ -116,6 +116,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
   overflow-y: scroll;
   padding: 20px;
   padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .chart {
@@ -222,7 +223,9 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 #affpol-rep-avg,
 #affpol-dem-avg {
-  width: 100%;
+  width: 250px;
+  height: 200px
+
 }
 
 .w-100{
@@ -231,8 +234,8 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 // affpol
 #affpol-row-1 {
-  height: 500px;
-  padding-top: 50px;
+  //height: 500px;
+  //padding-top: 50px;
   margin: auto;
   // #affpol-time-info {
   //   padding-top: 50px;
@@ -254,10 +257,11 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 .gauge-div {
+  padding:30px;
 }
 
 .gauge {
-  width: 100%;
+  //width: 100%;
 }
 
 .gauge-heading {
@@ -265,7 +269,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 }
 
 #affpol-row-2 {
-  height: 450px;
+  //height: 450px;
   padding-top: 50px;
   // background-color: rgba(0,0,190,.03);
 
@@ -435,7 +439,7 @@ h3 {
 
 #demnorm-row-2 {
   padding: 50px;
-  height: 500px;
+  //height: 500px;
 }
 
 #demnorm-lines-div {
