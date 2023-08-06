@@ -332,7 +332,10 @@ h3 {
   text-align: center;
 }
 
-
+.container {
+  width:750px;
+  margin-right: 0px !important;
+}
 
 .tabbody {
     animation: fadeInAnimation ease 2.5s;
