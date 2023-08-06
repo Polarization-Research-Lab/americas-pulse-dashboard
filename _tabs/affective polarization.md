@@ -83,7 +83,7 @@ params:
 <div class = 'row chartrow chart' id='affpol-row-4'>
 
   <!-- info -->
-  <div class='col-3' id='affpol-hist-info'>
+  <div class='col-1' id='affpol-hist-info'>
     <div class = 'd-flex p-2'>
 
       <!-- <img class = 'icon-title' src = '{{ site.baseurl }}/assets/img/home-therm.png'>-->
@@ -96,7 +96,7 @@ params:
     <p><b>Vertical dashed line:</b> Average</p>
   </div>
 
-  <div class='col-6 row d-flex justify-content-center' id='affpol-hists'>
+  <div class='col-4 row d-flex justify-content-center' id='affpol-hists'>
 
     <div class='col-6 affpol-hist-container'>
 
@@ -108,14 +108,6 @@ params:
           <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/affpol-hist.js" data-canvasid="affpol-dem-hist" data-source="{{ site.baseurl }}/assets/data/affpol-hist-dem.json"></script>
         </div> 
       </div> 
-
-      <!-- <div class='col-2'>
-        <div>
-          <canvas id = "affpol-dem-avg2" class="gauge"></canvas>
-          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-dem-avg2" data-gauge="{{ site.data.meta.affpol_dem_avg }}"></script>
-        </div> 
-      </div>  -->
-
     </div>
 
     <hr>
@@ -130,14 +122,6 @@ params:
           <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/affpol-hist.js" data-canvasid="affpol-rep-hist" data-source="{{ site.baseurl }}/assets/data/affpol-hist-rep.json"></script>
         </div> 
       </div> 
-
-      <!-- <div class='col-2'>
-        <div>
-          <canvas id = "affpol-rep-avg2" class="gauge"></canvas>
-          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/gauge.js" data-canvasid="affpol-rep-avg2" data-gauge="{{ site.data.meta.affpol_rep_avg }}"></script>
-        </div> 
-      </div>  -->
-
     </div>
 
   </div>
