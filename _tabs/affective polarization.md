@@ -13,7 +13,7 @@ params:
 
 <!-- row 1 -->
 
-<h2><span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2>1<span class="mr-2">Affective Polarization in the US</span><a href="#affective-polarization-in-the-us" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Each week, we ask a thousand Americans how they feel about their own political party, as well as how they feel about the opposing political party. <emph>Affective polarization</emph> is the difference between the two <sup><a href = "https://academic.oup.com/poq/article-abstract/76/3/405/1894274">[Iyengar et al., 2012]</a></sup>.</p>
 
 <div class='row chartrow chart' id='affpol-row-1'>
@@ -23,9 +23,10 @@ params:
   </div>
 </div>
 
-<div class = 'row chartrow chart' id='affpol-row-2'>
+
 <h3>Avergae level of polarizaiton by party</h3>
 <p>(more is worse)</p>
+<div class = 'row chartrow chart' id='affpol-row-2'>
   <div class = 'col-2'>
     <h5 class = 'gauge-heading'>Democrats:</h5>
     <div class = 'gauge-div'>
@@ -35,9 +36,9 @@ params:
     </div>
   </div>
 
-  <div class = 'col1'>
-    &nbsp;
-  <\div>
+  <div id = 'col1'>
+    <p>&nbsp;</p>
+  </div>
 
   <div class = 'col-2'>
     <h5 class = 'gauge-heading'>Republicans:</h5>
@@ -51,15 +52,13 @@ params:
 </div><!-- end row2 -->
 
 <div class = 'row chartrow chart' id='affpol-row-3'>
-
     <div class='col-3' id='affpol-time-div'>
       <canvas id = "affpol-time" class=""></canvas>
       <script src='{{ site.baseurl }}/assets/js/charts/affpol-time.js' data-canvasid="affpol-time"></script>
     </div>
-
     <div class='col-1' id='affpol-time-info'>
         <h5><span class="mr-2">Is it getting better or worse?</span><a href="#is-it-getting-better-or-worse?" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h5>
-        <p>The y-axis shows the level of polarization, averaged across each week.</p>
+        <p>Affective polarization averaged across each week.</p>
         <!-- <p>Our national sample's average amount of polarization is <b>{{ site.data.meta.affpol_nat_avg }}</b>.</p> -->
         <!-- <p>The average from our last survey was <b>{{ site.data.meta.affpol_nat_avg }}</b>.</p> -->
         <div id = "affpol-timebar-div" >
@@ -78,21 +77,16 @@ params:
   <!-- info -->
   <div class='col-1' id='affpol-hist-info'>
     <div class = 'd-flex p-2'>
-
       <!-- <img class = 'icon-title' src = '{{ site.baseurl }}/assets/img/home-therm.png'>-->
-
       <h2><span class="mr-2">Which party is more polarized?</span><a href="#which-party-is-worse" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
     </div>
-
     <p><b>Top:</b> How <emph>Democrats</emph> rate the Republican and Democratic Party</p>
     <p><b>Bottom:</b> How <emph>Republicans</emph> rate the Republican and Democratic Party</p>
     <p><b>Vertical dashed line:</b> Average</p>
   </div>
 
   <div class='col-4 row d-flex justify-content-center' id='affpol-hists'>
-
     <div class='col-6 affpol-hist-container'>
-
       <div class=''>
         <h5 class = 'text-center'>Democrats</h5>
         <br>
@@ -102,11 +96,8 @@ params:
         </div> 
       </div> 
     </div>
-
     <hr>
-
     <div class='col-6 affpol-hist-container'>
-      
       <div class=''>
         <h5 class = 'text-center'>Republicans</h5>
         <br>
