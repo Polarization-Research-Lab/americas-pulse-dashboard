@@ -273,11 +273,7 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
   padding-top: 50px;
   // background-color: rgba(0,0,190,.03);
 
-  #affpol-time-div {
-    height: 350px;
-    width: 100% !important;
-    padding: 20px;
-  }
+
 
   #affpol-timebar-div {
     height: 180px;
@@ -292,14 +288,28 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 
 #affpol-row-3 {
-  /* height: 800px; */
-
+   height: 400px;
+   #affpol-time-div {
+    height: 350px;
+    width: 100% !important;
+    padding: 20px;
+  }
   #affpol-hists {
     // padding-top: 30px;
   }
   #affpol-hist-info {
     padding-top: 30px;
   }
+}
+
+#affpol-row-4 {
+  height: 400px;
+ #affpol-hists {
+   // padding-top: 30px;
+ }
+ #affpol-hist-info {
+   padding-top: 30px;
+ }
 }
 
 .affpol-hist-container {
