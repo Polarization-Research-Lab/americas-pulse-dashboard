@@ -112,15 +112,12 @@ html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 .chartrow {
   min-width: 800px;
-  overflow-x: scroll;
-  overflow-y: scroll;
   padding: 20px;
   padding-bottom: 20px;
   padding-bottom: 0px;
 }
 
 .chart {
-  overflow: hidden;
 }
 
 // Download, Share, Screenshot Buttons
@@ -373,7 +370,7 @@ h3 {
 
 // Violence
 #violence-row-1 {
-  height: 500px;
+
   // padding-left: 100px;
   // padding-top: 100px;
   // margin-bottom: 70px;
@@ -383,11 +380,11 @@ h3 {
 #violence-sankey-div {
   width: 700px;
   // height: 600px;
-  height:6 00px;
+
 }
 
 #violence-sankey {
-
+  height:350px;
 }
 
 .violence-line-div {
@@ -532,7 +529,7 @@ h3 {
 
 
 .trustval-row {
-  height: 400px;
+  //height: 400px;
 }
 
 #trustval {
@@ -553,11 +550,12 @@ h3 {
 }
 
  .trustval-line-container {
-   padding: 30px;
+   padding: 10px;
+   width:500px
  }
 
 .trustval-line-div {
-  width: 500px;
+
   height: 300px;
   padding: 30px;
 }
