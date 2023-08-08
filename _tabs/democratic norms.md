@@ -39,10 +39,10 @@ order: 2
 
 
 <h2><span class="mr-2">Support for Norm Violations by Party.</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<strong>Support for Ignoring Court Judges</strong>
+<h2>Support for Ignoring Court Judges</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>Do you agree or disagree: {inparty: Democratic/Republican} elected officials should sometimes consider ignoring court decisions when the judges who issued those decisions were appointed by {outparty: Democratic/Republican} presidents.</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -53,10 +53,10 @@ order: 2
   </div>
 </div>
 
-<strong>Support for Reducing Polling Stations</strong>
+<h2>Support for Reducing Polling Stations</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>Do you agree or disagree: {inparty: Democrats/Republicans} should reduce the number of polling stations in areas that typically support {outparty: Democrats/Republicans}.</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -67,10 +67,10 @@ order: 2
   </div>
 </div>
 
-<strong>Support for Using Executive Orders to Circumvent Congress</strong>
+<h2>Support for Using Executive Orders to Circumvent Congress</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>Do you agree or disagree: If a {inparty: Democratic/Republican} president can't get cooperation from {outparty: Democratic/Republican} members of congress to pass new laws, the {inparty: Democratic/Republican} president should circumvent Congress and issue executive orders on their own to accomplish their priorities.</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -81,10 +81,10 @@ order: 2
   </div>
 </div>
 
-<strong>Suport for Media Censorship</strong>
+<h2>Suport for Media Censorship</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>Do you agree or disagree with the following: The government should be able to censor media sources that spend more time attacking {inparty: Democrats/Republicans} than {outparty: Democrats/Republicans}.</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -95,10 +95,10 @@ order: 2
   </div>
 </div>
 
-<strong>Support for Constitution in the Face of Election Denial</strong>
+<h2>Support for Constitution in the Face of Election Denial</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>Do you agree or disagree with the following: When a {inparty: Democratic/Republican} candidate questions the outcome of an election other {inparty: Democrats/Republicans} should be more loyal to the {inparty: Democratic/Republican} party than to election rules and the constitution.</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
