@@ -11,7 +11,7 @@ order: 2
 <h2><span class="mr-2">Do Americans support Violations of Democratic Norms?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>The strength of a democracy depends on the willingness of citizens and elites to respect democratic norms and institutions.</p>
 
-<h3>Average Number of Norm Violations Supported (by Region)</h3>
+<h2>Average Number of Norm Violations Supported (by Region)</h2>
 
 <div class='row chartrow chart' id='affpol-row-1'>
   <div class='row' id='affpol-map-div'>
@@ -39,7 +39,7 @@ order: 2
 
 
 <h2><span class="mr-2">Support for Norm Violations by Party.</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-<h5>Support for Ignoring Court Judges</h5>
+<strong>Support for Ignoring Court Judges</strong>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -53,7 +53,7 @@ order: 2
   </div>
 </div>
 
-<h5>Support for Reducing Polling Stations</h5>
+<strong>Support for Reducing Polling Stations</strong>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -67,7 +67,7 @@ order: 2
   </div>
 </div>
 
-<h5>Support for Using Executive Orders to Circumvent Congress</h5>
+<strong>Support for Using Executive Orders to Circumvent Congress</strong>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -81,7 +81,7 @@ order: 2
   </div>
 </div>
 
-<h5>Suport for Media Censorship</h5>
+<strong>Suport for Media Censorship</strong>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>
@@ -95,7 +95,7 @@ order: 2
   </div>
 </div>
 
-<h5>Support for Constitution in the Face of Election Denial</h5>
+<strong>Support for Constitution in the Face of Election Denial</strong>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <h4>What we ask:</h4>

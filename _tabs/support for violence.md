@@ -26,7 +26,7 @@ order: 3
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
 
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v1question'>{name} was convicted of protesting without a permit. He was arrested by police after leading a protest against {outparty} on the grounds of the county courthouse. He made no effort to acquire the necessary permit for the protest and refused to leave when asked by police. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -40,7 +40,7 @@ order: 3
 <h2><span class="mr-2">Support for Vandalism</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v2question'>{name} was convicted of vandalism. He was arrested by police after he vandalized several large signs expressing support for candidates of the {outparty} party. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -54,7 +54,7 @@ order: 3
 <h2><span class="mr-2">Support for Assault</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v3question'>{name} was convicted of assault. He was arrested by police for throwing rocks at peaceful {outparty} protesters. Although no one was  seriously injured, paramedics bandaged a man with a head wound. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -68,7 +68,7 @@ order: 3
 <h2><span class="mr-2">Support for Arson</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v4question'>{name} was convicted of arson. He was arrested by police as he attempted to run from a fire he started at the local {outparty} headquarters. Although he waited for the building to close for the night, several adjacent buildings were still occupied. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -82,7 +82,7 @@ order: 3
 <h2><span class="mr-2">Support for Assault with a Deadly Weapon</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v5question'>{name} was convicted of assault with a deadly weapon.He was arrested by police after driving his car into a crowd of {outparty} protesters. Although no one was killed, several individuals were seriously injured and one spent a month in the hospital. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>
@@ -96,7 +96,7 @@ order: 3
 <h2><span class="mr-2">Support for Murder</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <div class = 'row chartrow violence-row'>
   <div class='chartv'>
-    <h4>What we ask:</h4>
+    <strong>What we ask:</strong>
     <div class="questionbox"><blockquote id='v6question'>{name} was convicted of murder. He was arrested by police after surveillance footage was found showing him stabbing a prominent {outparty} to death. {name} targeted the victim because he believed the victim had prevented him from voting in the last election as part of a conspiracy to stop {inparty} voters. Do you support or oppose {name}’s actions?</blockquote></div>
   </div>
   <div class = 'violence-line-container'>

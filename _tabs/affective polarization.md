@@ -50,8 +50,8 @@ params:
       <p class = 'text-center'>{{ site.data.meta.affpol_rep_avg }}</p>
     </div>
   </div>
-
 </div><!-- end row2 -->
+
 <h3>Is it getting better or worse?<a href="#is-it-getting-better-or-worse?" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 <p>Affective polarization averaged across each week.</p>
 <div class = 'row chartrow chart' id='affpol-row-3'>

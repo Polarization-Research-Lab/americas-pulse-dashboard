@@ -11,7 +11,7 @@ order: 4
 <h2><span class="mr-2">How proud are Americans to be Americans?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
     <div class='trustval-info '>
-      <p>What we ask:</p>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>How proud are you to be an American?</blockquote></div>
     </div>
     <div class='trustval-line-container'>
@@ -36,7 +36,7 @@ order: 4
 <h2><span class="mr-2">How much do Americans value the voting process?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
     <div class='trustval-info '>
-      <p>What we ask:</p>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>How important or unimportant is it to vote in every election?</blockquote></div>
     </div>
     <div class='trustval-line-container'>
@@ -61,7 +61,7 @@ order: 4
 <h2><span class="mr-2">Do Americans feel their government is responsive?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
     <div class='trustval-info '>
-      <p>What we ask:</p>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>If you were to complain about the poor quality of a public service, how likely or unlikely is it that the problem would be easily resolved?</blockquote></div>
     </div>
     <div class='trustval-line-container'>
@@ -85,7 +85,7 @@ order: 4
 <h2><span class="mr-2">Do Americans trust their politicians?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
     <div class='trustval-info '>
-      <p>What we ask:</p>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?</blockquote></div>
     </div>
     <div class='trustval-line-container'>

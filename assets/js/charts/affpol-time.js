@@ -104,7 +104,7 @@ fetch('/americas-pulse-dashboard/assets/data/affpol-time.json')
             },
             legend: {
               display: true,
-              position: 'right',
+              position: 'bottom',
               labels: {
                 font: {
                   size: 20,
