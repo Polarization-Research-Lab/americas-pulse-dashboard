@@ -8,10 +8,10 @@ order: 2
 
 <br>
 <br>
-<h2><span class="mr-2">2Do Americans support Violations of Democratic Norms?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2><span class="mr-2">3Do Americans support Violations of Democratic Norms?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>The strength of a democracy depends on the willingness of citizens and elites to respect democratic norms and institutions.</p>
 <p>Each week, we ask Americans which norms, if any, they would support elected officials violating.</p>
-<h3 class = 'text-center'>Avg # of Norm Violations Supported (by Region)</h3>
+<h3>Average Number of Norm Violations Supported (by Region)</h3>
 
 <div class='row chartrow chart' id='affpol-row-1'>
   <div class='row' id='affpol-map-div'>
@@ -60,7 +60,6 @@ order: 2
   <div id='affpol-time-div'>
     <canvas id = 'demnorm-executive'></canvas>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-executive" data-source='{{ site.baseurl }}/assets/data/norms/norm_executive.json'></script>
-    <div class='norm-party-header'>
   </div>
 </div>
 
@@ -69,7 +68,6 @@ order: 2
   <div id='affpol-time-div'>
     <canvas id = 'demnorm-censorship'></canvas>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-censorship" data-source='{{ site.baseurl }}/assets/data/norms/norm_censorship.json'></script>
-    <div class='norm-party-header'>
   </div>
 </div>
 
@@ -78,7 +76,6 @@ order: 2
   <div id='affpol-time-div'>
     <canvas id = 'demnorm-loyalty'></canvas>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/demnorm-party.js" data-canvasid="demnorm-loyalty" data-source='{{ site.baseurl }}/assets/data/norms/norm_loyalty.json'></script>
-    <div class='norm-party-header'>
   </div>
 </div>
 
