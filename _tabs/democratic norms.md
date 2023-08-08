@@ -8,7 +8,7 @@ order: 2
 
 <br>
 <br>
-<h2><span class="mr-2">3Do Americans support Violations of Democratic Norms?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2><span class="mr-2">Do Americans support Violations of Democratic Norms?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>The strength of a democracy depends on the willingness of citizens and elites to respect democratic norms and institutions.</p>
 
 <h3>Average Number of Norm Violations Supported (by Region)</h3>
