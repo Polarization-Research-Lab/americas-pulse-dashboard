@@ -10,16 +10,12 @@ layout: default
 <script src="{{ site.baseurl }}/assets/js/chartjs-plugin-annotation.min.js"></script>
 
 <div id='home-body'>
+	<h1>America's Political Pulse Survey</h1>
+	<p>This survey is a series of questions designed to shed light on public sentiment towards political animosity, respect for democracy, and support for political violence -- asked of a thousand Americans each week.</p>
 
-	<div class='row' id='home-row1'>
-
-		<div class='col-4' id=''>
-			<h1>America's Political Pulse Survey</h1>
-			<p>This survey is a series of questions designed to shed light on public sentiment towards political animosity, respect for democracy, and support for political violence -- asked of a thousand Americans each week.</p>
-		</div>
-
+	<!-- <div class='row' id='home-row1'>
 		<div class='col-8' id='home-affpol-time-div-up'>
-			<h2 class='text-center'>Affective Polarization over Time</h2>
+			<h5 class='text-center'>Affective Polarization over Time</h5>
 			<br>
 		    <div id='home-affpol-time-div'>
 		      <canvas id = "home-affpol-time" class=""></canvas>
@@ -28,13 +24,13 @@ layout: default
 
 		</div>
 
-	</div>
+	</div> -->
 
-	<br>
+	<!-- <br> -->
 
 	<div class='row' id='home-row2'>
 
-		<h1>Last Week in America</h1>
+		<h3>Last Week in America</h3>
 		<br>
 		<br>
 
@@ -43,7 +39,7 @@ layout: default
 			<div class='col-4 home-card'>
 				<div class='home-card-box' data-destination='{{ site.baseurl }}/tabs/affective%20polarization.html'>
 
-				      <div class = 'home-gauge-div'>
+				      <div class = 'gauge-div'>
 				          <canvas id = "home-affpol-nat-avg" class="gauge"></canvas>
 					  </div>
 			          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/chartjs-gauge.js" data-canvasid="home-affpol-nat-avg" data-gauge="{{ site.data.meta.affpol_week_avg }}" data-max='100'></script>
@@ -59,7 +55,7 @@ layout: default
 			          		{% endif %}
 				       </p>
 
-					<h1 class='text-center'>Affective Polarization<br>(0 - 100)</h1>
+					<h5 class='text-center'>Affective Polarization<br>(0 - 100)</h5>
 				</div>
 				
 			</div>
@@ -68,7 +64,7 @@ layout: default
 			<div class='col-4 home-card'>
 				<div class='home-card-box' data-destination='{{ site.baseurl }}/tabs/democratic%20norms.html'>
 
-				      <div class = 'home-gauge-div'>
+				      <div class = 'gauge-div'>
 				          <canvas id = "home-norm-avg" class="gauge"></canvas>
 					  </div>
 			          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/chartjs-gauge.js" data-canvasid="home-norm-avg" data-gauge="{{ site.data.meta.norm_week_avg }}" data-max='5'></script>
@@ -82,7 +78,7 @@ layout: default
 				          		(+/- 0.00)
 			          		{% endif %}
 				       </p>
-					<h1 class='text-center'>Average # of Norm Violations Supported</h1>
+					<h5 class='text-center'>Average number of norm violations supported</h5>
 				</div>
 
 			</div>
@@ -91,7 +87,7 @@ layout: default
 			<div class='col-4 home-card'>
 				<div class='home-card-box' data-destination='{{ site.baseurl }}/tabs/support%20for%20violence.html'>
 
-				      <div class = 'home-gauge-div'>
+				      <div class = 'gauge-div'>
 				          <canvas id = "home-violence-avg" class="gauge"></canvas>
 					  </div>
 			          <script type="text/javascript" src="{{ site.baseurl }}/assets/js/charts/chartjs-gauge.js" data-canvasid="home-violence-avg" data-gauge="{{ site.data.meta.violence_week_avg }}" data-max='6'></script>
@@ -107,7 +103,7 @@ layout: default
 			          		{% endif %}
 				       </p>
 
-					<h1 class='text-center'>Average # of Violent Political Acts Supported</h1>
+					<h5 class='text-center'>Average number of violent political acts supported</h5>
 				</div>
 
 			</div>

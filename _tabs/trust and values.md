@@ -6,15 +6,15 @@ order: 4
 <script src="{{ site.baseurl }}/assets/js/chartjs-adapter-date-fns.bundle.min.js"></script>
 
 <div id = 'trustval'>
-
+<br>
+<br>
+<h2><span class="mr-2">How proud are Americans to be Americans?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
-    <div class='col-3 trustval-info padd-right'>
-      <h2><span class="mr-2">How proud are Americans to be Americans?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-      <p>What we ask:</p>
+    <div class='trustval-info '>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>How proud are you to be an American?</blockquote></div>
     </div>
-
-    <div class='col-9 trustval-line-container'>
+    <div class='trustval-line-container'>
       <div class='row trustval-line-div'>
         <canvas id = 'trustval-pride'></canvas>
         <script 
@@ -33,10 +33,13 @@ order: 4
 
   </div>
 
-
+<h2><span class="mr-2">How much do Americans value the voting process?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
-
-    <div class='col-9 trustval-line-container'>
+    <div class='trustval-info '>
+      <strong>What we ask:</strong>
+      <div class="questionbox"><blockquote>How important or unimportant is it to vote in every election?</blockquote></div>
+    </div>
+    <div class='trustval-line-container'>
       <div class='row trustval-line-div trustval-line-div-alt'>
         <canvas id = 'trustval-vote'></canvas>
         <script 
@@ -53,26 +56,15 @@ order: 4
       </div>
     </div>
 
-    <div class='col-3 trustval-info padd-left'>
-      <h2><span class="mr-2">How much do Americans value the voting process?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-      <p>What we ask:</p>
-      <div class="questionbox"><blockquote>How important or unimportant is it to vote in every election?</blockquote></div>
-    </div>
-
-
-
   </div>
 
-
+<h2><span class="mr-2">Do Americans feel their government is responsive?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
-
-    <div class='col-3 trustval-info padd-right'>
-      <h2><span class="mr-2">Do Americans feel their government is responsive?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-      <p>What we ask:</p>
+    <div class='trustval-info '>
+      <strong>What we ask:</strong>
       <div class="questionbox"><blockquote>If you were to complain about the poor quality of a public service, how likely or unlikely is it that the problem would be easily resolved?</blockquote></div>
     </div>
-
-    <div class='col-9 trustval-line-container'>
+    <div class='trustval-line-container'>
       <div class='row trustval-line-div'>
         <canvas id = 'trustval-response'></canvas>    
         <script 
@@ -90,13 +82,13 @@ order: 4
     </div>
 
   </div>
-
-
-
+<h2><span class="mr-2">Do Americans trust their politicians?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
   <div class = 'row chartrow chart trustval-row'>
-
-
-    <div class='col-9 trustval-line-container'>
+    <div class='trustval-info '>
+      <strong>What we ask:</strong>
+      <div class="questionbox"><blockquote>If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?</blockquote></div>
+    </div>
+    <div class='trustval-line-container'>
       <div class='row trustval-line-div trustval-line-div-alt'>
         <canvas id = 'trustval-corruption'></canvas>    
         <script 
@@ -112,14 +104,5 @@ order: 4
         ></script>
       </div>
     </div>
-
-    <div class='col-3 trustval-info padd-left'>
-      <h2><span class="mr-2">Do Americans trust their politicians?</span><a href="#" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
-      <p>What we ask:</p>
-      <div class="questionbox"><blockquote>If a member of Congress were offered a bribe to influence the awarding of a government contract, do you think that the member of Congress would accept or refuse the bribe?</blockquote></div>
-    </div>
-
-
   </div>
-
 </div>

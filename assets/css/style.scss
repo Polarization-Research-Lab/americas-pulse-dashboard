@@ -12,10 +12,19 @@ $tab-count: {{ site.tabs | size | plus: 0 }}; // plus 1 for home tab (removed si
 /* append your custom style below */
 $sidebar-display: 'sidebar-display';
 
-html, body {height: 100%; background-color: rgba(255,255,255,1);}
+html, body {height: 100%; font-size:12pt;background-color: rgba(255,255,255,1);}
 
 #blank {
   width: 100%;
+}
+
+.row{
+  margin-bottom: 10px;
+}
+
+blockquote{
+  font-size: 12pt;
+  line-height: normal;
 }
 
 #main-wrapper {
@@ -29,6 +38,11 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
   // padding-top: 50px;
 }
 
+// .profile-wrapper{
+//   height:200px;
+//   margin-top:0px !important;
+// }
+
 
 #home-body {
   min-width: 800px;
@@ -36,13 +50,13 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 #home-row1 {
-  height: 350px;
+  height: 500px;
 }
 
 #home-affpol-time-div-up {
-  background-color: rgba(200,0,0,.03);
+
   padding-top: 20px;
-  border-radius: 30px;
+
 }
 
 #home-affpol-time-div {
@@ -51,13 +65,12 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 #home-row2 {
-  height: 400px;
+  height: 200px;
 }
 
 
 #home-cards {
-  width: 100%;
-  height: 100%;
+
 }
 
 
@@ -69,10 +82,9 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 
 .home-card-box {
   transition: all .2s ease-in-out;
-  background-color: rgba(0,0,200,.03);
-  border-radius: 30px;
+
   // height: 100%;
-  // width: 80%;
+  //width: 20%;
   // margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -84,7 +96,7 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 .home-gauge-div {
-  height: 200px;
+  width: 5%;
   padding: 10px;
 }
 
@@ -93,7 +105,7 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 .home-gauge-change { 
-  font-size: 30px;
+  font-size: 14px;
 }
 
 .home-gauge-change-pos {
@@ -109,18 +121,12 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
   opacity: .7;
 }
 
-
-
 .chartrow {
-  min-width: 800px;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  padding: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
-.chart {
-  overflow: hidden;
+.chartv {
+  width:250px;
 }
 
 // Download, Share, Screenshot Buttons
@@ -192,11 +198,9 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 
 // newsletter stuff
 #newsletter-box {
-  padding: 10px;
-  border:2px solid rgba(0,0,0,.2);
+  border:2px solid rgba(0,0,0,.3);
+  background-color: #ffffff;
   border-radius: 5px;
-  padding-bottom: 15px;
-  margin-bottom: 25px;
 }
 
 #newsletter-signup-txt {
@@ -223,24 +227,29 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 
 #affpol-rep-avg,
 #affpol-dem-avg {
-  width: 100%;
+  width: 350px;
+  height: 150px
+
+}
+
+.w-100{
+  margin-left: 5px !important;
 }
 
 // affpol
 #affpol-row-1 {
-  height: 500px;
-  background-color: rgba(190,0,0,.0);
-  padding-top: 50px;
+  //height: 500px;
+  //padding-top: 50px;
+  margin: auto;
   // #affpol-time-info {
   //   padding-top: 50px;
   // }
 
   #affpol-map-div {
     // margin: 0;
-    // width: 100%;
+    width: 600px;
     height: 400px;
-    background-color: rgba(0,0,0,.03); border-radius: 30px;
-    padding: 30px;
+    padding: 0px;
   }
 
   // #affpol-row-1-info {
@@ -252,10 +261,11 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 .gauge-div {
+  margin:0px;
 }
 
 .gauge {
-  width: 100%;
+  //width: 100%;
 }
 
 .gauge-heading {
@@ -263,16 +273,11 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 }
 
 #affpol-row-2 {
-  height: 450px;
+  //height: 450px;
   padding-top: 50px;
   // background-color: rgba(0,0,190,.03);
 
-  #affpol-time-div {
-    height: 350px;
-    width: 100% !important;
-    background-color: rgba(0,0,200,.03); border-radius: 30px;
-    padding: 20px;
-  }
+
 
   #affpol-timebar-div {
     height: 180px;
@@ -287,8 +292,12 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 
 
 #affpol-row-3 {
-  height: 800px;
-
+   height: 400px;
+   #affpol-time-div {
+    height: 350px;
+    width: 100% !important;
+    padding: 20px;
+  }
   #affpol-hists {
     // padding-top: 30px;
   }
@@ -297,10 +306,20 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
   }
 }
 
+#affpol-row-4 {
+  height: 400px;
+ #affpol-hists {
+   // padding-top: 30px;
+ }
+ #affpol-hist-info {
+   padding-top: 30px;
+ }
+}
+
 .affpol-hist-container {
-    background-color: rgba(200,0,0,.03); border-radius: 30px;
+
     padding: 20px;
-    margin-top: 30px;
+    width:375px;
 }
 
 
@@ -318,10 +337,14 @@ html, body {height: 100%; background-color: rgba(255,255,255,1);}
 
 .affpol-hist {
   height: 200px;
+
 }
+
+
 
 #sidebar {
   background: rgba(0,0,0,.01);
+  width: 250px !important;
 }
 
 
@@ -329,12 +352,17 @@ h3 {
   text-align: center;
 }
 
-
+.container {
+  width:750px;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
 
 .tabbody {
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    width:750px;
 } 
 
 @keyframes fadeInAnimation {
@@ -349,7 +377,7 @@ h3 {
 
 // Violence
 #violence-row-1 {
-  height: 650px;
+
   // padding-left: 100px;
   // padding-top: 100px;
   // margin-bottom: 70px;
@@ -357,21 +385,20 @@ h3 {
 
 #violence-sankey-div-blank,
 #violence-sankey-div {
-  // width: 100%;
+  width: 700px;
   // height: 600px;
-  height: 600px;
+
 }
 
 #violence-sankey {
-    background-color: rgba(0,0,0,.03); border-radius: 30px;
+  height:350px;
 }
 
 .violence-line-div {
-    background-color: rgba(200,0,0,.03); border-radius: 30px;
-    padding: 20px;
-}
-.violence-line-div-alt {
-    background-color: rgba(0,0,200,.03); border-radius: 30px;
+  height: 400px;
+  //padding: 30px;
+  width: 490px;
+  margin-left:10px;
 }
 
 #violence-title-div {
@@ -379,7 +406,7 @@ h3 {
 }
 
 .violence-row {
-  height: 400px;
+  padding-left:15px;
   padding-bottom: 0px;
 }
 
@@ -387,11 +414,10 @@ h3 {
   // background-color: rgba(0,0,190,.03);
 }
 
+// #sidebar ul{
+//   margin-bottom: 0px !important;
+// }
 
-.violence-line-div {
-  width: 100%;
-  height: 80%;
-}
 
 
 #demnorm-row-1 {
@@ -410,11 +436,11 @@ h3 {
 #demnorm-map-div {
   // width: 100%;
   height: 400px; 
-  background-color: rgba(0,0,0,.03); border-radius: 30px;
+
 }
 
 #demnorm-map {
-  padding: 25px;
+  padding: 5px;
 }
 
 #demnorm-title {
@@ -427,14 +453,14 @@ h3 {
 
 #demnorm-row-2 {
   padding: 50px;
-  height: 500px;
+  //height: 500px;
 }
 
 #demnorm-lines-div {
   // width: 100%;
-  height: 400px;
-  background-color: rgba(0,0,200,.03); border-radius: 30px;
-  padding: 20px;
+  height: 300px;
+
+  padding: 5px;
 }
 
 #demnormline-btn-div {
@@ -464,9 +490,10 @@ h3 {
 
 
 .questionbox {
-  overflow-y: scroll;
+  width: 250px;
+  //overflow-y: scroll;
   // overflow: hidden;
-  height: 200px;
+  //height: 200px;
 }
 
 
@@ -479,8 +506,6 @@ h3 {
 
 .norm-chart-div-parent {
   transition: all .2s ease-in-out;
-  // background-color: rgba(255,245,245,1); border-radius: 30px;
-  background-color: rgba(200,0,0,.03); border-radius: 30px;
   padding-bottom: 10px;
   height: 100%;
 }
@@ -509,7 +534,7 @@ h3 {
 
 
 .trustval-row {
-  height: 400px;
+  //height: 400px;
 }
 
 #trustval {
@@ -517,7 +542,8 @@ h3 {
 
 
 .trustval-info {
-  padding: 20px;
+  padding: 0px;
+  width: 250px;
 }
 
 .padd-left {
@@ -528,18 +554,24 @@ h3 {
   padding-right: 40px;
 }
 
-// .trustval-line-container {
-//   padding: 30px;
-// }
+.violence-line-container {
+  padding: 10px;
+  width:500px
+}
+
+ .trustval-line-container {
+   padding: 10px;
+   width:500px
+ }
 
 .trustval-line-div {
-  background-color: rgba(200,0,0,.03); border-radius: 30px;
+
   height: 300px;
   padding: 30px;
 }
 
 .trustval-line-div-alt {
-  background-color: rgba(0,0,200,.03); border-radius: 30px;
+
 }
 
 

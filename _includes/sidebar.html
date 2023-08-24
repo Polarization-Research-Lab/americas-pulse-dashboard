@@ -50,7 +50,7 @@
   <div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center">
 
     <div id='newsletter-box'>
-      <p>Stay up to date on Lab News!</p>
+      <p>Sign up for our newsletter</p>
 
 
       <!-- Begin Mailchimp Signup Form -->
@@ -94,10 +94,7 @@
     {% for entry in site.data.contact %}
       {% case entry.type %}
         {% when 'github' %}
-          Find the code on  
-          {%- capture url -%}
-            https://{{ entry.type }}.com/{{ site[entry.type].username }}
-          {%- endcapture -%}
+          
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
@@ -124,24 +121,6 @@
     {% endfor %}
 
 
-    <div class="footer-right">
-
-      <p class="mb-0">
-
-        {%- capture _platform -%}
-        <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
-        {%- endcapture -%}
-
-        {%- capture _theme -%}
-        <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
-        {%- endcapture -%}
-
-        {{ site.data.locales[site.lang].meta
-          | default: 'Using the :PLATFORM theme :THEME.'
-          | replace: ':PLATFORM', _platform | replace: ':THEME', _theme
-        }}
-      </p>
-    </div>
     
   </div> <!-- .sidebar-bottom -->
 
