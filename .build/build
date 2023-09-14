@@ -5,7 +5,7 @@
 cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/"
 
 ## Get common environment variables
-source ../../.env
+source ../../../.env
 
 ## Redirect stdout and stderr
 exec &>> ".log"
