@@ -811,3 +811,339 @@ Traceback (most recent call last):
   File "/usr/lib/python3.8/subprocess.py", line 1764, in _try_wait
     (pid, sts) = os.waitpid(self.pid, wait_flags)
 KeyboardInterrupt
+--- START: [2023-09-26 13:10:40]  ---
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.2     ✔ readr     2.1.4
+✔ forcats   1.0.0     ✔ stringr   1.5.0
+✔ ggplot2   3.4.2     ✔ tibble    3.2.1
+✔ lubridate 1.9.2     ✔ tidyr     1.3.0
+✔ purrr     1.0.1     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘data.table’
+
+The following objects are masked from ‘package:lubridate’:
+
+    hour, isoweek, mday, minute, month, quarter, second, wday, week,
+    yday, year
+
+The following objects are masked from ‘package:dplyr’:
+
+    between, first, last
+
+The following object is masked from ‘package:purrr’:
+
+    transpose
+
+Loading required package: Rcpp
+Loading 'brms' package (version 2.19.0). Useful instructions
+can be found by typing help('brms'). A more detailed introduction
+to the package is available through vignette('brms_overview').
+
+Attaching package: ‘brms’
+
+The following object is masked from ‘package:stats’:
+
+    ar
+
+Loading required package: maps
+
+Attaching package: ‘maps’
+
+The following object is masked from ‘package:purrr’:
+
+    map
+
+Loading required package: StanHeaders
+rstan (Version 2.21.8, GitRev: 2e1f913d3ca3)
+For execution on a local, multicore CPU with excess RAM we recommend calling
+options(mc.cores = parallel::detectCores()).
+To avoid recompilation of unchanged Stan programs, we recommend calling
+rstan_options(auto_write = TRUE)
+
+Attaching package: ‘rstan’
+
+The following object is masked from ‘package:tidyr’:
+
+    extract
+
+
+Attaching package: ‘tidybayes’
+
+The following objects are masked from ‘package:brms’:
+
+    dstudent_t, pstudent_t, qstudent_t, rstudent_t
+
+Loading required package: viridisLite
+
+Attaching package: ‘viridis’
+
+The following object is masked from ‘package:maps’:
+
+    unemp
+
+[1] 1
+Compiling Stan program...
+Start sampling
+
+SAMPLING FOR MODEL 'ba849ca0a6c5a61fad9555d2cc431621' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'ba849ca0a6c5a61fad9555d2cc431621' NOW (CHAIN 2).
+
+SAMPLING FOR MODEL 'ba849ca0a6c5a61fad9555d2cc431621' NOW (CHAIN 3).
+
+SAMPLING FOR MODEL 'ba849ca0a6c5a61fad9555d2cc431621' NOW (CHAIN 4).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.022158 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 221.58 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+Chain 2: 
+Chain 2: Gradient evaluation took 0.021906 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 219.06 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 3: 
+Chain 3: Gradient evaluation took 0.021954 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 219.54 seconds.
+Chain 3: Adjust your expectations accordingly!
+Chain 3: 
+Chain 3: 
+Chain 4: 
+Chain 4: Gradient evaluation took 0.021697 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 216.97 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 3: 
+Chain 3:  Elapsed Time: 1562.22 seconds (Warm-up)
+Chain 3:                512.347 seconds (Sampling)
+Chain 3:                2074.57 seconds (Total)
+Chain 3: 
+Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 1461.88 seconds (Warm-up)
+Chain 4:                808.378 seconds (Sampling)
+Chain 4:                2270.25 seconds (Total)
+Chain 4: 
+Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 1384.16 seconds (Warm-up)
+Chain 1:                934.515 seconds (Sampling)
+Chain 1:                2318.67 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 1577.67 seconds (Warm-up)
+Chain 2:                910.41 seconds (Sampling)
+Chain 2:                2488.08 seconds (Total)
+Chain 2: 
+[1] 2
+Compiling Stan program...
+Start sampling
+
+SAMPLING FOR MODEL 'ad5239ec65707834371fd79ee6503147' NOW (CHAIN 1).
+
+SAMPLING FOR MODEL 'ad5239ec65707834371fd79ee6503147' NOW (CHAIN 2).
+
+SAMPLING FOR MODEL 'ad5239ec65707834371fd79ee6503147' NOW (CHAIN 3).
+Chain 1: 
+Chain 1: Gradient evaluation took 0.028258 seconds
+Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 282.58 seconds.
+Chain 1: Adjust your expectations accordingly!
+Chain 1: 
+Chain 1: 
+
+SAMPLING FOR MODEL 'ad5239ec65707834371fd79ee6503147' NOW (CHAIN 4).
+Chain 2: 
+Chain 2: Gradient evaluation took 0.027887 seconds
+Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 278.87 seconds.
+Chain 2: Adjust your expectations accordingly!
+Chain 2: 
+Chain 2: 
+Chain 3: 
+Chain 3: Gradient evaluation took 0.028163 seconds
+Chain 3: 1000 transitions using 10 leapfrog steps per transition would take 281.63 seconds.
+Chain 3: Adjust your expectations accordingly!
+Chain 3: 
+Chain 3: 
+Chain 4: 
+Chain 4: Gradient evaluation took 0.02767 seconds
+Chain 4: 1000 transitions using 10 leapfrog steps per transition would take 276.7 seconds.
+Chain 4: Adjust your expectations accordingly!
+Chain 4: 
+Chain 4: 
+Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 3: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 4: Iteration:    1 / 2000 [  0%]  (Warmup)
+Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 4: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 3: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
+Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 4: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 3: Iteration:  400 / 2000 [ 20%]  (Warmup)
+Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 4: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 3: Iteration:  600 / 2000 [ 30%]  (Warmup)
+Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 3: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 4: Iteration:  800 / 2000 [ 40%]  (Warmup)
+Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 3: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 3: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 4: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 3: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 4: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+Chain 3: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 4: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+Chain 3: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 4: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+Chain 3: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 4: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+Chain 3: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 3: 
+Chain 3:  Elapsed Time: 5460.09 seconds (Warm-up)
+Chain 3:                4508.04 seconds (Sampling)
+Chain 3:                9968.13 seconds (Total)
+Chain 3: 
+Chain 4: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 4: 
+Chain 4:  Elapsed Time: 5623.9 seconds (Warm-up)
+Chain 4:                4436.9 seconds (Sampling)
+Chain 4:                10060.8 seconds (Total)
+Chain 4: 
+Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 1: 
+Chain 1:  Elapsed Time: 5623.54 seconds (Warm-up)
+Chain 1:                4675.35 seconds (Sampling)
+Chain 1:                10298.9 seconds (Total)
+Chain 1: 
+Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
+Chain 2: 
+Chain 2:  Elapsed Time: 5355.3 seconds (Warm-up)
+Chain 2:                5009.39 seconds (Sampling)
+Chain 2:                10364.7 seconds (Total)
+Chain 2: 
+Warning messages:
+1: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+ℹ Please use `all_of()` or `any_of()` instead.
+  # Was:
+  data %>% select(vars)
+
+  # Now:
+  data %>% select(all_of(vars))
+
+See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>. 
+2: Using an external vector in selections was deprecated in tidyselect 1.1.0.
+ℹ Please use `all_of()` or `any_of()` instead.
+  # Was:
+  data %>% select(otherdems)
+
+  # Now:
+  data %>% select(all_of(otherdems))
+
+See <https://tidyselect.r-lib.org/reference/faq-external-vector.html>. 
+3: Rows containing NAs were excluded from the model. 
+4: There were 8 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+5: Examine the pairs() plot to diagnose sampling problems
+ 
+6: In rm(bayes.mod1, post_strat) : object 'post_strat' not found
+7: Rows containing NAs were excluded from the model. 
+8: There were 7 divergent transitions after warmup. See
+https://mc-stan.org/misc/warnings.html#divergent-transitions-after-warmup
+to find out why this is a problem and how to eliminate them. 
+9: Examine the pairs() plot to diagnose sampling problems
+ 
+10: In rm(bayes.mod1, post_strat) : object 'post_strat' not found
+Error while shutting down parallel: unable to terminate some child processes
+/prl/code/pulse/landing/.build/utils.py:72: DtypeWarning: Columns (6,7,8,9,10,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  data = pd.read_csv(".tmp/all.csv")
+/prl/code/pulse/landing/.build/utils.py:72: DtypeWarning: Columns (6,7,8,9,10,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  data = pd.read_csv(".tmp/all.csv")
+/prl/code/pulse/landing/.build/utils.py:72: DtypeWarning: Columns (6,7,8,9,10,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  data = pd.read_csv(".tmp/all.csv")
+/prl/code/pulse/landing/.build/process_trust_and_values.py:12: DtypeWarning: Columns (6,7,8,9,10,11) have mixed types. Specify dtype option on import or set low_memory=False.
+  data = pd.read_csv(".tmp/all.csv")
+=== running: pull_data ===
+---done---
+=== running: process_mrps ===
+---done---
+=== running: process_affpol ===
+---done---
+=== running: process_norms ===
+---done---
+=== running: process_violence ===
+---done---
+=== running: process_trust_and_values ===
+---done---
+=== running: pull_download_links ===
+---done---

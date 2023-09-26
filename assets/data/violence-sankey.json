@@ -3,67 +3,67 @@
         {
             "from": "Supported Protesting without a Permit",
             "to": "Supported Vandalism",
-            "flow": 2714
+            "flow": 2785
         },
         {
             "from": "Supported Protesting without a Permit",
             "to": "Did not support Vandalism",
-            "flow": 9660
+            "flow": 9844
         },
         {
             "from": "Did not support Protesting without a Permit",
             "to": "Did not support Vandalism",
-            "flow": 26468
+            "flow": 27058
         },
         {
             "from": "Supported Vandalism",
             "to": "Supported Assault",
-            "flow": 1132
+            "flow": 1166
         },
         {
             "from": "Supported Vandalism",
             "to": "Did not support Assault",
-            "flow": 1600
+            "flow": 1638
         },
         {
             "from": "Did not support Vandalism",
             "to": "Did not support Assault",
-            "flow": 36076
+            "flow": 36849
         },
         {
             "from": "Supported Assault",
             "to": "Supported Arson",
-            "flow": 875
+            "flow": 896
         },
         {
             "from": "Supported Assault",
             "to": "Did not support Arson",
-            "flow": 277
+            "flow": 290
         },
         {
             "from": "Did not support Assault",
             "to": "Did not support Arson",
-            "flow": 37658
+            "flow": 38468
         },
         {
             "from": "Supported Arson",
             "to": "Supported Assault with Deadly Weapon",
-            "flow": 727
+            "flow": 744
         },
         {
             "from": "Supported Arson",
             "to": "Did not support Assault with Deadly Weapon",
-            "flow": 152
+            "flow": 156
         },
         {
             "from": "Did not support Arson",
             "to": "Did not support Assault with Deadly Weapon",
-            "flow": 37915
+            "flow": 38738
         },
         {
             "from": "Supported Assault with Deadly Weapon",
             "to": "Supported Murder",
-            "flow": 642
+            "flow": 659
         },
         {
             "from": "Supported Assault with Deadly Weapon",
@@ -73,7 +73,7 @@
         {
             "from": "Did not support Assault with Deadly Weapon",
             "to": "Did not support Murder",
-            "flow": 38063
+            "flow": 38890
         }
     ],
     "labels": {
@@ -90,7 +90,7 @@
         "Did not support Murder": " ",
         "Supported Murder": " "
     },
-    "max": 38790,
+    "max": 39634,
     "colors": {
         "Did not support Protesting without a Permit": "green",
         "Supported Protesting without a Permit": "red",
@@ -109,14 +109,14 @@
         {
             "content": [
                 "Did not support",
-                "68.2%"
+                "68.3%"
             ],
             "xValue": 0.4,
             "color": "white",
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 23274.0,
+            "yValue": 23780.399999999998,
             "type": "label",
             "font": {
                 "size": 14
@@ -125,14 +125,14 @@
         {
             "content": [
                 "Support",
-                "31.8%"
+                "31.7%"
             ],
             "xValue": 0,
             "color": "white",
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
@@ -148,7 +148,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 23274.0,
+            "yValue": 23780.399999999998,
             "type": "label",
             "font": {
                 "size": 14
@@ -164,7 +164,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
@@ -180,7 +180,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 23274.0,
+            "yValue": 23780.399999999998,
             "type": "label",
             "font": {
                 "size": 14
@@ -196,7 +196,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
@@ -212,7 +212,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 23274.0,
+            "yValue": 23780.399999999998,
             "type": "label",
             "font": {
                 "size": 14
@@ -228,7 +228,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
@@ -244,7 +244,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 23274.0,
+            "yValue": 23780.399999999998,
             "type": "label",
             "font": {
                 "size": 14
@@ -260,7 +260,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
@@ -276,7 +276,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": 15516.0,
+            "yValue": 15853.6,
             "type": "label",
             "font": {
                 "size": 14
@@ -292,7 +292,7 @@
             "backgroundColor": "rgba(0,0,0,.7)",
             "borderColor": "rgba(0,0,0,.7)",
             "borderRadius": 10,
-            "yValue": -3879.0,
+            "yValue": -3963.4,
             "type": "label",
             "font": {
                 "size": 14
