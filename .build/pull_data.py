@@ -2,12 +2,8 @@ import sys
 
 import pandas as pd
 
-# sys.path.append("../../../utils/")
-# import distilldb as ddb
-
-import dataset as database
-
-db = database.connect()
+sys.path.append("../../../utils/")
+import distilldb as ddb
 
 db = ddb.Database(config="secrets.json")
 
