@@ -1861,3 +1861,9 @@ Traceback (most recent call last):
   File "/prl/code/citizens/landing page v1/.build/pull_data.py", line 12, in <module>
     db = ddb.Database(config="secrets.json")
 NameError: name 'ddb' is not defined
+[main f6b1de8] routine update
+ 1 file changed, 14 insertions(+)
+To https://github.com/Polarization-Research-Lab/americas-pulse-dashboard.git
+   8c8ba1d..f6b1de8  main -> main
+--- FIN: [2023-10-23 21:53:55]  ---
+============

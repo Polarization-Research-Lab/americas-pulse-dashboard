@@ -8,7 +8,7 @@ cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )/"
 source ../../../.env
 
 ## Redirect stdout and stderr
-exec &>> ".log"
+# exec &>> ".log"
 
 # Execute
 # ## Add Timestamp
