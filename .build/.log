@@ -1847,3 +1847,17 @@ To https://github.com/Polarization-Research-Lab/americas-pulse-dashboard.git
 ============
 --- START: [2023-10-23 21:52:48]  ---
 ./build: line 18: pipeline.py: command not found
+[main 8c8ba1d] routine update
+ 2 files changed, 19 insertions(+), 3 deletions(-)
+To https://github.com/Polarization-Research-Lab/americas-pulse-dashboard.git
+   2dc814a..8c8ba1d  main -> main
+--- FIN: [2023-10-23 21:52:48]  ---
+============
+--- START: [2023-10-23 21:53:54]  ---
+=== running: pull_data ===
+Traceback (most recent call last):
+  File "pipeline.py", line 2, in <module>
+    import pull_data
+  File "/prl/code/citizens/landing page v1/.build/pull_data.py", line 12, in <module>
+    db = ddb.Database(config="secrets.json")
+NameError: name 'ddb' is not defined
