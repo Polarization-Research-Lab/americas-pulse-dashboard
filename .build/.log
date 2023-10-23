@@ -1835,3 +1835,15 @@ Error while shutting down parallel: unable to terminate some child processes
 ---done---
 === running: pull_download_links ===
 ---done---
+[main 2dc814a] routine update
+ 26 files changed, 1307 insertions(+), 890 deletions(-)
+ rewrite _data/datalinks.json (100%)
+ rewrite assets/data/affpol-hist-dem.json (80%)
+ rewrite assets/data/affpol-hist-rep.json (80%)
+ rewrite assets/data/affpol-map.json (80%)
+To https://github.com/Polarization-Research-Lab/americas-pulse-dashboard.git
+   b8248a4..2dc814a  main -> main
+--- FIN: [2023-10-11 00:15:13]  ---
+============
+--- START: [2023-10-23 21:52:48]  ---
+./build: line 18: pipeline.py: command not found
