@@ -2,10 +2,10 @@ import sys
 
 import pandas as pd
 
-sys.path.append("../../../utils/")
+sys.path.append("utils/")
 import distilldb as ddb
 
-db = ddb.Database(config="../../../../.secrets/db.json")
+db = ddb.Database(config="../../../../.secrets/db.json", database = "web")
 
 with db.Session() as session:
     links = pd.read_sql(
@@ -14,7 +14,7 @@ with db.Session() as session:
     )
     links = links[links["file"].str.contains("week")]
     links["week"] = links["file"].apply(
-        lambda x: int(x.split("week")[-1].split(".")[0])
+        lambda x: int(x.replace('downloads/citizens/','').split("week")[-1].split("_")[0])
     )
     links["year"] = links["file"].apply(lambda x: int(x.split("_")[0].split("/")[-1]))
 
