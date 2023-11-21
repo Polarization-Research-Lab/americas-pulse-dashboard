@@ -2,7 +2,7 @@ import sys
 
 import pandas as pd
 
-sys.path.append(".utils/python")
+sys.path.append("utils")
 import distilldb as ddb
 
 db = ddb.Database(config="../../../../.secrets/db.json", database = 'surveys')
