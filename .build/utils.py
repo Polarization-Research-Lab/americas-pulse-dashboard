@@ -24,22 +24,23 @@ def agg_weighted_mean(
 
 ## Remove Disengaged Participants
 def remove_disengaged(data):
-    return data[
-        (
-            (data["engagement_measure"] == 7)
-            & (data["year"] == 2022)
-            & ((data["week"] == 40) | (data["week"] == 39))
-        )
-        | (
-            (data["engagement_measure"] == 1)
-            & (
-                (data["year"] == 2022) & ((data["week"] == 40) | (data["week"] == 39))
-                == False
-            )
-        )
-        | ((data["engagement_measure"] == 1) & ((data["year"] == 2023) & (data['week'] < 25)))
-        | (data["engaged"] == True)
-    ]
+    return data[data['engaged'] == True]
+    # return data[
+    #     (
+    #         (data["engagement_measure"] == 7)
+    #         & (data["year"] == 2022)
+    #         & ((data["week"] == 40) | (data["week"] == 39))
+    #     )
+    #     | (
+    #         (data["engagement_measure"] == 1)
+    #         & (
+    #             (data["year"] == 2022) & ((data["week"] == 40) | (data["week"] == 39))
+    #             == False
+    #         )
+    #     )
+    #     | ((data["engagement_measure"] == 1) & ((data["year"] == 2023) & (data['week'] < 25)))
+    #     | (data["engaged"] == True)
+    # ]
 
 
 # Recode Functions
