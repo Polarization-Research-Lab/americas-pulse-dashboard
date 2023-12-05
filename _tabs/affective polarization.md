@@ -26,7 +26,7 @@ params:
 </div>
 
 
-<h3>Average level of polarizaiton by party</h3>
+<h3>Average level of polarization by party</h3>
 <p>(more is worse)</p>
 <div class = 'row chartrow chart'>
   <div>
