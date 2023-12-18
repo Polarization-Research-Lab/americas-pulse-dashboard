@@ -17,8 +17,10 @@ conn = ibis.mysql.connect(
 )
 links = conn.table("download_counts").execute()
 
+
 # Get links and paste them to a data file for jekyll
-links = links[links["file"].str.contains("week")]
+links = links[links["file"].str.contains("week") & ~links["file"].str.contains("toplines")]
+
 links["week"] = links["file"].apply(
     lambda x: int(x.replace('downloads/citizens/','').split("week")[-1].split("_")[0])
 )
