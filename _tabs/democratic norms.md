@@ -53,7 +53,7 @@ order: 2
   </div>
 </div>
 
-<h2>Support for Reducing Polling Stations</h2>
+<h2>Reducing Polling Stations</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <strong>What we ask:</strong>
@@ -67,7 +67,7 @@ order: 2
   </div>
 </div>
 
-<h2>Support for Using Executive Orders to Circumvent Congress</h2>
+<h2>Using Executive Orders to Circumvent Congress</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <strong>What we ask:</strong>
@@ -81,7 +81,7 @@ order: 2
   </div>
 </div>
 
-<h2>Suport for Media Censorship</h2>
+<h2>Media Censorship</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <strong>What we ask:</strong>
@@ -95,7 +95,7 @@ order: 2
   </div>
 </div>
 
-<h2>Support for Constitution in the Face of Election Denial</h2>
+<h2>Favoring the Party over the Constitution during Contested Elections</h2>
 <div class = 'row chartrow violence-row violence-row-alt'>
   <div class='chartv'>
     <strong>What we ask:</strong>
