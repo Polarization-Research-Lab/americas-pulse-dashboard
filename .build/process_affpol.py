@@ -24,6 +24,8 @@ data.loc[data["pid"] == "rep", "affpol"] = (
     - data.loc[data["pid"] == "rep", "democrat_therm_1"]
 )
 
+data = data[(data['year'] ==2023) & (data['week'] == 47)]
+
 data = data.loc[
     data["affpol"] >= 0,
 ]  # <-- we dont want those with negative affpol values
@@ -39,6 +41,7 @@ meta["affpol_nat_avg"] = round(
     utils.weighted_mean(*data[["affpol", "weight"]].values.T), 2
 )
 
+exit()
 
 # # Build Histograms
 # ## Democrats
