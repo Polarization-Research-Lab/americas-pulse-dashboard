@@ -25,25 +25,10 @@ If you use our data in your research, we humbly ask that you cite our lab 🙏:
   <div class = 'col-6'>
     <div class = 'dl'>
       <h3 class = 'dlh3'>All Data Collected (so far)</h3>
-      <button id='download-btn-all'>Download All Survey Data</button>
+      <a href="https://apps.polarizationresearchlab.org/api/count/all-data.zip"><button id='download-btn-all'>Download All Survey Data</button></a>
     </div>
   </div>
 
-  <div class = 'col-6'>
-    <div class = 'dl'>
-      <h3 class = 'dlh3'>Survey Data by Week</h3>
-      <p>Select a week: 
-      <select id='dlselectbox'>
-        {% for data in site.data.datalinks %}
-        <option value="{{ data.file }}" data-week="{{ data.week }}" data-year="{{ data.year }}">
-          {{ data.year }} - week {{ data.week }}
-        </option>
-        {% endfor %}
-      </select></p>
-      <button id='download-btn-week'>Download Data File</button>
-      <button id='download-btn-week-topline'>Download Topline Report</button>
-    </div>
-  </div>
 </div>
 
 <br>
